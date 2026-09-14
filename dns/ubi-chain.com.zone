@@ -1,10 +1,10 @@
 ; ubi-chain.com — UBICHAIN stability-guarantee zone
-; serial 2026091402  applied 2026-09-14T14:27:00+09:00
+; serial 2026091404  applied 2026-09-14T15:10:00+09:00
 $ORIGIN ubi-chain.com.
 $TTL 3600
 
 @                86400  IN SOA    ns1.vercel-dns.com. hostmaster.ubi-chain.com. (
-                                 2026091402 ; serial
+                                 2026091404 ; serial
                                  86400      ; refresh
                                  7200       ; retry
                                  604800     ; expire

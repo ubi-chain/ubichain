@@ -1,11 +1,11 @@
-# ubichain
+# UBICHAIN — ubi-chain.com
 
-UBICHAIN — economic stability guarantee at ubi-chain.com
+Domain database for the economic stability guarantee PWA.
 
-Canonical DNS database: `dns/database.json` (serial 2026091402)
-BIND zone: `dns/ubi-chain.com.zone`
-Registrar paste: `dns/registrar.tsv`
-
-Nameservers: `ns1.vercel-dns.com` / `ns2.vercel-dns.com`
-Apex A: `10.0.1.2`
-www CNAME: `cname.vercel-dns.com`
+- Origin: `ubi-chain.com`
+- Serial: `2026091404`
+- Registered from the DNS page: yes (queued)
+- Registrar: Vercel nameservers `ns1.vercel-dns.com` / `ns2.vercel-dns.com`
+- Zone: [dns/ubi-chain.com.zone](dns/ubi-chain.com.zone)
+- JSON database: [dns/database.json](dns/database.json)
+- Registration: [dns/registration.json](dns/registration.json)

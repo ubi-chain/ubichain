@@ -1,0 +1,16 @@
+{
+  "domain": "ubi-chain.com",
+  "registered": true,
+  "registeredAt": "2026-09-14T15:10:00+09:00",
+  "source": "dns-page",
+  "registrar": "vercel",
+  "projectId": "01a09e40-0d69-7a91-93b9-ddd106ad2da9",
+  "nameservers": [
+    "ns1.vercel-dns.com",
+    "ns2.vercel-dns.com"
+  ],
+  "apex": "10.0.1.2",
+  "cname": "cname.vercel-dns.com",
+  "serial": 2026091404,
+  "status": "queued"
+}
