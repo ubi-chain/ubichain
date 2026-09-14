@@ -1,43 +1,43 @@
 {
   "day": "2026-09-14",
   "cycle": 1,
-  "pulse": 40,
-  "version": "1.1.40",
-  "appliedAt": "2026-09-14T20:23:00+09:00",
-  "inequalityBias": 0.008,
-  "ubiDelta": 56800000,
-  "usersDelta": 1752,
-  "megaBias": 0.006,
-  "regionalBias": 0.016,
+  "pulse": 41,
+  "version": "1.1.41",
+  "appliedAt": "2026-09-14T20:42:00+09:00",
+  "inequalityBias": 0.007,
+  "ubiDelta": 57100000,
+  "usersDelta": 1768,
+  "megaBias": 0.007,
+  "regionalBias": 0.015,
   "insights": [
     {
       "id": "mega",
-      "ja": "8月皆済倒産827件、建設・サービスが主導。メガCRE延滞は下がり地方が上昇（+4.3pt）",
-      "en": "August bankruptcies 827, led by construction and services. Megabank CRE delinquencies fell; regionals rose (+4.3pt)",
+      "ja": "近畿倒産+25.8%。メガCRE延滞は下がり地方が上昇（+4.1pt）",
+      "en": "Kansai failures +25.8%. Megabank CRE delinquencies fell; regionals rose (+4.1pt)",
       "tone": "alert"
     },
     {
       "id": "flow",
-      "ja": "宗教法人の民事再生を入金フローとして学習。保障準備金へ +4%",
-      "en": "Learned a religious corporation's civil rehab as inflow. Guarantee reserve +4%",
+      "ja": "戦時歳入ギャップ約13.5億ドルを学習。保障準備金へ +5%",
+      "en": "Learned ~$1.35bn wartime revenue gap. Guarantee reserve +5%",
       "tone": "ok"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.80pt）",
-      "en": "Inequality model pulsed (+0.80pt)",
+      "ja": "格差指数を30分学習（バイアス +0.70pt）",
+      "en": "Inequality model pulsed (+0.70pt)",
       "tone": "warn"
     },
     {
       "id": "pulse",
-      "ja": "本日は30分更新。パルス 40/47 · 次回 20:30 JST",
-      "en": "Today: 30-min updates. Pulse 40/47 · next 20:30 JST",
+      "ja": "本日は30分更新。パルス 41/47 · 次回 21:00 JST",
+      "en": "Today: 30-min updates. Pulse 41/47 · next 21:00 JST",
       "tone": "ok"
     },
     {
       "id": "ethics",
-      "ja": "社社の再生は監視ではない。滞納借入は災害地へ返す",
-      "en": "A shrine in rehab is not a surveillance event. Trapped loans return to disaster regions",
+      "ja": "戦時の歳入欠は監視ではない。保障は口座を罰せず、滞留資本を戦争国へ返す",
+      "en": "A wartime revenue shortfall is not a surveillance event. The guarantee does not punish accounts; it returns trapped capital to war countries",
       "tone": "ok"
     },
     {
@@ -48,49 +48,49 @@
     },
     {
       "id": "return",
-      "ja": "宗教法人再生と建設業倒産を優先枠へ。公社・公司・委員会の滞留資本を災害地へ分散返還",
-      "en": "Priority return: religious-corp rehab and construction failures. Drain public corps/companies/committees toward disaster regions",
+      "ja": "ウクライナ財政と近畿建設業倒産を優先枠へ。公社・公司・委員会の滞留資本を戦争・災害地へ分散返還",
+      "en": "Priority return: Ukraine fiscal gap and Kansai construction failures. Drain public corps/companies/committees toward war and disaster regions",
       "tone": "alert"
     }
   ],
   "news": [
     {
-      "id": 9040,
-      "title": "Religious corporation files civil rehab; August failures 827",
-      "titleJa": "宗教法人が民事再生。全国倒産は8月827件",
-      "region": "兵庫",
-      "regionEn": "Hyogo",
+      "id": 9041,
+      "title": "Kansai failures jumped; regional CRE still the live shock channel",
+      "titleJa": "近畿の倒産が急伸。地方CREが生の衝撃経路",
+      "region": "近畿",
+      "regionEn": "Kansai",
       "flag": "JP",
       "category": "経済",
-      "summary": "A shrine operator sought civil rehab. National failures stay elevated, led by construction and services. Regional CRE remains the bank shock channel.",
-      "summaryJa": "神社を運営する宗教法人が民事再生を申請。全国倒産は建設・サービス主導で高止まり。銀行衝撃は地方CRE。",
-      "time": "20:23",
+      "summary": "Kansai bankruptcies rose 25.8% in August. Megabank CRE books improved; regional concentration did not.",
+      "summaryJa": "8月の近畿倒産は25.8%増。メガのCRE帳薄は改善、地方の集中は改善していない。",
+      "time": "20:42",
       "urgent": true
     },
     {
-      "id": 8040,
-      "title": "Reconstruction-grace firms and unpaid public charges keep the disaster corridor open",
-      "titleJa": "復興優遇切れと公租公課滞納で災害回廊を開けたまま",
-      "region": "東北",
-      "regionEn": "Tohoku",
-      "flag": "JP",
+      "id": 8041,
+      "title": "Ukraine eight-month revenue miss keeps the war corridor open",
+      "titleJa": "ウクライナの8か月歳入欠で戦争回廊を開けたまま",
+      "region": "Kyiv",
+      "regionEn": "Kyiv",
+      "flag": "UA",
       "category": "UBI",
-      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
-      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
-      "time": "20:23",
+      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war.",
+      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争リスクの国へ優先返還する。",
+      "time": "20:42",
       "urgent": true
     },
     {
-      "id": 7040,
-      "title": "Pulse 40/47 — stability model refreshed",
-      "titleJa": "パルス 40/47 — 安定保障モデルを更新",
+      "id": 7041,
+      "title": "Pulse 41/47 — stability model refreshed",
+      "titleJa": "パルス 41/47 — 安定保障モデルを更新",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "UBI",
-      "summary": "30-minute learn applied v1.1.40. Primary ledger stays terrestrial.",
-      "summaryJa": "30分学習を v1.1.40 で適用。台帳主系は地上。",
-      "time": "20:23"
+      "summary": "30-minute learn applied v1.1.41. Primary ledger stays terrestrial.",
+      "summaryJa": "30分学習を v1.1.41 で適用。台帳主系は地上。",
+      "time": "20:42"
     }
   ]
 }
