@@ -3,7 +3,7 @@
   "cycle": 1,
   "pulse": 44,
   "version": "1.1.44",
-  "appliedAt": "2026-09-14T22:12:00+09:00",
+  "appliedAt": "2026-09-14T22:26:00+09:00",
   "inequalityBias": 0.008,
   "ubiDelta": 58200000,
   "usersDelta": 1816,
@@ -64,7 +64,7 @@
       "category": "経済",
       "summary": "Aozora-class US office books and Swiss property provisions show the same channel. Regional CRE still carries most of the maturity wall.",
       "summaryJa": "青空銀行級の米オフィス貸付とスイスの不動産引当が同じ経路。満期の壁はまだ地方CRE。",
-      "time": "22:12",
+      "time": "22:26",
       "urgent": true
     },
     {
@@ -77,7 +77,7 @@
       "category": "UBI",
       "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
       "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
-      "time": "22:12",
+      "time": "22:26",
       "urgent": true
     },
     {
@@ -90,7 +90,7 @@
       "category": "UBI",
       "summary": "30-minute learn applied v1.1.44. Primary ledger stays terrestrial.",
       "summaryJa": "30分学習を v1.1.44 で適用。台帳主系は地上。",
-      "time": "22:12"
+      "time": "22:26"
     }
   ]
 }
