@@ -3,7 +3,7 @@
   "cycle": 1,
   "pulse": 40,
   "version": "1.1.40",
-  "appliedAt": "2026-09-14T20:12:00+09:00",
+  "appliedAt": "2026-09-14T20:23:00+09:00",
   "inequalityBias": 0.008,
   "ubiDelta": 56800000,
   "usersDelta": 1752,
@@ -64,7 +64,7 @@
       "category": "経済",
       "summary": "A shrine operator sought civil rehab. National failures stay elevated, led by construction and services. Regional CRE remains the bank shock channel.",
       "summaryJa": "神社を運営する宗教法人が民事再生を申請。全国倒産は建設・サービス主導で高止まり。銀行衝撃は地方CRE。",
-      "time": "20:12",
+      "time": "20:23",
       "urgent": true
     },
     {
@@ -77,7 +77,7 @@
       "category": "UBI",
       "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
       "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
-      "time": "20:12",
+      "time": "20:23",
       "urgent": true
     },
     {
@@ -90,7 +90,7 @@
       "category": "UBI",
       "summary": "30-minute learn applied v1.1.40. Primary ledger stays terrestrial.",
       "summaryJa": "30分学習を v1.1.40 で適用。台帳主系は地上。",
-      "time": "20:12"
+      "time": "20:23"
     }
   ]
 }
