@@ -1,43 +1,43 @@
 {
   "day": "2026-09-14",
   "cycle": 1,
-  "pulse": 35,
-  "version": "1.1.35",
-  "appliedAt": "2026-09-14T17:42:00+09:00",
-  "inequalityBias": 0.007,
-  "ubiDelta": 54900000,
-  "usersDelta": 1644,
-  "megaBias": 0.005,
-  "regionalBias": 0.016,
+  "pulse": 36,
+  "version": "1.1.36",
+  "appliedAt": "2026-09-14T18:12:00+09:00",
+  "inequalityBias": 0.008,
+  "ubiDelta": 55200000,
+  "usersDelta": 1670,
+  "megaBias": 0.006,
+  "regionalBias": 0.015,
   "insights": [
     {
       "id": "mega",
-      "ja": "CRE CLOの苦境率が8月に19%→28%。メガはCREを縮小したが地方は集中が残る（+4.6pt）",
-      "en": "CRE CLO distress jumped 19%→28% in August. Megas shrank CRE; regionals did not (+4.6pt)",
+      "ja": "地方銀行の53%がCRE/資本300%超。メガの延滞下落と分峀（地方+4.4pt）",
+      "en": "53% of regionals sit over the 300% CRE/capital line. Megas cut delinquencies; the split widened (+4.4pt regional)",
       "tone": "alert"
     },
     {
       "id": "flow",
-      "ja": "地方CRE集中を入金フローとして学習。保障準備金へ +5%",
-      "en": "Learned regional CRE concentration as inflow. Guarantee reserve +5%",
+      "ja": "大阪のパーキング設備企業など今日の破産速報を学習。保障準備金へ +4%",
+      "en": "Learned today's parking-equipment and developer bankruptcies. Guarantee reserve +4%",
       "tone": "ok"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.70pt）",
-      "en": "Inequality model pulsed (+0.70pt)",
+      "ja": "格差指数を30分学習（バイアス +0.80pt）",
+      "en": "Inequality model pulsed (+0.80pt)",
       "tone": "warn"
     },
     {
       "id": "pulse",
-      "ja": "本日は30分更新。パルス 35/47 · 次回 18:00 JST",
-      "en": "Today: 30-min updates. Pulse 35/47 · next 18:00 JST",
+      "ja": "本日は30分更新。パルス 36/47 · 次回 18:30 JST",
+      "en": "Today: 30-min updates. Pulse 36/47 · next 18:30 JST",
       "tone": "ok"
     },
     {
       "id": "ethics",
-      "ja": "戦時の預金払いは監視ではない。保障は口座を罰せず、滞留資本を返す",
-      "en": "Wartime deposit payouts are not surveillance. The guarantee does not punish accounts; it returns trapped capital",
+      "ja": "公共工事を受注した工事企業の破産は監視ではない。滞納税金は災害・戦争地へ返す",
+      "en": "A public-works contractor failing is not a surveillance event. Trapped tax and premiums return to disaster and war regions",
       "tone": "ok"
     },
     {
@@ -48,49 +48,49 @@
     },
     {
       "id": "return",
-      "ja": "ウクライナ戦時財政と預金保証払いを優先枠へ。公社・公司・委員会の滞留資本を戦争国へ分散返還",
-      "en": "Priority return: Ukraine war finance and deposit-guarantee payouts. Drain public corps/companies/committees toward war-risk countries",
+      "ja": "建設業連鎖破産と公租公課滞納を優先枠へ。公社・公司・委員会の滞留資本を災害地へ分散返還",
+      "en": "Priority return: construction cascade and unpaid public premiums. Drain public corps/companies/committees toward disaster regions",
       "tone": "alert"
     }
   ],
   "news": [
     {
-      "id": 9035,
-      "title": "CRE CLO distress jumped; regional concentration still above the 300% line",
-      "titleJa": "CRE CLO苦境が急伸。地方のCRE集中は300%線の上",
-      "region": "北本",
-      "regionEn": "Kitamoto",
+      "id": 9036,
+      "title": "Osaka parking-equipment group bankrupt; regional CRE still over the 300% line",
+      "titleJa": "大阪のパーキング設備企業が破産。地方CREは300%線の上",
+      "region": "大阪",
+      "regionEn": "Osaka",
       "flag": "JP",
       "category": "経済",
-      "summary": "August CRE CLO distress rose from 19% to 28%. Megabank CRE books are smaller; regional books still carry the cliff.",
-      "summaryJa": "8月のCRE CLO苦境率は19%から28%へ。メガのCREは縮小、地方が崖を抱える。",
-      "time": "17:42",
+      "summary": "A parking-equipment maker failed with ¥35.2bn. Regional CRE concentration remains the shock channel; megabank books are smaller.",
+      "summaryJa": "パーキング設備メーカーが負債35.2億円で破産。地方のCRE集中が衝撃経路。メガの帳薄は縮小。",
+      "time": "18:12",
       "urgent": true
     },
     {
-      "id": 8035,
-      "title": "Ukraine fiscal gap and deposit-guarantee payouts keep the war corridor open",
-      "titleJa": "ウクライナ財政ギャップと預金保証払いで戦争回廊を開けたまま",
-      "region": "Kyiv",
-      "regionEn": "Kyiv",
-      "flag": "UA",
-      "category": "UBI",
-      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war.",
-      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争リスクの国へ優先返還する。",
-      "time": "17:42",
-      "urgent": true
-    },
-    {
-      "id": 7035,
-      "title": "Pulse 35/47 — stability model refreshed",
-      "titleJa": "パルス 35/47 — 安定保障モデルを更新",
+      "id": 8036,
+      "title": "Construction failures and unpaid public charges widen the disaster return corridor",
+      "titleJa": "建設業倒産と公租公課滞納で災害返還回廊を拡張",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "UBI",
-      "summary": "30-minute learn applied v1.1.35. Primary ledger stays terrestrial.",
-      "summaryJa": "30分学習を v1.1.35 で適用。台帳主系は地上。",
-      "time": "17:42"
+      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
+      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
+      "time": "18:12",
+      "urgent": true
+    },
+    {
+      "id": 7036,
+      "title": "Pulse 36/47 — stability model refreshed",
+      "titleJa": "パルス 36/47 — 安定保障モデルを更新",
+      "region": "北本",
+      "regionEn": "Kitamoto",
+      "flag": "JP",
+      "category": "UBI",
+      "summary": "30-minute learn applied v1.1.36. Primary ledger stays terrestrial.",
+      "summaryJa": "30分学習を v1.1.36 で適用。台帳主系は地上。",
+      "time": "18:12"
     }
   ]
 }
