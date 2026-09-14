@@ -1,96 +1,96 @@
 {
   "day": "2026-09-14",
   "cycle": 1,
-  "pulse": 32,
-  "version": "1.1.32",
-  "appliedAt": "2026-09-14T16:29:00+09:00",
-  "inequalityBias": 0.006,
-  "ubiDelta": 52400000,
-  "usersDelta": 1512,
-  "megaBias": 0.012,
-  "regionalBias": 0.008,
+  "pulse": 33,
+  "version": "1.1.33",
+  "appliedAt": "2026-09-14T16:42:00+09:00",
+  "inequalityBias": 0.007,
+  "ubiDelta": 53800000,
+  "usersDelta": 1580,
+  "megaBias": 0.009,
+  "regionalBias": 0.011,
   "insights": [
     {
       "id": "mega",
-      "ja": "みずほ・青空銀系のCRE損失を再推定（+4.2pt）。メガも倒産しうる",
-      "en": "Re-scored CRE losses around Mizuho/Aozora books (+4.2pt). Megabanks can fail too",
+      "ja": "米銀ストレステスト通過でもCRE想定-39%。メガの簿価と時価の溝を再推定（+3.8pt）",
+      "en": "Fed stress test passed, but CRE shock is -39%. Re-scored megabank book-vs-market gap (+3.8pt)",
       "tone": "alert"
     },
     {
       "id": "flow",
-      "ja": "地方・メガの入金フローを学習。保障準備金へ +5%",
-      "en": "Learned bank inflows. Guarantee reserve +5%",
+      "ja": "地方銀行のCRE融資を学習。保障準備金へ +5%",
+      "en": "Learned regional CRE books. Guarantee reserve +5%",
       "tone": "ok"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.60pt）",
-      "en": "Inequality model pulsed (+0.60pt)",
+      "ja": "格差指数を30分学習（バイアス +0.70pt）",
+      "en": "Inequality model pulsed (+0.70pt)",
       "tone": "warn"
     },
     {
       "id": "pulse",
-      "ja": "本日は30分更新。パルス 32/47 · 次回 16:30 JST",
-      "en": "Today: 30-min updates. Pulse 32/47 · next 16:30 JST",
+      "ja": "本日は30分更新。パルス 33/47 · 次回 17:00 JST",
+      "en": "Today: 30-min updates. Pulse 33/47 · next 17:00 JST",
       "tone": "ok"
     },
     {
       "id": "ethics",
-      "ja": "SMS送信認証はSIM/ゲートウェイ経由。偽受信箱は使わない。衛星AI1は推論エッジであり台帳ではない",
-      "en": "SMS send-auth is SIM/gateway. No fake inbox. X AI1 is inference edge, not the ledger",
+      "ja": "戦争下の預金払い戻しは監視ではない。保障は口座を罰せず、滞留資本を返す",
+      "en": "Wartime deposit payouts are not surveillance. The guarantee does not punish accounts; it returns trapped capital",
       "tone": "ok"
     },
     {
       "id": "heal",
-      "ja": "公開DNSはNXDOMAINのまま。Vercel確認TXTはレジストラ掲載待ちとして学習",
-      "en": "Public DNS still NXDOMAIN. Learned Vercel verify TXT waits on the registrar",
+      "ja": "公開DNSはNXDOMAINのまま。Vercel確認TXTはレジストラ掲載待ちとして継続学習",
+      "en": "Public DNS still NXDOMAIN. Vercel verify TXT still waits on the registrar",
       "tone": "warn"
     },
     {
       "id": "return",
-      "ja": "戦争下のウクライナ財政と千葉豪雨を優先枠へ。公社・公司・委員会の滞留資本を分散返還",
-      "en": "Priority return: Ukraine war finance and Chiba flood. Drain insolvency-risk public corps/companies/committees",
+      "ja": "ウクライナ財政と預金保証払いを優先枠へ。公社・公司・委員会の滞留資本を戦争国へ分散返還",
+      "en": "Priority return: Ukraine fiscal stress and deposit-guarantee payouts. Drain public corps/companies/committees toward war-risk countries",
       "tone": "alert"
     }
   ],
   "news": [
     {
-      "id": 9032,
-      "title": "Commercial-property losses hit banks; Aozora-class CRE shock reweighted",
-      "titleJa": "商業用不動産損が銀行を直撃。青空銀級CREを再配分",
-      "region": "東京",
-      "regionEn": "Tokyo",
+      "id": 9033,
+      "title": "Regional CRE books still sit on a mark-to-market cliff",
+      "titleJa": "地方銀行のCREは時価評価の崖に残る",
+      "region": "北本",
+      "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "経済",
-      "summary": "Office-loan losses across continents raised megabank and regional fail scores. Guarantee reserve absorbs the shock; capital stays in banks until deposited.",
-      "summaryJa": "オフィス融資損でメガ・地方の倒産確率を上げた。保障準備金が衝撃を吸収する。資本は入金まで銀行内。",
-      "time": "16:29",
+      "summary": "Large-bank stress tests held capital, but commercial-property loans at regionals remain the shock channel. Guarantee reserve absorbs deposits before insolvency.",
+      "summaryJa": "大手のストレステストは資本を保ったが、地方の商業用不動産融資が衝撃経路。倒産前に入金を保障準備金へ。",
+      "time": "16:42",
       "urgent": true
     },
     {
-      "id": 8032,
-      "title": "Ukraine fiscal stress and Chiba urban flood: return corridor widened",
-      "titleJa": "ウクライナ財政危機と千葉豪雨へ返還回廊を拡張",
+      "id": 8033,
+      "title": "Ukraine deposit-guarantee payouts and war-budget gap widen the return corridor",
+      "titleJa": "ウクライナ預金保証の払い戻しと戦時財政ギャップで返還回廊を拡げる",
+      "region": "Kyiv",
+      "regionEn": "Kyiv",
+      "flag": "UA",
+      "category": "UBI",
+      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war.",
+      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争リスクの国へ優先返還する。",
+      "time": "16:42",
+      "urgent": true
+    },
+    {
+      "id": 7033,
+      "title": "Pulse 33/47 — stability model refreshed",
+      "titleJa": "パルス 33/47 — 安定保障モデルを更新",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "UBI",
-      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to war and disaster countries.",
-      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争・災害の国へ優先返還する。",
-      "time": "16:29",
-      "urgent": true
-    },
-    {
-      "id": 7032,
-      "title": "Pulse 32/47 — stability model, SMS auth, X AI1 edge refreshed",
-      "titleJa": "パルス 32/47 — 安定保障・SMS認証・X AI1エッジを更新",
-      "region": "北本",
-      "regionEn": "Kitamoto",
-      "flag": "JP",
-      "category": "UBI",
-      "summary": "30-minute learn applied v1.1.32. Primary ledger stays terrestrial; ISS replica; X AI1 remains design-orbit inference cache.",
-      "summaryJa": "30分学習を v1.1.32 で適用。台帳主系は地上、ISSは複製、X AI1は設計軌道の推論キャッシュ。",
-      "time": "16:29"
+      "summary": "30-minute learn applied v1.1.33. Primary ledger stays terrestrial.",
+      "summaryJa": "30分学習を v1.1.33 で適用。台帳主系は地上。",
+      "time": "16:42"
     }
   ]
 }
