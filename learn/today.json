@@ -1,43 +1,43 @@
 {
   "day": "2026-09-14",
   "cycle": 1,
-  "pulse": 44,
-  "version": "1.1.44",
-  "appliedAt": "2026-09-14T22:26:00+09:00",
-  "inequalityBias": 0.008,
-  "ubiDelta": 58200000,
-  "usersDelta": 1816,
-  "megaBias": 0.011,
-  "regionalBias": 0.013,
+  "pulse": 45,
+  "version": "1.1.45",
+  "appliedAt": "2026-09-14T22:42:00+09:00",
+  "inequalityBias": 0.007,
+  "ubiDelta": 58500000,
+  "usersDelta": 1832,
+  "megaBias": 0.008,
+  "regionalBias": 0.015,
   "insights": [
     {
       "id": "mega",
-      "ja": "青空銀行級の米オフィス損とG-SIB級の時価評ギャップを再推定（メガ+3.8pt / 地方+3.9pt）",
-      "en": "Re-scored Aozora-class US office losses and a G-SIB-scale mark-to-market gap (mega +3.8pt / regional +3.9pt)",
+      "ja": "FRB仮定CRE-39%は地方帳薄1.6兆ドルに残る。メガテスト通過でも崖は地方（+4.2pt）",
+      "en": "Fed CRE -39% still sits on $1.6tn regional books. Megas passed the test; regionals hold the cliff (+4.2pt)",
       "tone": "alert"
     },
     {
       "id": "flow",
-      "ja": "三大陸の不動産引当を入金フローとして学習。保障準備金へ +5%",
-      "en": "Learned three-continent property provisions as inflow. Guarantee reserve +5%",
+      "ja": "戦時預金保証払いを入金フローとして学習。保障準備金へ +5%",
+      "en": "Learned wartime deposit-guarantee payouts as inflow. Guarantee reserve +5%",
       "tone": "ok"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.80pt）",
-      "en": "Inequality model pulsed (+0.80pt)",
+      "ja": "格差指数を30分学習（バイアス +0.70pt）",
+      "en": "Inequality model pulsed (+0.70pt)",
       "tone": "warn"
     },
     {
       "id": "pulse",
-      "ja": "本日は30分更新。パルス 44/47 · 次回 22:30 JST",
-      "en": "Today: 30-min updates. Pulse 44/47 · next 22:30 JST",
+      "ja": "本日は30分更新。パルス 45/47 · 次回 23:00 JST",
+      "en": "Today: 30-min updates. Pulse 45/47 · next 23:00 JST",
       "tone": "ok"
     },
     {
       "id": "ethics",
-      "ja": "公租公課滞納の破産は監視ではない。滞納税金は災害地へ返す",
-      "en": "A failure after unpaid public charges is not a surveillance event. Trapped tax and premiums return to disaster regions",
+      "ja": "戦時の預金払いは監視ではない。保障は口座を罰せず、滞留資本を戦争国へ返す",
+      "en": "Wartime deposit payouts are not surveillance. The guarantee does not punish accounts; it returns trapped capital to war countries",
       "tone": "ok"
     },
     {
@@ -48,49 +48,49 @@
     },
     {
       "id": "return",
-      "ja": "三大陸の不動産損と公租公課滞納を優先枠へ。公社・公司・委員会の滞留資本を災害地へ分散返還",
-      "en": "Priority return: three-continent property losses and unpaid public charges. Drain public corps/companies/committees toward disaster regions",
+      "ja": "ウクライナ預金保証と夜間空襲を優先枠へ。公社・公司・委員会の滞留資本を戦争国へ分散返還",
+      "en": "Priority return: Ukraine deposit-guarantee payouts and overnight air raids. Drain public corps/companies/committees toward war-risk countries",
       "tone": "alert"
     }
   ],
   "news": [
     {
-      "id": 9044,
-      "title": "Office losses hit lenders on three continents; a G-SIB-scale gap sits in the book",
-      "titleJa": "オフィス損が三大陸の銀行を直撃。G-SIB級の評価ギャップも帳にある",
-      "region": "東京",
-      "regionEn": "Tokyo",
+      "id": 9045,
+      "title": "Fed CRE -39% still sits on regional books, not megabank test scores",
+      "titleJa": "FRBのCRE-39%仮定は地方帳薄に残る。メガのテスト通過ではない",
+      "region": "北本",
+      "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "経済",
-      "summary": "Aozora-class US office books and Swiss property provisions show the same channel. Regional CRE still carries most of the maturity wall.",
-      "summaryJa": "青空銀行級の米オフィス貸付とスイスの不動産引当が同じ経路。満期の壁はまだ地方CRE。",
-      "time": "22:26",
+      "summary": "Large-bank stress tests held capital under a -39% CRE shock. About $1.6tn of commercial mortgages still sit at regionals.",
+      "summaryJa": "大手のストレステストはCRE-39%で資本を保った。商業モーゲージ約1.6兆ドルはまだ地方。",
+      "time": "22:42",
       "urgent": true
     },
     {
-      "id": 8044,
-      "title": "Unpaid public charges and religious-corp rehab keep the disaster corridor open",
-      "titleJa": "公租公課滞納と宗教法人再生で災害回廊を開けたまま",
-      "region": "大阪",
-      "regionEn": "Osaka",
-      "flag": "JP",
+      "id": 8045,
+      "title": "Ukraine deposit-guarantee payouts and overnight raids keep the war corridor open",
+      "titleJa": "ウクライナ預金保証払いと夜間空襲で戦争回廊を開けたまま",
+      "region": "Kyiv",
+      "regionEn": "Kyiv",
+      "flag": "UA",
       "category": "UBI",
-      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
-      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
-      "time": "22:26",
+      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war.",
+      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争リスクの国へ優先返還する。",
+      "time": "22:42",
       "urgent": true
     },
     {
-      "id": 7044,
-      "title": "Pulse 44/47 — stability model refreshed",
-      "titleJa": "パルス 44/47 — 安定保障モデルを更新",
+      "id": 7045,
+      "title": "Pulse 45/47 — stability model refreshed",
+      "titleJa": "パルス 45/47 — 安定保障モデルを更新",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "UBI",
-      "summary": "30-minute learn applied v1.1.44. Primary ledger stays terrestrial.",
-      "summaryJa": "30分学習を v1.1.44 で適用。台帳主系は地上。",
-      "time": "22:26"
+      "summary": "30-minute learn applied v1.1.45. Primary ledger stays terrestrial.",
+      "summaryJa": "30分学習を v1.1.45 で適用。台帳主系は地上。",
+      "time": "22:42"
     }
   ]
 }
