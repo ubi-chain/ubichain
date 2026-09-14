@@ -1,43 +1,43 @@
 {
   "day": "2026-09-14",
   "cycle": 1,
-  "pulse": 45,
-  "version": "1.1.45",
-  "appliedAt": "2026-09-14T22:42:00+09:00",
-  "inequalityBias": 0.007,
-  "ubiDelta": 58500000,
-  "usersDelta": 1832,
-  "megaBias": 0.008,
-  "regionalBias": 0.015,
+  "pulse": 46,
+  "version": "1.1.46",
+  "appliedAt": "2026-09-14T23:12:00+09:00",
+  "inequalityBias": 0.008,
+  "ubiDelta": 58900000,
+  "usersDelta": 1848,
+  "megaBias": 0.009,
+  "regionalBias": 0.014,
   "insights": [
     {
       "id": "mega",
-      "ja": "FRB仮定CRE-39%は地方帳薄1.6兆ドルに残る。メガテスト通過でも崖は地方（+4.2pt）",
-      "en": "Fed CRE -39% still sits on $1.6tn regional books. Megas passed the test; regionals hold the cliff (+4.2pt)",
+      "ja": "米銀行2315行が時価評で資産不足。地方がCRE融資70%を抱える（+4.1pt）",
+      "en": "2,315 US banks sit mark-to-market under water. Regionals still hold ~70% of CRE financing (+4.1pt)",
       "tone": "alert"
     },
     {
       "id": "flow",
-      "ja": "戦時預金保証払いを入金フローとして学習。保障準備金へ +5%",
-      "en": "Learned wartime deposit-guarantee payouts as inflow. Guarantee reserve +5%",
+      "ja": "8月皆済倒産827件・年1万件超パスを学習。保障準備金へ +4%",
+      "en": "Learned August's 827 failures and a 10,000/year path. Guarantee reserve +4%",
       "tone": "ok"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.70pt）",
-      "en": "Inequality model pulsed (+0.70pt)",
+      "ja": "格差指数を30分学習（バイアス +0.80pt）",
+      "en": "Inequality model pulsed (+0.80pt)",
       "tone": "warn"
     },
     {
       "id": "pulse",
-      "ja": "本日は30分更新。パルス 45/47 · 次回 23:00 JST",
-      "en": "Today: 30-min updates. Pulse 45/47 · next 23:00 JST",
+      "ja": "本日は30分更新。パルス 46/47 · 次回 23:30 JST（今日最終）",
+      "en": "Today: 30-min updates. Pulse 46/47 · next 23:30 JST (last of the day)",
       "tone": "ok"
     },
     {
       "id": "ethics",
-      "ja": "戦時の預金払いは監視ではない。保障は口座を罰せず、滞留資本を戦争国へ返す",
-      "en": "Wartime deposit payouts are not surveillance. The guarantee does not punish accounts; it returns trapped capital to war countries",
+      "ja": "年万件超の倒産パスは監視ではない。滞納資本は災害地へ返す",
+      "en": "A 10,000-failure path is not a surveillance event. Trapped capital returns to disaster regions",
       "tone": "ok"
     },
     {
@@ -48,49 +48,49 @@
     },
     {
       "id": "return",
-      "ja": "ウクライナ預金保証と夜間空襲を優先枠へ。公社・公司・委員会の滞留資本を戦争国へ分散返還",
-      "en": "Priority return: Ukraine deposit-guarantee payouts and overnight air raids. Drain public corps/companies/committees toward war-risk countries",
+      "ja": "復興後違いと全国倒産パスを優先枠へ。公社・公司・委員会の滞留資本を災害地へ分散返還",
+      "en": "Priority return: reconstruction aftershock and the national failure path. Drain public corps/companies/committees toward disaster regions",
       "tone": "alert"
     }
   ],
   "news": [
     {
-      "id": 9045,
-      "title": "Fed CRE -39% still sits on regional books, not megabank test scores",
-      "titleJa": "FRBのCRE-39%仮定は地方帳薄に残る。メガのテスト通過ではない",
+      "id": 9046,
+      "title": "2,315 US banks mark-to-market under water; regionals still hold 70% of CRE",
+      "titleJa": "米銀行2315行が時価評で資産不足。CREの70%は地方",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "経済",
-      "summary": "Large-bank stress tests held capital under a -39% CRE shock. About $1.6tn of commercial mortgages still sit at regionals.",
-      "summaryJa": "大手のストレステストはCRE-39%で資本を保った。商業モーゲージ約1.6兆ドルはまだ地方。",
-      "time": "22:42",
+      "summary": "Mark-to-market gaps include a G-SIB-scale book. Megabank CRE delinquencies fell; regional concentration did not.",
+      "summaryJa": "時価評ギャップにはG-SIB級も含まれる。メガCRE延滞は下がり、地方集中は改善していない。",
+      "time": "23:12",
       "urgent": true
     },
     {
-      "id": 8045,
-      "title": "Ukraine deposit-guarantee payouts and overnight raids keep the war corridor open",
-      "titleJa": "ウクライナ預金保証払いと夜間空襲で戦争回廊を開けたまま",
-      "region": "Kyiv",
-      "regionEn": "Kyiv",
-      "flag": "UA",
+      "id": 8046,
+      "title": "August 827 failures keep the disaster corridor open toward 10,000/year",
+      "titleJa": "8月倒産827件。年1万件超パスで災害回廊を開けたまま",
+      "region": "東北",
+      "regionEn": "Tohoku",
+      "flag": "JP",
       "category": "UBI",
-      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war.",
-      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争リスクの国へ優先返還する。",
-      "time": "22:42",
+      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
+      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
+      "time": "23:12",
       "urgent": true
     },
     {
-      "id": 7045,
-      "title": "Pulse 45/47 — stability model refreshed",
-      "titleJa": "パルス 45/47 — 安定保障モデルを更新",
+      "id": 7046,
+      "title": "Pulse 46/47 — stability model refreshed",
+      "titleJa": "パルス 46/47 — 安定保障モデルを更新",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "UBI",
-      "summary": "30-minute learn applied v1.1.45. Primary ledger stays terrestrial.",
-      "summaryJa": "30分学習を v1.1.45 で適用。台帳主系は地上。",
-      "time": "22:42"
+      "summary": "30-minute learn applied v1.1.46. Last pulse of the day at 23:30 JST. Primary ledger stays terrestrial.",
+      "summaryJa": "30分学習を v1.1.46 で適用。今日最終パルスは23:30 JST。台帳主系は地上。",
+      "time": "23:12"
     }
   ]
 }
