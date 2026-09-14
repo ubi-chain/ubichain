@@ -1,0 +1,17 @@
+; ubi-chain.com — UBICHAIN stability-guarantee zone
+$ORIGIN ubi-chain.com.
+$TTL 3600
+
+@                86400  IN NS     ns1.vercel-dns.com.
+@                86400  IN NS     ns2.vercel-dns.com.
+@                3600   IN A      10.0.1.2
+www              3600   IN CNAME  cname.vercel-dns.com.
+pay              3600   IN CNAME  cname.vercel-dns.com.
+news             3600   IN CNAME  cname.vercel-dns.com.
+international    3600   IN CNAME  cname.vercel-dns.com.
+ai               3600   IN CNAME  cname.vercel-dns.com.
+infra            3600   IN CNAME  cname.vercel-dns.com.
+monitor          3600   IN CNAME  cname.vercel-dns.com.
+*                3600   IN CNAME  cname.vercel-dns.com.
+@                3600   IN CAA    0 issue "letsencrypt.org"
+@                3600   IN TXT    "v=spf1 -all"
