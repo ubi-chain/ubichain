@@ -1,9 +1,9 @@
 {
   "day": "2026-09-14",
   "cycle": 1,
-  "pulse": 41,
-  "version": "1.1.41",
-  "appliedAt": "2026-09-14T20:42:00+09:00",
+  "pulse": 42,
+  "version": "1.1.42",
+  "appliedAt": "2026-09-14T21:11:00+09:00",
   "inequalityBias": 0.007,
   "ubiDelta": 57100000,
   "usersDelta": 1768,
@@ -30,8 +30,8 @@
     },
     {
       "id": "pulse",
-      "ja": "本日は30分更新。パルス 41/47 · 次回 21:00 JST",
-      "en": "Today: 30-min updates. Pulse 41/47 · next 21:00 JST",
+      "ja": "本日は30分更新。パルス 42/47 · 次回 21:30 JST",
+      "en": "Today: 30-min updates. Pulse 42/47 · next 21:30 JST",
       "tone": "ok"
     },
     {
@@ -55,7 +55,7 @@
   ],
   "news": [
     {
-      "id": 9041,
+      "id": 9042,
       "title": "Kansai failures jumped; regional CRE still the live shock channel",
       "titleJa": "近畿の倒産が急伸。地方CREが生の衝撃経路",
       "region": "近畿",
@@ -64,11 +64,11 @@
       "category": "経済",
       "summary": "Kansai bankruptcies rose 25.8% in August. Megabank CRE books improved; regional concentration did not.",
       "summaryJa": "8月の近畿倒産は25.8%増。メガのCRE帳薄は改善、地方の集中は改善していない。",
-      "time": "20:42",
+      "time": "21:11",
       "urgent": true
     },
     {
-      "id": 8041,
+      "id": 8042,
       "title": "Ukraine eight-month revenue miss keeps the war corridor open",
       "titleJa": "ウクライナの8か月歳入欠で戦争回廊を開けたまま",
       "region": "Kyiv",
@@ -77,20 +77,20 @@
       "category": "UBI",
       "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war.",
       "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争リスクの国へ優先返還する。",
-      "time": "20:42",
+      "time": "21:11",
       "urgent": true
     },
     {
-      "id": 7041,
-      "title": "Pulse 41/47 — stability model refreshed",
-      "titleJa": "パルス 41/47 — 安定保障モデルを更新",
+      "id": 7042,
+      "title": "Pulse 42/47 — stability model refreshed",
+      "titleJa": "パルス 42/47 — 安定保障モデルを更新",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "UBI",
-      "summary": "30-minute learn applied v1.1.41. Primary ledger stays terrestrial.",
-      "summaryJa": "30分学習を v1.1.41 で適用。台帳主系は地上。",
-      "time": "20:42"
+      "summary": "30-minute learn applied v1.1.42. Primary ledger stays terrestrial.",
+      "summaryJa": "30分学習を v1.1.42 で適用。台帳主系は地上。",
+      "time": "21:11"
     }
   ]
 }
