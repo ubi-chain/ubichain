@@ -1,37 +1,37 @@
 {
   "day": "2026-09-14",
   "cycle": 1,
-  "pulse": 33,
-  "version": "1.1.33",
-  "appliedAt": "2026-09-14T16:42:00+09:00",
-  "inequalityBias": 0.007,
-  "ubiDelta": 53800000,
-  "usersDelta": 1580,
-  "megaBias": 0.009,
-  "regionalBias": 0.011,
+  "pulse": 34,
+  "version": "1.1.34",
+  "appliedAt": "2026-09-14T17:12:00+09:00",
+  "inequalityBias": 0.008,
+  "ubiDelta": 54200000,
+  "usersDelta": 1620,
+  "megaBias": 0.010,
+  "regionalBias": 0.012,
   "insights": [
     {
       "id": "mega",
-      "ja": "米銀ストレステスト通過でもCRE想定-39%。メガの簿価と時価の溝を再推定（+3.8pt）",
-      "en": "Fed stress test passed, but CRE shock is -39%. Re-scored megabank book-vs-market gap (+3.8pt)",
+      "ja": "米銀ストレステスト通過でもCRE想定-39%。メガの簿価と時価の溝を再推定（+4.0pt）",
+      "en": "Fed stress test passed, but CRE shock is -39%. Re-scored megabank book-vs-market gap (+4.0pt)",
       "tone": "alert"
     },
     {
       "id": "flow",
-      "ja": "地方銀行のCRE融資を学習。保障準備金へ +5%",
-      "en": "Learned regional CRE books. Guarantee reserve +5%",
+      "ja": "地方銀行のCRE融資を学習。保障準備金へ +5.2%",
+      "en": "Learned regional CRE books. Guarantee reserve +5.2%",
       "tone": "ok"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.70pt）",
-      "en": "Inequality model pulsed (+0.70pt)",
+      "ja": "格差指数を30分学習（バイアス +0.80pt）",
+      "en": "Inequality model pulsed (+0.80pt)",
       "tone": "warn"
     },
     {
       "id": "pulse",
-      "ja": "本日は30分更新。パルス 33/47 · 次回 17:00 JST",
-      "en": "Today: 30-min updates. Pulse 33/47 · next 17:00 JST",
+      "ja": "本日は30分更新。パルス 34/47 · 次回 17:30 JST",
+      "en": "Today: 30-min updates. Pulse 34/47 · next 17:30 JST",
       "tone": "ok"
     },
     {
@@ -42,8 +42,8 @@
     },
     {
       "id": "heal",
-      "ja": "公開DNSはNXDOMAINのまま。Vercel確認TXTはレジストラ掲載待ちとして継続学習",
-      "en": "Public DNS still NXDOMAIN. Vercel verify TXT still waits on the registrar",
+      "ja": "公開DNSはNXDOMAINのまま。レジストラ側のTXT反映を待機継続",
+      "en": "Public DNS still NXDOMAIN. Continue waiting for registrar TXT propagation",
       "tone": "warn"
     },
     {
@@ -55,7 +55,7 @@
   ],
   "news": [
     {
-      "id": 9033,
+      "id": 9034,
       "title": "Regional CRE books still sit on a mark-to-market cliff",
       "titleJa": "地方銀行のCREは時価評価の崖に残る",
       "region": "北本",
@@ -64,11 +64,11 @@
       "category": "経済",
       "summary": "Large-bank stress tests held capital, but commercial-property loans at regionals remain the shock channel. Guarantee reserve absorbs deposits before insolvency.",
       "summaryJa": "大手のストレステストは資本を保ったが、地方の商業用不動産融資が衝撃経路。倒産前に入金を保障準備金へ。",
-      "time": "16:42",
+      "time": "17:12",
       "urgent": true
     },
     {
-      "id": 8033,
+      "id": 8034,
       "title": "Ukraine deposit-guarantee payouts and war-budget gap widen the return corridor",
       "titleJa": "ウクライナ預金保証の払い戻しと戦時財政ギャップで返還回廊を拡げる",
       "region": "Kyiv",
@@ -77,20 +77,20 @@
       "category": "UBI",
       "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war.",
       "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争リスクの国へ優先返還する。",
-      "time": "16:42",
+      "time": "17:12",
       "urgent": true
     },
     {
-      "id": 7033,
-      "title": "Pulse 33/47 — stability model refreshed",
-      "titleJa": "パルス 33/47 — 安定保障モデルを更新",
+      "id": 7034,
+      "title": "Pulse 34/47 — stability model refreshed",
+      "titleJa": "パルス 34/47 — 安定保障モデルを更新",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "UBI",
-      "summary": "30-minute learn applied v1.1.33. Primary ledger stays terrestrial.",
-      "summaryJa": "30分学習を v1.1.33 で適用。台帳主系は地上。",
-      "time": "16:42"
+      "summary": "30-minute learn applied v1.1.34. Primary ledger stays terrestrial.",
+      "summaryJa": "30分学習を v1.1.34 で適用。台帳主系は地上。",
+      "time": "17:12"
     }
   ]
 }
