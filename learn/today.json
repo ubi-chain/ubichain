@@ -1,43 +1,43 @@
 {
   "day": "2026-09-14",
   "cycle": 1,
-  "pulse": 42,
-  "version": "1.1.42",
-  "appliedAt": "2026-09-14T21:12:00+09:00",
-  "inequalityBias": 0.008,
-  "ubiDelta": 57500000,
-  "usersDelta": 1784,
-  "megaBias": 0.009,
-  "regionalBias": 0.014,
+  "pulse": 43,
+  "version": "1.1.43",
+  "appliedAt": "2026-09-14T21:42:00+09:00",
+  "inequalityBias": 0.007,
+  "ubiDelta": 57800000,
+  "usersDelta": 1801,
+  "megaBias": 0.006,
+  "regionalBias": 0.016,
   "insights": [
     {
       "id": "mega",
-      "ja": "CRE満期約①兆ドルの壁。メガ延滞は下がり地方が更新残る（+4.0pt）",
-      "en": "About $1tn of CRE debt still matures soon. Megabank delinquencies fell; regionals still hold the rollover (+4.0pt)",
+      "ja": "地方CRE 1.6兆ドル、53%が資本比300%超。メガ延滞下落と分峀（地方+4.4pt）",
+      "en": "Regional CRE still $1.6tn; 53% over 300% of capital. Megas cut delinquencies; the split widened (+4.4pt regional)",
       "tone": "alert"
     },
     {
       "id": "flow",
-      "ja": "零ゼロ融資後の倒産47件を学習。保障準備金へ +4%",
-      "en": "Learned 47 post-zero-zero loan failures. Guarantee reserve +4%",
+      "ja": "千葉豪雨の住宅6000棚超を入金フローとして学習。保障準備金へ +5%",
+      "en": "Learned Chiba flood housing damage as inflow. Guarantee reserve +5%",
       "tone": "ok"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.80pt）",
-      "en": "Inequality model pulsed (+0.80pt)",
+      "ja": "格差指数を30分学習（バイアス +0.70pt）",
+      "en": "Inequality model pulsed (+0.70pt)",
       "tone": "warn"
     },
     {
       "id": "pulse",
-      "ja": "本日は30分更新。パルス 42/47 · 次回 21:30 JST",
-      "en": "Today: 30-min updates. Pulse 42/47 · next 21:30 JST",
+      "ja": "本日は30分更新。パルス 43/47 · 次回 22:00 JST",
+      "en": "Today: 30-min updates. Pulse 43/47 · next 22:00 JST",
       "tone": "ok"
     },
     {
       "id": "ethics",
-      "ja": "災害復興の42兆円の後違いは監視ではない。滞納借入は災害地へ返す",
-      "en": "A reconstruction-spend aftershock is not a surveillance event. Trapped loans return to disaster regions",
+      "ja": "水害後の生活再建は監視ではない。保障は口座を罰せず、滞留資本を災害地へ返す",
+      "en": "Post-flood rebuilding is not a surveillance event. The guarantee does not punish accounts; it returns trapped capital to disaster regions",
       "tone": "ok"
     },
     {
@@ -48,49 +48,49 @@
     },
     {
       "id": "return",
-      "ja": "復興費42兆円の後違いと零ゼロ後倒産を優先枠へ。公社・公司・委員会の滞留資本を災害地へ分散返還",
-      "en": "Priority return: reconstruction aftershock and post-zero-zero failures. Drain public corps/companies/committees toward disaster regions",
+      "ja": "千葉豪雨とウクライナ全土攻撃を優先枠へ。公社・公司・委員会の滞留資本を災害・戦争地へ分散返還",
+      "en": "Priority return: Chiba flood and Ukraine nationwide strikes. Drain public corps/companies/committees toward disaster and war regions",
       "tone": "alert"
     }
   ],
   "news": [
     {
-      "id": 9042,
-      "title": "CRE maturity wall ~$1tn; regional books still sit in front of it",
-      "titleJa": "CRE満期の壁は約①兆ドル。地方帳薄がその前にいる",
-      "region": "北本",
-      "regionEn": "Kitamoto",
+      "id": 9043,
+      "title": "Chiba flood: 7,000+ homes still damaged a month on",
+      "titleJa": "千葉豪雨から1か月、住宅被害7000棚超が残る",
+      "region": "千葉",
+      "regionEn": "Chiba",
       "flag": "JP",
       "category": "経済",
-      "summary": "About a trillion dollars of commercial property debt still matures soon. Megabank CRE improved; regional concentration did not.",
-      "summaryJa": "商業不動産の満期債務はまだ約①兆ドル。メガCREは改善、地方集中は改善していない。",
-      "time": "21:12",
+      "summary": "Housing damage remains above 7,000. Regional CRE books still hold the bank shock; megabank delinquencies fell.",
+      "summaryJa": "住宅被害は7000棚超のまま。銀行衝撃は地方CRE。メガ延滞は下がった。",
+      "time": "21:42",
       "urgent": true
     },
     {
-      "id": 8042,
-      "title": "Reconstruction aftershock and post-zero-zero failures keep the disaster corridor open",
-      "titleJa": "復興後違いと零ゼロ後倒産で災害回廊を開けたまま",
-      "region": "東北",
-      "regionEn": "Tohoku",
-      "flag": "JP",
+      "id": 8043,
+      "title": "Ukraine nationwide strikes keep the war corridor open",
+      "titleJa": "ウクライナ全土攻撃で戦争回廊を開けたまま",
+      "region": "Kyiv",
+      "regionEn": "Kyiv",
+      "flag": "UA",
       "category": "UBI",
-      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
-      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
-      "time": "21:12",
+      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war and disaster.",
+      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争・災害リスクの地へ優先返還する。",
+      "time": "21:42",
       "urgent": true
     },
     {
-      "id": 7042,
-      "title": "Pulse 42/47 — stability model refreshed",
-      "titleJa": "パルス 42/47 — 安定保障モデルを更新",
+      "id": 7043,
+      "title": "Pulse 43/47 — stability model refreshed",
+      "titleJa": "パルス 43/47 — 安定保障モデルを更新",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "UBI",
-      "summary": "30-minute learn applied v1.1.42. Primary ledger stays terrestrial.",
-      "summaryJa": "30分学習を v1.1.42 で適用。台帳主系は地上。",
-      "time": "21:12"
+      "summary": "30-minute learn applied v1.1.43. Primary ledger stays terrestrial.",
+      "summaryJa": "30分学習を v1.1.43 で適用。台帳主系は地上。",
+      "time": "21:42"
     }
   ]
 }
