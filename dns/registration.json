@@ -1,7 +1,7 @@
 {
   "domain": "ubi-chain.com",
   "registered": true,
-  "registeredAt": "2026-09-14T15:22:00+09:00",
+  "registeredAt": "2026-09-14T16:17:00+09:00",
   "source": "dns-page",
   "registrar": "vercel",
   "loginVia": "github",
@@ -14,6 +14,11 @@
   ],
   "apex": "10.0.1.2",
   "cname": "cname.vercel-dns.com",
-  "serial": 2026091405,
+  "verify": {
+    "host": "_vercel",
+    "type": "TXT",
+    "value": "vc-domain-verify=ubi-chain.com,a867d92e04fd510123b0"
+  },
+  "serial": 2026091406,
   "status": "queued"
 }
