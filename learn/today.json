@@ -1,96 +1,71 @@
 {
-  "day": "2026-09-14",
-  "cycle": 1,
-  "pulse": 47,
-  "version": "1.1.47",
-  "appliedAt": "2026-09-14T23:42:00+09:00",
-  "inequalityBias": 0.007,
-  "ubiDelta": 59200000,
-  "usersDelta": 1864,
-  "megaBias": 0.008,
-  "regionalBias": 0.016,
+  "day": "2026-09-15",
+  "cycle": 2,
+  "version": "1.2.0",
+  "appliedAt": "2026-09-15T00:05:00+09:00",
+  "inequalityBias": 0.009,
+  "ubiDelta": 48000000,
+  "usersDelta": 2140,
+  "megaBias": 0.006,
+  "regionalBias": 0.019,
   "insights": [
     {
       "id": "mega",
-      "ja": "今日終了：メガCRE延滞は下がり、地方は1.6兆ドルの崖を抱えたまま（+4.5pt）",
-      "en": "Day close: megabank CRE delinquencies fell; regionals still hold the $1.6tn cliff (+4.5pt)",
-      "tone": "alert"
+      "ja": "メガバンクはCET1余裕を維持、ストレス耐性は確認済み",
+      "en": "Megabanks hold CET1 buffers; stress resilience confirmed",
+      "tone": "ok"
     },
     {
       "id": "flow",
-      "ja": "戦時財政ギャップと地方CREを一日分学習。保障準備金へ +5%",
-      "en": "Closed the day on wartime fiscal gap and regional CRE. Guarantee reserve +5%",
-      "tone": "ok"
+      "ja": "地方銀行の預金流出圧力が強まる：競争と貯蓄から投資へのシフト",
+      "en": "Regional banks face rising deposit outflow pressure from competition and savings-to-investment shift",
+      "tone": "alert"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.70pt）",
-      "en": "Inequality model pulsed (+0.70pt)",
+      "ja": "若年層金融資産のジニ係数が上昇、格差が拡大",
+      "en": "Youth financial-asset Gini rises; inequality widens",
       "tone": "warn"
     },
     {
-      "id": "pulse",
-      "ja": "今日の30分パルスはここで終了。パルス 47/47 · 明日から日次",
-      "en": "Today's 30-min pulses end here. Pulse 47/47 · daily cycle from tomorrow",
-      "tone": "ok"
-    },
-    {
       "id": "ethics",
-      "ja": "冬を前にした戦時財政は監視ではない。保障は口座を罰せず、滞留資本を戦争・災害地へ返す",
-      "en": "A wartime fiscal winter is not a surveillance event. The guarantee does not punish accounts; it returns trapped capital to war and disaster regions",
+      "ja": "倒産リスクを抱える地方金融は監視ではなく、尊厳ある再分配の起点",
+      "en": "Regional insolvency risk is not a surveillance event; it is the starting point for dignified redistribution",
       "tone": "ok"
     },
     {
       "id": "heal",
-      "ja": "公開DNSはNXDOMAINのまま。Vercel確認TXTはレジストラ掲載待ち",
-      "en": "Public DNS still NXDOMAIN. Vercel verify TXT still waits on the registrar",
-      "tone": "warn"
-    },
-    {
-      "id": "return",
-      "ja": "今日分の優先枠を固定：戦争財政と地方CRE。公社・公司・委員会の滞留資本を災害・戦争地へ分散返還",
-      "en": "Day-close priority: war finance and regional CRE. Drain public corps/companies/committees toward disaster and war regions",
-      "tone": "alert"
+      "ja": "預金の首都圏集中を緩め、地方への資本還流を学習",
+      "en": "Learning to ease deposit concentration in greater Tokyo and recirculate capital to regions",
+      "tone": "ok"
     }
   ],
   "news": [
     {
-      "id": 9047,
-      "title": "Day close: megabank CRE eased; regional $1.6tn cliff did not",
-      "titleJa": "今日終了：メガCREは軽減、地方の1.6兆ドルは解消していない",
-      "region": "北本",
-      "regionEn": "Kitamoto",
+      "id": 9002,
+      "title": "Japan regional banks face deposit risks as competition rises",
+      "titleJa": "日本の地方銀行、預金競争激化で資金調達リスクに直面",
+      "region": "東京",
+      "regionEn": "Tokyo",
       "flag": "JP",
       "category": "経済",
-      "summary": "Large-bank books improved. Regional concentration and the CRE maturity wall remain the live shock channel.",
-      "summaryJa": "大手帳薄は改善。生の衝撃経路は地方集中とCRE満期の壁。",
-      "time": "23:42",
+      "summary": "Moody's: rising rates benefits fade; households shift savings to investments, forcing higher deposit rates and pressure on regional NIM.",
+      "summaryJa": "Moody's：金利上昇効果は薄れ、家計は貯蓄から投資へシフト。地銀は預金金利引き上げを余儀なくされ、純金利マージンに圧力。",
+      "time": "00:05",
       "urgent": true
     },
     {
-      "id": 8047,
-      "title": "Ukraine winter fiscal gap keeps the war corridor open into tomorrow's daily cycle",
-      "titleJa": "ウクライナ冬季財政ギャップで戦争回廊を明日の日次へ継ぐ",
-      "region": "Kyiv",
-      "regionEn": "Kyiv",
-      "flag": "UA",
+      "id": 8002,
+      "title": "Child tax credit expansion signals path toward UBI",
+      "titleJa": "児童税額控除拡大がUBIへの道筋を示す",
+      "region": "Washington",
+      "regionEn": "Washington",
+      "flag": "US",
       "category": "UBI",
-      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war and disaster.",
-      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争・災害リスクの地へ優先返還する。",
-      "time": "23:42",
+      "summary": "Bipartisan moves to expand refundable child credits are viewed as incremental steps that could evolve into broader basic income mechanisms.",
+      "summaryJa": "還付可能な児童税額控除の拡大は、より広範な基本所得メカニズムへ進化しうる段階的措置と見なされる。",
+      "time": "00:05",
       "urgent": true
-    },
-    {
-      "id": 7047,
-      "title": "Pulse 47/47 — today's 30-min cycle complete",
-      "titleJa": "パルス 47/47 — 今日の30分サイクル終了",
-      "region": "北本",
-      "regionEn": "Kitamoto",
-      "flag": "JP",
-      "category": "UBI",
-      "summary": "Final 30-minute learn applied v1.1.47. From 2026-09-15 the site returns to the daily cycle. Primary ledger stays terrestrial.",
-      "summaryJa": "今日最終の30分学習を v1.1.47 で適用。2026-09-15から日次に戻る。台帳主系は地上。",
-      "time": "23:42"
     }
   ]
 }
