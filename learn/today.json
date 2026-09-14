@@ -1,43 +1,43 @@
 {
   "day": "2026-09-14",
   "cycle": 1,
-  "pulse": 39,
-  "version": "1.1.39",
-  "appliedAt": "2026-09-14T19:42:00+09:00",
-  "inequalityBias": 0.007,
-  "ubiDelta": 56400000,
-  "usersDelta": 1735,
-  "megaBias": 0.008,
-  "regionalBias": 0.015,
+  "pulse": 40,
+  "version": "1.1.40",
+  "appliedAt": "2026-09-14T20:12:00+09:00",
+  "inequalityBias": 0.008,
+  "ubiDelta": 56800000,
+  "usersDelta": 1752,
+  "megaBias": 0.006,
+  "regionalBias": 0.016,
   "insights": [
     {
       "id": "mega",
-      "ja": "FRB仮定のCRE-39%と地方帳薄の差を再推定。メガ通過でも地方が崖（+4.5pt）",
-      "en": "Re-scored Fed CRE -39% vs regional books. Megas passed; regionals still sit on the cliff (+4.5pt)",
+      "ja": "8月皆済倒産827件、建設・サービスが主導。メガCRE延滞は下がり地方が上昇（+4.3pt）",
+      "en": "August bankruptcies 827, led by construction and services. Megabank CRE delinquencies fell; regionals rose (+4.3pt)",
       "tone": "alert"
     },
     {
       "id": "flow",
-      "ja": "戦時インフラ損失約100億ドルを入金フローとして学習。保障準備金へ +5%",
-      "en": "Learned ~$10bn wartime infrastructure damage as inflow. Guarantee reserve +5%",
+      "ja": "宗教法人の民事再生を入金フローとして学習。保障準備金へ +4%",
+      "en": "Learned a religious corporation's civil rehab as inflow. Guarantee reserve +4%",
       "tone": "ok"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.70pt）",
-      "en": "Inequality model pulsed (+0.70pt)",
+      "ja": "格差指数を30分学習（バイアス +0.80pt）",
+      "en": "Inequality model pulsed (+0.80pt)",
       "tone": "warn"
     },
     {
       "id": "pulse",
-      "ja": "本日は30分更新。パルス 39/47 · 次回 20:00 JST",
-      "en": "Today: 30-min updates. Pulse 39/47 · next 20:00 JST",
+      "ja": "本日は30分更新。パルス 40/47 · 次回 20:30 JST",
+      "en": "Today: 30-min updates. Pulse 40/47 · next 20:30 JST",
       "tone": "ok"
     },
     {
       "id": "ethics",
-      "ja": "原発の外部電力消失は監視ではない。保障は口座を罰せず、滞留資本を戦争・災害地へ返す",
-      "en": "A plant losing offsite power is not a surveillance event. The guarantee does not punish accounts; it returns trapped capital to war and disaster regions",
+      "ja": "社社の再生は監視ではない。滞納借入は災害地へ返す",
+      "en": "A shrine in rehab is not a surveillance event. Trapped loans return to disaster regions",
       "tone": "ok"
     },
     {
@@ -48,49 +48,49 @@
     },
     {
       "id": "return",
-      "ja": "ウクライナ戦時財政とザポリージャ原発危機を優先枠へ。公社・公司・委員会の滞留資本を戦争国へ分散返還",
-      "en": "Priority return: Ukraine war finance and Zaporizhzhia plant stress. Drain public corps/companies/committees toward war-risk countries",
+      "ja": "宗教法人再生と建設業倒産を優先枠へ。公社・公司・委員会の滞留資本を災害地へ分散返還",
+      "en": "Priority return: religious-corp rehab and construction failures. Drain public corps/companies/committees toward disaster regions",
       "tone": "alert"
     }
   ],
   "news": [
     {
-      "id": 9039,
-      "title": "Fed CRE -39% scenario still sits on regional books, not megabank test scores",
-      "titleJa": "FRBのCRE-39%仮定は地方帳薄に残る。メガのテスト通過ではない",
-      "region": "北本",
-      "regionEn": "Kitamoto",
+      "id": 9040,
+      "title": "Religious corporation files civil rehab; August failures 827",
+      "titleJa": "宗教法人が民事再生。全国倒産は8月827件",
+      "region": "兵庫",
+      "regionEn": "Hyogo",
       "flag": "JP",
       "category": "経済",
-      "summary": "Large-bank stress tests held capital under a -39% CRE shock. Regional concentration is the live channel.",
-      "summaryJa": "大手のストレステストはCRE-39%で資本を保った。生の経路は地方の集中。",
-      "time": "19:42",
+      "summary": "A shrine operator sought civil rehab. National failures stay elevated, led by construction and services. Regional CRE remains the bank shock channel.",
+      "summaryJa": "神社を運営する宗教法人が民事再生を申請。全国倒産は建設・サービス主導で高止まり。銀行衝撃は地方CRE。",
+      "time": "20:12",
       "urgent": true
     },
     {
-      "id": 8039,
-      "title": "Ukraine fiscal gap and Zaporizhzhia offsite-power loss keep the war corridor open",
-      "titleJa": "ウクライナ財政ギャップとザポリージャ原発の外部電力消失で戦争回廊を開けたまま",
-      "region": "Zaporizhzhia",
-      "regionEn": "Zaporizhzhia",
-      "flag": "UA",
+      "id": 8040,
+      "title": "Reconstruction-grace firms and unpaid public charges keep the disaster corridor open",
+      "titleJa": "復興優遇切れと公租公課滞納で災害回廊を開けたまま",
+      "region": "東北",
+      "regionEn": "Tohoku",
+      "flag": "JP",
       "category": "UBI",
-      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war.",
-      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争リスクの国へ優先返還する。",
-      "time": "19:42",
+      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
+      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
+      "time": "20:12",
       "urgent": true
     },
     {
-      "id": 7039,
-      "title": "Pulse 39/47 — stability model refreshed",
-      "titleJa": "パルス 39/47 — 安定保障モデルを更新",
+      "id": 7040,
+      "title": "Pulse 40/47 — stability model refreshed",
+      "titleJa": "パルス 40/47 — 安定保障モデルを更新",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "UBI",
-      "summary": "30-minute learn applied v1.1.39. Primary ledger stays terrestrial.",
-      "summaryJa": "30分学習を v1.1.39 で適用。台帳主系は地上。",
-      "time": "19:42"
+      "summary": "30-minute learn applied v1.1.40. Primary ledger stays terrestrial.",
+      "summaryJa": "30分学習を v1.1.40 で適用。台帳主系は地上。",
+      "time": "20:12"
     }
   ]
 }
