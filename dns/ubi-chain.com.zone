@@ -1,17 +1,29 @@
 ; ubi-chain.com — UBICHAIN stability-guarantee zone
+; serial 2026091402  applied 2026-09-14T14:27:00+09:00
 $ORIGIN ubi-chain.com.
 $TTL 3600
 
+@                86400  IN SOA    ns1.vercel-dns.com. hostmaster.ubi-chain.com. (
+                                 2026091402 ; serial
+                                 86400      ; refresh
+                                 7200       ; retry
+                                 604800     ; expire
+                                 300 )      ; minimum
 @                86400  IN NS     ns1.vercel-dns.com.
 @                86400  IN NS     ns2.vercel-dns.com.
 @                3600   IN A      10.0.1.2
 www              3600   IN CNAME  cname.vercel-dns.com.
 pay              3600   IN CNAME  cname.vercel-dns.com.
+banks            3600   IN CNAME  cname.vercel-dns.com.
 news             3600   IN CNAME  cname.vercel-dns.com.
 international    3600   IN CNAME  cname.vercel-dns.com.
 ai               3600   IN CNAME  cname.vercel-dns.com.
 infra            3600   IN CNAME  cname.vercel-dns.com.
 monitor          3600   IN CNAME  cname.vercel-dns.com.
+me               3600   IN CNAME  cname.vercel-dns.com.
+app              3600   IN CNAME  cname.vercel-dns.com.
+dns              3600   IN CNAME  cname.vercel-dns.com.
 *                3600   IN CNAME  cname.vercel-dns.com.
 @                3600   IN CAA    0 issue "letsencrypt.org"
 @                3600   IN TXT    "v=spf1 -all"
+_dmarc           3600   IN TXT    "v=DMARC1; p=reject; adkim=s; aspf=s"

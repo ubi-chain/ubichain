@@ -1,0 +1,17 @@
+ホスト名	TYPE	TTL	VALUE
+@	A	3600	10.0.1.2
+www	CNAME	3600	cname.vercel-dns.com
+pay	CNAME	3600	cname.vercel-dns.com
+banks	CNAME	3600	cname.vercel-dns.com
+news	CNAME	3600	cname.vercel-dns.com
+international	CNAME	3600	cname.vercel-dns.com
+ai	CNAME	3600	cname.vercel-dns.com
+infra	CNAME	3600	cname.vercel-dns.com
+monitor	CNAME	3600	cname.vercel-dns.com
+me	CNAME	3600	cname.vercel-dns.com
+app	CNAME	3600	cname.vercel-dns.com
+dns	CNAME	3600	cname.vercel-dns.com
+*	CNAME	3600	cname.vercel-dns.com
+@	CAA	3600	0 issue "letsencrypt.org"
+@	TXT	3600	"v=spf1 -all"
+_dmarc	TXT	3600	"v=DMARC1; p=reject; adkim=s; aspf=s"
