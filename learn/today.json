@@ -3,7 +3,7 @@
   "cycle": 1,
   "pulse": 46,
   "version": "1.1.46",
-  "appliedAt": "2026-09-14T23:12:00+09:00",
+  "appliedAt": "2026-09-14T23:17:00+09:00",
   "inequalityBias": 0.008,
   "ubiDelta": 58900000,
   "usersDelta": 1848,
@@ -64,7 +64,7 @@
       "category": "経済",
       "summary": "Mark-to-market gaps include a G-SIB-scale book. Megabank CRE delinquencies fell; regional concentration did not.",
       "summaryJa": "時価評ギャップにはG-SIB級も含まれる。メガCRE延滞は下がり、地方集中は改善していない。",
-      "time": "23:12",
+      "time": "23:17",
       "urgent": true
     },
     {
@@ -77,7 +77,7 @@
       "category": "UBI",
       "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
       "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
-      "time": "23:12",
+      "time": "23:17",
       "urgent": true
     },
     {
@@ -90,7 +90,7 @@
       "category": "UBI",
       "summary": "30-minute learn applied v1.1.46. Last pulse of the day at 23:30 JST. Primary ledger stays terrestrial.",
       "summaryJa": "30分学習を v1.1.46 で適用。今日最終パルスは23:30 JST。台帳主系は地上。",
-      "time": "23:12"
+      "time": "23:17"
     }
   ]
 }
