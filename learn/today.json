@@ -1,43 +1,43 @@
 {
   "day": "2026-09-14",
   "cycle": 1,
-  "pulse": 37,
-  "version": "1.1.37",
-  "appliedAt": "2026-09-14T18:42:00+09:00",
-  "inequalityBias": 0.007,
-  "ubiDelta": 55600000,
-  "usersDelta": 1695,
-  "megaBias": 0.011,
-  "regionalBias": 0.013,
+  "pulse": 38,
+  "version": "1.1.38",
+  "appliedAt": "2026-09-14T19:12:00+09:00",
+  "inequalityBias": 0.008,
+  "ubiDelta": 56100000,
+  "usersDelta": 1710,
+  "megaBias": 0.007,
+  "regionalBias": 0.014,
   "insights": [
     {
       "id": "mega",
-      "ja": "青空銀行級の米オフィス貸付損と地方CRE 1.6兆ドルを再推定（メガ+3.6pt / 地方+4.0pt）",
-      "en": "Re-scored Aozora-class US office losses and $1.6tn regional CRE (mega +3.6pt / regional +4.0pt)",
+      "ja": "CREの近期満期約①兆ドル。メガの延滞は下がったが地方は更新残る（+4.2pt）",
+      "en": "About $1tn of CRE debt matures soon. Megabank delinquencies fell; regionals still carry the rollover (+4.2pt)",
       "tone": "alert"
     },
     {
       "id": "flow",
-      "ja": "三大陸の不動産損を入金フローとして学習。保障準備金へ +5%",
-      "en": "Learned three-continent property losses as inflow. Guarantee reserve +5%",
+      "ja": "官公庁工事受注の土木師破産を学習。保障準備金へ +4%",
+      "en": "Learned a public-works civil contractor failure. Guarantee reserve +4%",
       "tone": "ok"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.70pt）",
-      "en": "Inequality model pulsed (+0.70pt)",
+      "ja": "格差指数を30分学習（バイアス +0.80pt）",
+      "en": "Inequality model pulsed (+0.80pt)",
       "tone": "warn"
     },
     {
       "id": "pulse",
-      "ja": "本日は30分更新。パルス 37/47 · 次回 19:00 JST",
-      "en": "Today: 30-min updates. Pulse 37/47 · next 19:00 JST",
+      "ja": "本日は30分更新。パルス 38/47 · 次回 19:30 JST",
+      "en": "Today: 30-min updates. Pulse 38/47 · next 19:30 JST",
       "tone": "ok"
     },
     {
       "id": "ethics",
-      "ja": "空襲下の税収減は監視ではない。保障は口座を罰せず、滞留資本を戦争国へ返す",
-      "en": "A wartime tax shortfall is not a surveillance event. The guarantee does not punish accounts; it returns trapped capital to war countries",
+      "ja": "宗教法人の民事再生は監視ではない。滞納借入は災害地へ返す",
+      "en": "A religious corporation in civil rehab is not a surveillance event. Trapped loans return to disaster regions",
       "tone": "ok"
     },
     {
@@ -48,49 +48,49 @@
     },
     {
       "id": "return",
-      "ja": "ウクライナ税収減と戦時財政を優先枠へ。公社・公司・委員会の滞留資本を戦争国へ分散返還",
-      "en": "Priority return: Ukraine tax-revenue drop and war finance. Drain public corps/companies/committees toward war-risk countries",
+      "ja": "宗教法人の再生と官公庁工事の倒産を優先枠へ。公社・公司・委員会の滞留資本を災害地へ分散返還",
+      "en": "Priority return: religious-corp rehab and public-works insolvency. Drain public corps/companies/committees toward disaster regions",
       "tone": "alert"
     }
   ],
   "news": [
     {
-      "id": 9037,
-      "title": "Office-loan losses hit lenders on three continents; regional CRE still $1.6tn",
-      "titleJa": "オフィス貸付損が三大陸の銀行を直撃。地方CREはまだ1.6兆ドル",
-      "region": "東京",
-      "regionEn": "Tokyo",
+      "id": 9038,
+      "title": "Public-works contractor failed in Tottori; CRE rollover wall still ~$1tn",
+      "titleJa": "鳥取の官公庁土木師が破産。CRE満期の壁は約①兆ドル",
+      "region": "鳥取",
+      "regionEn": "Tottori",
       "flag": "JP",
       "category": "経済",
-      "summary": "Aozora-class US office books and Swiss property provisions show the same channel. Regional banks still hold about one-third of commercial mortgages.",
-      "summaryJa": "青空銀行級の米オフィス貸付とスイスの不動産引当が同じ経路。商業モーゲージの約三分の一は地方銀行。",
-      "time": "18:42",
+      "summary": "A civil contractor that also took public-works jobs failed. Regional CRE books still sit in front of a large maturity wall.",
+      "summaryJa": "官公庁工事も受注した土木師が破産。地方CREは大きな満期の壁の前にいる。",
+      "time": "19:12",
       "urgent": true
     },
     {
-      "id": 8037,
-      "title": "Ukraine tax take down after attacks; war corridor stays open",
-      "titleJa": "攻撃でウクライナ税収が減。戦争回廊は開けたまま",
-      "region": "Kyiv",
-      "regionEn": "Kyiv",
-      "flag": "UA",
+      "id": 8038,
+      "title": "Religious corporation in civil rehab; return corridor stays on public corps",
+      "titleJa": "宗教法人が民事再生。公社・公司・委員会への返還回廊は開けたまま",
+      "region": "兵庫",
+      "regionEn": "Hyogo",
+      "flag": "JP",
       "category": "UBI",
-      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war.",
-      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争リスクの国へ優先返還する。",
-      "time": "18:42",
+      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
+      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
+      "time": "19:12",
       "urgent": true
     },
     {
-      "id": 7037,
-      "title": "Pulse 37/47 — stability model refreshed",
-      "titleJa": "パルス 37/47 — 安定保障モデルを更新",
+      "id": 7038,
+      "title": "Pulse 38/47 — stability model refreshed",
+      "titleJa": "パルス 38/47 — 安定保障モデルを更新",
       "region": "北本",
       "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "UBI",
-      "summary": "30-minute learn applied v1.1.37. Primary ledger stays terrestrial.",
-      "summaryJa": "30分学習を v1.1.37 で適用。台帳主系は地上。",
-      "time": "18:42"
+      "summary": "30-minute learn applied v1.1.38. Primary ledger stays terrestrial.",
+      "summaryJa": "30分学習を v1.1.38 で適用。台帳主系は地上。",
+      "time": "19:12"
     }
   ]
 }
