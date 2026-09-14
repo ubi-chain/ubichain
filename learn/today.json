@@ -1,0 +1,19 @@
+{
+  "day": "2026-09-14",
+  "cycle": 1,
+  "appliedAt": "2026-09-14T00:05:00+09:00",
+  "inequalityBias": 0.009,
+  "ubiDelta": 49104000,
+  "usersDelta": 1748,
+  "megaBias": -0.0075,
+  "regionalBias": -0.004,
+  "insights": [
+    {"id": "mega", "ja": "HSBCの倒産確率を再推定（+5.0pt）", "en": "Re-scored insolvency for HSBC (+5.0pt)", "tone": "alert"},
+    {"id": "flow", "ja": "地方・メガの入金フローを学習。保障準備金へ +6%", "en": "Learned bank inflows. Guarantee reserve +6%", "tone": "ok"},
+    {"id": "gap", "ja": "格差指数を日次学習（バイアス +0.90pt）", "en": "Inequality model updated (+0.90pt)", "tone": "warn"}
+  ],
+  "news": [
+    {"id": 9001, "title": "Daily learn cycle 1 — stability model refreshed", "titleJa": "日次学習サイクル 1 — 安定保障モデルを更新", "region": "北本", "regionEn": "Kitamoto", "flag": "JP", "category": "経済", "summary": "Overnight training re-estimated megabank fail risk and regional inflows. HSBC moved +5.0pt.", "summaryJa": "夜間学習でメガバンク倒産確率と地方入金を再推定。HSBCは +5.0pt。", "time": "本日学習", "urgent": true},
+    {"id": 8001, "title": "Guarantee reserve reweighted from yesterday's bank deposits", "titleJa": "前日の銀行入金から保障準備金を再配分", "region": "United Kingdom", "regionEn": "United Kingdom", "flag": "GB", "category": "UBI", "summary": "Cycle 1 shifted UBI float from bank-held capital into the public reserve after the daily learn pass.", "summaryJa": "サイクル 1 の学習で、銀行内資本から公共の保障準備金へ UBI 原資を寄せた。", "time": "本日学習"}
+  ]
+}
