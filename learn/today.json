@@ -3,29 +3,29 @@
   "cycle": 1,
   "pulse": 42,
   "version": "1.1.42",
-  "appliedAt": "2026-09-14T21:11:00+09:00",
-  "inequalityBias": 0.007,
-  "ubiDelta": 57100000,
-  "usersDelta": 1768,
-  "megaBias": 0.007,
-  "regionalBias": 0.015,
+  "appliedAt": "2026-09-14T21:12:00+09:00",
+  "inequalityBias": 0.008,
+  "ubiDelta": 57500000,
+  "usersDelta": 1784,
+  "megaBias": 0.009,
+  "regionalBias": 0.014,
   "insights": [
     {
       "id": "mega",
-      "ja": "近畿倒産+25.8%。メガCRE延滞は下がり地方が上昇（+4.1pt）",
-      "en": "Kansai failures +25.8%. Megabank CRE delinquencies fell; regionals rose (+4.1pt)",
+      "ja": "CRE満期約①兆ドルの壁。メガ延滞は下がり地方が更新残る（+4.0pt）",
+      "en": "About $1tn of CRE debt still matures soon. Megabank delinquencies fell; regionals still hold the rollover (+4.0pt)",
       "tone": "alert"
     },
     {
       "id": "flow",
-      "ja": "戦時歳入ギャップ約13.5億ドルを学習。保障準備金へ +5%",
-      "en": "Learned ~$1.35bn wartime revenue gap. Guarantee reserve +5%",
+      "ja": "零ゼロ融資後の倒産47件を学習。保障準備金へ +4%",
+      "en": "Learned 47 post-zero-zero loan failures. Guarantee reserve +4%",
       "tone": "ok"
     },
     {
       "id": "gap",
-      "ja": "格差指数を30分学習（バイアス +0.70pt）",
-      "en": "Inequality model pulsed (+0.70pt)",
+      "ja": "格差指数を30分学習（バイアス +0.80pt）",
+      "en": "Inequality model pulsed (+0.80pt)",
       "tone": "warn"
     },
     {
@@ -36,8 +36,8 @@
     },
     {
       "id": "ethics",
-      "ja": "戦時の歳入欠は監視ではない。保障は口座を罰せず、滞留資本を戦争国へ返す",
-      "en": "A wartime revenue shortfall is not a surveillance event. The guarantee does not punish accounts; it returns trapped capital to war countries",
+      "ja": "災害復興の42兆円の後違いは監視ではない。滞納借入は災害地へ返す",
+      "en": "A reconstruction-spend aftershock is not a surveillance event. Trapped loans return to disaster regions",
       "tone": "ok"
     },
     {
@@ -48,36 +48,36 @@
     },
     {
       "id": "return",
-      "ja": "ウクライナ財政と近畿建設業倒産を優先枠へ。公社・公司・委員会の滞留資本を戦争・災害地へ分散返還",
-      "en": "Priority return: Ukraine fiscal gap and Kansai construction failures. Drain public corps/companies/committees toward war and disaster regions",
+      "ja": "復興費42兆円の後違いと零ゼロ後倒産を優先枠へ。公社・公司・委員会の滞留資本を災害地へ分散返還",
+      "en": "Priority return: reconstruction aftershock and post-zero-zero failures. Drain public corps/companies/committees toward disaster regions",
       "tone": "alert"
     }
   ],
   "news": [
     {
       "id": 9042,
-      "title": "Kansai failures jumped; regional CRE still the live shock channel",
-      "titleJa": "近畿の倒産が急伸。地方CREが生の衝撃経路",
-      "region": "近畿",
-      "regionEn": "Kansai",
+      "title": "CRE maturity wall ~$1tn; regional books still sit in front of it",
+      "titleJa": "CRE満期の壁は約①兆ドル。地方帳薄がその前にいる",
+      "region": "北本",
+      "regionEn": "Kitamoto",
       "flag": "JP",
       "category": "経済",
-      "summary": "Kansai bankruptcies rose 25.8% in August. Megabank CRE books improved; regional concentration did not.",
-      "summaryJa": "8月の近畿倒産は25.8%増。メガのCRE帳薄は改善、地方の集中は改善していない。",
-      "time": "21:11",
+      "summary": "About a trillion dollars of commercial property debt still matures soon. Megabank CRE improved; regional concentration did not.",
+      "summaryJa": "商業不動産の満期債務はまだ約①兆ドル。メガCREは改善、地方集中は改善していない。",
+      "time": "21:12",
       "urgent": true
     },
     {
       "id": 8042,
-      "title": "Ukraine eight-month revenue miss keeps the war corridor open",
-      "titleJa": "ウクライナの8か月歳入欠で戦争回廊を開けたまま",
-      "region": "Kyiv",
-      "regionEn": "Kyiv",
-      "flag": "UA",
+      "title": "Reconstruction aftershock and post-zero-zero failures keep the disaster corridor open",
+      "titleJa": "復興後違いと零ゼロ後倒産で災害回廊を開けたまま",
+      "region": "東北",
+      "regionEn": "Tohoku",
+      "flag": "JP",
       "category": "UBI",
-      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to countries under war.",
-      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、戦争リスクの国へ優先返還する。",
-      "time": "21:11",
+      "summary": "Admin-line policy: insolvency capital in public corps, companies, and committees returns first to disaster regions.",
+      "summaryJa": "管理者回線の方針。倒産しうる公社・公司・委員会の資本を、災害リスクの地へ優先返還する。",
+      "time": "21:12",
       "urgent": true
     },
     {
@@ -90,7 +90,7 @@
       "category": "UBI",
       "summary": "30-minute learn applied v1.1.42. Primary ledger stays terrestrial.",
       "summaryJa": "30分学習を v1.1.42 で適用。台帳主系は地上。",
-      "time": "21:11"
+      "time": "21:12"
     }
   ]
 }
