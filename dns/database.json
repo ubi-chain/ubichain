@@ -1,22 +1,16 @@
 {
   "origin": "ubi-chain.com",
   "class": "IN",
-  "serial": 2026091404,
-  "appliedAt": "2026-09-14T15:10:00+09:00",
+  "serial": 2026091405,
+  "appliedAt": "2026-09-14T15:22:00+09:00",
   "registry": "pending-delegation",
   "registered": true,
   "registrar": "vercel",
-  "nameservers": [
-    "ns1.vercel-dns.com",
-    "ns2.vercel-dns.com"
-  ],
-  "apex": {
-    "type": "A",
-    "value": "10.0.1.2"
-  },
+  "nameservers": ["ns1.vercel-dns.com", "ns2.vercel-dns.com"],
+  "apex": {"type": "A", "value": "10.0.1.2"},
   "cname": "cname.vercel-dns.com",
   "records": [
-    {"host": "@", "fqdn": "ubi-chain.com", "type": "SOA", "value": "ns1.vercel-dns.com. hostmaster.ubi-chain.com. 2026091404 86400 7200 604800 300", "ttl": 86400, "purposeJa": "ゾーン権限とシリアル", "purposeEn": "Zone authority and serial"},
+    {"host": "@", "fqdn": "ubi-chain.com", "type": "SOA", "value": "ns1.vercel-dns.com. hostmaster.ubi-chain.com. 2026091405 86400 7200 604800 300", "ttl": 86400, "purposeJa": "ゾーン権限とシリアル", "purposeEn": "Zone authority and serial"},
     {"host": "@", "fqdn": "ubi-chain.com", "type": "NS", "value": "ns1.vercel-dns.com.", "ttl": 86400, "purposeJa": "権威ネームサーバー 1", "purposeEn": "Authoritative nameserver 1"},
     {"host": "@", "fqdn": "ubi-chain.com", "type": "NS", "value": "ns2.vercel-dns.com.", "ttl": 86400, "purposeJa": "権威ネームサーバー 2", "purposeEn": "Authoritative nameserver 2"},
     {"host": "@", "fqdn": "ubi-chain.com", "type": "A", "value": "10.0.1.2", "ttl": 3600, "purposeJa": "apex を本番ホストへ（HTTPS / PWA）", "purposeEn": "Apex to production host (HTTPS / PWA)"},
