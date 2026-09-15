@@ -1,0 +1,29 @@
+name: domain-bot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - "dns/**"
+      - "CNAME"
+      - ".github/workflows/domain-bot.yml"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe domains
+        run: |
+          set +e
+          echo "== ubi-chain.com A/NS/CNAME =="
+          dig +short A ubi-chain.com || true
+          dig +short NS ubi-chain.com || true
+          dig +short CNAME ubi-chain.com || true
+          echo "== HTTPS heads =="
+          curl -sI --max-time 15 https://ubi-chain.com | head -n 12 || true
+          curl -sI --max-time 15 https://ubi-chain.github.io | head -n 8 || true
+          curl -sI --max-time 15 https://ubichain.is-a.dev | head -n 8 || true
