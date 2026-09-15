@@ -1,0 +1,14 @@
+{
+  "serial": 2026091505,
+  "paypalRegistersDomains": false,
+  "freeOrigin": "https://ubi-chain.github.io",
+  "paidOrigin": "ubi-chain.com",
+  "paidStatus": "unregistered-nxdomain",
+  "donorMayPayWith": "PayPal at an ICANN registrar of their choice",
+  "afterPayment": {
+    "nameservers": ["ns1.vercel-dns.com", "ns2.vercel-dns.com"],
+    "forwardTo": "https://ubi-chain.github.io",
+    "type": "301"
+  },
+  "never": ["collect-paypal-login", "invent-purchase", "store-card"]
+}
