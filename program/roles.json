@@ -1,0 +1,53 @@
+{
+  "program": "UBICHAIN",
+  "serial": 2026091502,
+  "updatedAt": "2026-09-15T12:55:00+09:00",
+  "principle": "Domain is a public good. Money does not buy the protocol; it funds the origin and unlocks participation.",
+  "roles": {
+    "donor": {
+      "ja": "ドネーター",
+      "en": "donor",
+      "how": "Funds or transfers the paid origin (ubi-chain.com) or renewal.",
+      "rights": [
+        "domain.donate",
+        "domain.renew",
+        "program.join",
+        "program.credit",
+        "ledger.public-name-opt-in"
+      ],
+      "notRights": [
+        "protocol.veto",
+        "ubi.preferential-payout",
+        "dns.unilateral-transfer"
+      ]
+    },
+    "supporter": {
+      "ja": "企画賛同者",
+      "en": "supporter",
+      "how": "Public endorsement, review, localization, or regional learning contribution.",
+      "rights": [
+        "program.join",
+        "program.propose",
+        "learn.contribute",
+        "ledger.public-name-opt-in"
+      ],
+      "notRights": [
+        "domain.donate-control",
+        "protocol.veto"
+      ]
+    }
+  },
+  "grants": {
+    "domainDonation": {
+      "target": "ubi-chain.com",
+      "status": "open-unregistered",
+      "eligible": ["donor"],
+      "effect": "Registrant may be the donor of record. Nameservers stay ns1.vercel-dns.com and ns2.vercel-dns.com. Zone remains public in dns/."
+    },
+    "programAccess": {
+      "eligible": ["donor", "supporter"],
+      "effect": "Join the stability-guarantee program: daily learn cycle, proposal queue, credit on the public ledger."
+    }
+  },
+  "roster": []
+}
