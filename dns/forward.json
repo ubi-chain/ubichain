@@ -1,0 +1,10 @@
+{
+  "serial": 2026091504,
+  "from": ["ubi-chain.com", "www.ubi-chain.com"],
+  "to": "https://ubi-chain.github.io",
+  "when": "after-paid-registration",
+  "method": "https-301",
+  "nameservers": ["ns1.vercel-dns.com", "ns2.vercel-dns.com"],
+  "status": "armed-waiting-nxdomain",
+  "buy": false
+}
