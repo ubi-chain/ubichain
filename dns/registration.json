@@ -1,24 +1,43 @@
 {
-  "domain": "ubi-chain.com",
+  "domain": "ubichain.is-a.dev",
   "registered": true,
-  "registeredAt": "2026-09-14T16:17:00+09:00",
-  "source": "dns-page",
-  "registrar": "vercel",
+  "registeredAt": "2026-09-15T09:26:00+09:00",
+  "source": "is-a.dev + github pages",
+  "registrar": "is-a.dev",
   "loginVia": "github",
   "githubLogin": "ubi-chain",
   "githubRepo": "ubi-chain/ubichain",
   "projectId": "01a09e40-0d69-7a91-93b9-ddd106ad2da9",
-  "nameservers": [
-    "ns1.vercel-dns.com",
-    "ns2.vercel-dns.com"
-  ],
-  "apex": "10.0.1.2",
-  "cname": "cname.vercel-dns.com",
-  "verify": {
-    "host": "_vercel",
-    "type": "TXT",
-    "value": "vc-domain-verify=ubi-chain.com,a867d92e04fd510123b0"
+  "vercel": {
+    "cname": "cname.vercel-dns.com",
+    "nameservers": ["ns1.vercel-dns.com", "ns2.vercel-dns.com"],
+    "loginVia": "github",
+    "addDomain": "ubichain.is-a.dev"
   },
-  "serial": 2026091406,
-  "status": "queued"
+  "pages": {
+    "origin": "ubi-chain.github.io",
+    "url": "https://ubi-chain.github.io",
+    "status": "live"
+  },
+  "isADev": {
+    "origin": "ubichain.is-a.dev",
+    "file": "https://github.com/ubi-chain/register/blob/add-ubichain/domains/ubichain.json",
+    "fork": "ubi-chain/register",
+    "branch": "add-ubichain",
+    "compare": "https://github.com/is-a-dev/register/compare/main...ubi-chain:add-ubichain?expand=1",
+    "status": "pr-ready"
+  },
+  "paid": {
+    "origin": "ubi-chain.com",
+    "registered": false,
+    "status": "unregistered-nxdomain",
+    "reason": ".com is not free",
+    "verify": {
+      "host": "_vercel",
+      "type": "TXT",
+      "value": "vc-domain-verify=ubi-chain.com,a867d92e04fd510123b0"
+    }
+  },
+  "serial": 2026091501,
+  "status": "free-live"
 }

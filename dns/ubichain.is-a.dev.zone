@@ -1,0 +1,6 @@
+; ubichain.is-a.dev — free hostname CNAME to Vercel
+; serial 2026091501  applied 2026-09-15T09:26:00+09:00
+$ORIGIN ubichain.is-a.dev.
+$TTL 3600
+
+@                3600   IN CNAME  cname.vercel-dns.com.
