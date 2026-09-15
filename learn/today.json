@@ -1,69 +1,69 @@
 {
-  "day": "2026-09-15",
-  "cycle": 2,
-  "version": "1.2.0",
-  "appliedAt": "2026-09-15T00:05:00+09:00",
-  "inequalityBias": 0.009,
-  "ubiDelta": 48000000,
-  "usersDelta": 2140,
-  "megaBias": 0.006,
-  "regionalBias": 0.019,
+  "day": "2026-09-16",
+  "cycle": 3,
+  "version": "1.3.0",
+  "appliedAt": "2026-09-16T00:05:00+09:00",
+  "inequalityBias": 0.011,
+  "ubiDelta": 52000000,
+  "usersDelta": 2380,
+  "megaBias": 0.007,
+  "regionalBias": 0.022,
   "insights": [
     {
       "id": "mega",
-      "ja": "メガバンクはCET1余裕を維持、ストレス耐性は確認済み",
-      "en": "Megabanks hold CET1 buffers; stress resilience confirmed",
+      "ja": "みずほが貯蓄預金金利を16年半ぶり復活、メガバンク間の預金争奪が本格化",
+      "en": "Mizuho revives tiered savings deposit rates after 16.5 years; megabank deposit competition intensifies",
       "tone": "ok"
     },
     {
       "id": "flow",
-      "ja": "地方銀行の預金流出圧力が強まる：競争と貯蓄から投資へのシフト",
-      "en": "Regional banks face rising deposit outflow pressure from competition and savings-to-investment shift",
+      "ja": "地方預金の首都圏集中が加速、相続とNISAシフトで地銀資金基盤がさらに縮小",
+      "en": "Regional deposit concentration in greater Tokyo accelerates via inheritance and NISA shift, further eroding local bank funding bases",
       "tone": "alert"
     },
     {
       "id": "gap",
-      "ja": "若年層金融資産のジニ係数が上昇、格差が拡大",
-      "en": "Youth financial-asset Gini rises; inequality widens",
+      "ja": "若年層（18-24歳）の金融資産ジニが0.718と最高水準、格差の固定化リスク",
+      "en": "Youth (18-24) financial-asset Gini hits 0.718, highest among ages; risk of locked-in inequality",
       "tone": "warn"
     },
     {
       "id": "ethics",
-      "ja": "倒産リスクを抱える地方金融は監視ではなく、尊厳ある再分配の起点",
-      "en": "Regional insolvency risk is not a surveillance event; it is the starting point for dignified redistribution",
+      "ja": "貧困は監視対象ではなく、尊厳ある再分配とUBI実験の倫理的起点",
+      "en": "Poverty is not a surveillance target; it is the ethical starting point for dignified redistribution and UBI experiments",
       "tone": "ok"
     },
     {
       "id": "heal",
-      "ja": "預金の首都圏集中を緩め、地方への資本還流を学習",
-      "en": "Learning to ease deposit concentration in greater Tokyo and recirculate capital to regions",
+      "ja": "メガの金利競争を地方還流の機会に変え、預金格差を学習で緩和",
+      "en": "Turning megabank rate competition into an opportunity for regional capital recirculation and learning to ease deposit gaps",
       "tone": "ok"
     }
   ],
   "news": [
     {
-      "id": 9002,
-      "title": "Japan regional banks face deposit risks as competition rises",
-      "titleJa": "日本の地方銀行、預金競争激化で資金調達リスクに直面",
+      "id": 9003,
+      "title": "Mizuho revives savings deposit rates; regional banks face deepening deposit outflow",
+      "titleJa": "みずほ貯蓄預金金利復活、地銀は預金流出圧力がさらに強まる",
       "region": "東京",
       "regionEn": "Tokyo",
       "flag": "JP",
       "category": "経済",
-      "summary": "Moody's: rising rates benefits fade; households shift savings to investments, forcing higher deposit rates and pressure on regional NIM.",
-      "summaryJa": "Moody's：金利上昇効果は薄れ、家計は貯蓄から投資へシフト。地銀は預金金利引き上げを余儀なくされ、純金利マージンに圧力。",
+      "summary": "Mizuho becomes first megabank to reinstate balance-linked savings rates (up to 0.90%). Regional banks confront intensifying competition, Tokyo deposit concentration (50.7%), and inheritance-driven outflows.",
+      "summaryJa": "みずほがメガ初の残高連動貯蓄預金金利を復活（最大0.90%）。地銀は競争激化・首都圏預金集中（50.7%）・相続による流出圧力に直面。",
       "time": "00:05",
       "urgent": true
     },
     {
-      "id": 8002,
-      "title": "Child tax credit expansion signals path toward UBI",
-      "titleJa": "児童税額控除拡大がUBIへの道筋を示す",
-      "region": "Washington",
-      "regionEn": "Washington",
-      "flag": "US",
+      "id": 8003,
+      "title": "Japan eyes earlier cash support for low-income households by spring 2029",
+      "titleJa": "低所得世帯向け現金給付、2029年春への前倒しを検討",
+      "region": "東京",
+      "regionEn": "Tokyo",
+      "flag": "JP",
       "category": "UBI",
-      "summary": "Bipartisan moves to expand refundable child credits are viewed as incremental steps that could evolve into broader basic income mechanisms.",
-      "summaryJa": "還付可能な児童税額控除の拡大は、より広範な基本所得メカニズムへ進化しうる段階的措置と見なされる。",
+      "summary": "Government considers advancing income-linked cash payments to spring 2029 to bridge the end of temporary consumption-tax cuts, moving closer to broader basic-income-style support.",
+      "summaryJa": "政府は一時的消費税減税終了後の空白を埋めるため、所得連動型現金給付を2029年春に前倒し検討。より広範な基本所得型支援に近づく動き。",
       "time": "00:05",
       "urgent": true
     }
