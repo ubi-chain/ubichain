@@ -1,7 +1,7 @@
 {
   "program": "UBICHAIN",
-  "serial": 2026091502,
-  "updatedAt": "2026-09-15T12:55:00+09:00",
+  "serial": 2026091503,
+  "updatedAt": "2026-09-15T12:57:00+09:00",
   "principle": "Domain is a public good. Money does not buy the protocol; it funds the origin and unlocks participation.",
   "roles": {
     "donor": {
@@ -12,6 +12,7 @@
         "domain.donate",
         "domain.renew",
         "program.join",
+        "grok.participate",
         "program.credit",
         "ledger.public-name-opt-in"
       ],
@@ -27,6 +28,7 @@
       "how": "Public endorsement, review, localization, or regional learning contribution.",
       "rights": [
         "program.join",
+        "grok.participate",
         "program.propose",
         "learn.contribute",
         "ledger.public-name-opt-in"
@@ -46,7 +48,7 @@
     },
     "programAccess": {
       "eligible": ["donor", "supporter"],
-      "effect": "Join the stability-guarantee program: daily learn cycle, proposal queue, credit on the public ledger."
+      "effect": "Join the stability-guarantee program and Grok participation queue. No login is added."
     }
   },
   "roster": []
