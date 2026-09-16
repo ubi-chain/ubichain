@@ -1,71 +1,33 @@
 {
-  "day": "2026-09-16",
-  "cycle": 3,
-  "version": "1.3.0",
-  "appliedAt": "2026-09-16T00:05:00+09:00",
-  "inequalityBias": 0.011,
-  "ubiDelta": 52000000,
-  "usersDelta": 2380,
-  "megaBias": 0.007,
-  "regionalBias": 0.022,
+  "day": "2026-09-17",
+  "cycle": 4,
+  "version": "1.4.0",
+  "appliedAt": "2026-09-17T00:05:00+09:00",
+  "inequalityBias": 0.71,
+  "ubiDelta": 18,
+  "usersDelta": 1420,
+  "megaBias": 0.42,
+  "regionalBias": 0.67,
   "insights": [
-    {
-      "id": "mega",
-      "ja": "みずほが貯蓄預金金利を16年半ぶり復活、メガバンク間の預金争奪が本格化",
-      "en": "Mizuho revives tiered savings deposit rates after 16.5 years; megabank deposit competition intensifies",
-      "tone": "ok"
-    },
-    {
-      "id": "flow",
-      "ja": "地方預金の首都圏集中が加速、相続とNISAシフトで地銀資金基盤がさらに縮小",
-      "en": "Regional deposit concentration in greater Tokyo accelerates via inheritance and NISA shift, further eroding local bank funding bases",
-      "tone": "alert"
-    },
-    {
-      "id": "gap",
-      "ja": "若年層（18-24歳）の金融資産ジニが0.718と最高水準、格差の固定化リスク",
-      "en": "Youth (18-24) financial-asset Gini hits 0.718, highest among ages; risk of locked-in inequality",
-      "tone": "warn"
-    },
-    {
-      "id": "ethics",
-      "ja": "貧困は監視対象ではなく、尊厳ある再分配とUBI実験の倫理的起点",
-      "en": "Poverty is not a surveillance target; it is the ethical starting point for dignified redistribution and UBI experiments",
-      "tone": "ok"
-    },
-    {
-      "id": "heal",
-      "ja": "メガの金利競争を地方還流の機会に変え、預金格差を学習で緩和",
-      "en": "Turning megabank rate competition into an opportunity for regional capital recirculation and learning to ease deposit gaps",
-      "tone": "ok"
-    }
+    "メガバンクはG-SIB資本要件と不動産関連リスクで慎重姿勢が続く",
+    "地銀預金は金利正常化とネット銀行競争でコスト上昇・流出圧力",
+    "若年層の資産格差が拡大、NISA参加率の偏りが世代間不平等を助長",
+    "ethics: insolvency — 地域銀行の貸倒・含み損が個人・中小の連鎖破綻を招くリスク",
+    "heal: UBI的所得保証は預金流出と格差を緩衝し、地域金融の安定を支える"
   ],
   "news": [
     {
-      "id": 9003,
-      "title": "Mizuho revives savings deposit rates; regional banks face deepening deposit outflow",
-      "titleJa": "みずほ貯蓄預金金利復活、地銀は預金流出圧力がさらに強まる",
-      "region": "東京",
-      "regionEn": "Tokyo",
-      "flag": "JP",
+      "id": 9004,
       "category": "経済",
-      "summary": "Mizuho becomes first megabank to reinstate balance-linked savings rates (up to 0.90%). Regional banks confront intensifying competition, Tokyo deposit concentration (50.7%), and inheritance-driven outflows.",
-      "summaryJa": "みずほがメガ初の残高連動貯蓄預金金利を復活（最大0.90%）。地銀は競争激化・首都圏預金集中（50.7%）・相続による流出圧力に直面。",
-      "time": "00:05",
-      "urgent": true
+      "priority": "urgent",
+      "title": "日本地銀の預金競争激化と青空銀行の米オフィスローン損失",
+      "summary": "Moody'sが地銀の預金コスト上昇を警告。Aozora Bankが米商業用不動産損失で株価急落・社長退任。"
     },
     {
-      "id": 8003,
-      "title": "Japan eyes earlier cash support for low-income households by spring 2029",
-      "titleJa": "低所得世帯向け現金給付、2029年春への前倒しを検討",
-      "region": "東京",
-      "regionEn": "Tokyo",
-      "flag": "JP",
+      "id": 8004,
       "category": "UBI",
-      "summary": "Government considers advancing income-linked cash payments to spring 2029 to bridge the end of temporary consumption-tax cuts, moving closer to broader basic-income-style support.",
-      "summaryJa": "政府は一時的消費税減税終了後の空白を埋めるため、所得連動型現金給付を2029年春に前倒し検討。より広範な基本所得型支援に近づく動き。",
-      "time": "00:05",
-      "urgent": true
+      "title": "児童税額控除拡大がUBIへの道、AI時代の再分配議論",
+      "summary": "WSJが児童税額控除の拡大をUBIへの漸進的ステップと指摘。TAI時代の再分配政策としてUBIが再注目。"
     }
   ]
 }
