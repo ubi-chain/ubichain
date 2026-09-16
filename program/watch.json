@@ -1,0 +1,9 @@
+{
+  "title": "警察機構のサービス監視",
+  "principle": "Police organs receive watch authority over THIS SERVICE (abuse, fraud, threats on UBICHAIN pages), bounded by national criminal procedure and constitutions. Not a wiretap of private life. Not a substitute for 110/911.",
+  "watch": {
+    "target": "ubi-chain service surfaces",
+    "includes": ["public desk posts", "published ledger labels", "reported abuse on OZ display names"],
+    "excludes": ["private mailboxes", "device contents", "location without warrant or statute"]
+  }
+}

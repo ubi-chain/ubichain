@@ -1,0 +1,20 @@
+{
+  "title": "副管理者番号",
+  "principle": "Authority is delegated only as written in each nation's constitution, statutes, and official emergency numbering. This file does not replace 110/911 dispatch and does not create extra-legal police power.",
+  "scope": "UBICHAIN service charter only",
+  "deputies": [
+    {"cc": "JP", "name": "日本", "police": "110", "ambulanceFire": "119", "coast": "118", "basis": "警察法・消防法・海難及救援に関する法令"},
+    {"cc": "US", "name": "United States", "police": "911", "ambulanceFire": "911", "basis": "State and federal emergency statutes"},
+    {"cc": "GB", "name": "United Kingdom", "police": "999", "ambulanceFire": "999", "eu": "112", "basis": "Emergency call regulations"},
+    {"cc": "FR", "name": "France", "police": "17", "ambulanceFire": "15 / 18", "eu": "112", "basis": "Code de la sécurité intérieure"},
+    {"cc": "DE", "name": "Germany", "police": "110", "ambulanceFire": "112", "basis": "Polizei- und Rettungsdienstrecht der Länder"},
+    {"cc": "KR", "name": "한국", "police": "112", "ambulanceFire": "119", "basis": "경찰법 · 소방기본법"},
+    {"cc": "CN", "name": "中国", "police": "110", "ambulanceFire": "120 / 119", "basis": "人民警察法"},
+    {"cc": "IN", "name": "India", "police": "112", "ambulanceFire": "112", "basis": "Emergency Response Support System"}
+  ],
+  "grant": {
+    "role": "deputy-admin-number",
+    "rights": ["service.observe", "service.abuse-report", "desk.conference"],
+    "notRights": ["protocol.rewrite", "ubi.seize", "civilian.surveil-beyond-statute"]
+  }
+}
