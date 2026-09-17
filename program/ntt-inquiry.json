@@ -1,0 +1,11 @@
+{
+  "status": "armed-until-domain-live",
+  "from": "080-5725-6673",
+  "when": "After ubi-chain.com resolves",
+  "doNot": ["place-live-call", "spoof-carrier", "buy-domain"],
+  "draft": {
+    "to": "NTT東日本 / iタウンページ登載",
+    "subject": "ubi-chain.com 公開後の番号台帳協議",
+    "body": "公開先 https://ubi-chain.com （現在は https://ubi-chain.github.io ）。中小と大手が番号（法人番号・証券コード・NPO）で協議し、効率的な計画経済の協議台を開きたい。連絡 080-5725-6673 / haruki_200049@icloud.com"
+  }
+}

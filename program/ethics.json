@@ -1,0 +1,7 @@
+{
+  "title": "インターナショナル倫理委員会",
+  "mandate": "Organizations aligned with international ethics and moral law have personnel oversight of committees — hiring, rotation, conflict-of-interest, and removal for abuse. Not a substitute for national labor law.",
+  "standards": ["UDHR", "ILO core conventions", "national constitution", "UBICHAIN program chapters"],
+  "oversight": ["appoint", "rotate", "disclose-conflict", "suspend-on-abuse"],
+  "notOversight": ["rewrite-statute", "seize-assets", "secret-police"]
+}

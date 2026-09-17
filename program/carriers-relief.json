@@ -1,0 +1,6 @@
+{
+  "title": "スマホ各社のホームレス救済手段",
+  "ask": "Carriers pass unused devices, prepaid, public Wi-Fi maps, charging, and shelter directories as a relief rail. Voluntary charter, not a claim of existing statutory duty.",
+  "carriers": ["NTTドコモ", "KDDI / au", "軟銀", "楽天モバイル"],
+  "means": ["unused-handset", "prepaid-zero-balance-emergency", "wifi-map", "charging-spot", "shelter-directory"]
+}

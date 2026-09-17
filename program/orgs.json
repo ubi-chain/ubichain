@@ -1,0 +1,27 @@
+{
+  "title": "公社・公司・NPO 登録",
+  "principle": "Organizations register by existing public numbers: Japan corporate number (13), stock ticker, NPO authentication, EIN/Company House abroad. UBICHAIN does not issue state licenses.",
+  "sourcesJP": {
+    "townpageLatest": "https://itp.ne.jp/",
+    "townpageNote": "紙タウンページは2026-03終了。最新番号の検索先は iタウンページ。",
+    "corporateNumber": "https://www.houjin-bangou.nta.go.jp/",
+    "npo": "https://www.npo-homepage.go.jp/npoportal/",
+    "gbiz": "https://info.gbiz.go.jp/"
+  },
+  "sourcesWorld": {
+    "US": "https://www.sec.gov/edgar",
+    "UK": "https://find-and-update.company-information.service.gov.uk/",
+    "EU": "https://e-justice.europa.eu/",
+    "KR": "https://www.ftc.go.kr/",
+    "UN": "https://www.un.org/en/about-us"
+  },
+  "seed": [
+    {"kind": "会社", "name": "NTT株式会社", "ticker": "9432", "corporateNumber": "7010001065142", "role": "大手・国内通信"},
+    {"kind": "会社", "name": "NTT東日本株式会社", "corporateNumber": "8011101028104", "role": "東日本地域電気通信・番号台帳"},
+    {"kind": "会社", "name": "KDDI株式会社", "ticker": "9433", "role": "携帯"},
+    {"kind": "会社", "name": "軟銀グループ株式会社", "ticker": "9984", "role": "携帯・持株"},
+    {"kind": "会社", "name": "軟銀株式会社", "ticker": "9434", "role": "携帯"},
+    {"kind": "会社", "name": "東日本旅客鉄道", "ticker": "9020", "role": "交通"}
+  ],
+  "registerFields": ["kind", "legalName", "corporateNumber", "ticker", "npoId", "foreignRegistry", "ethicsPledge", "smeOrLarge"]
+}

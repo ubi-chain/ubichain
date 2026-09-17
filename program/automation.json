@@ -1,24 +1,11 @@
 {
-  "serial": 2026091504,
-  "updatedAt": "2026-09-15T13:00:00+09:00",
+  "serial": 2026091701,
+  "updatedAt": "2026-09-17T09:30:00+09:00",
   "domainPublish": {
     "origins": ["https://ubi-chain.github.io", "ubichain.is-a.dev", "ubi-chain.com"],
     "paid": "unregistered-nxdomain",
-    "nameservers": ["ns1.vercel-dns.com", "ns2.vercel-dns.com"],
     "buy": false,
-    "attachWhenTeamExists": true,
-    "forwardWhenRegistered": {
-      "from": ["https://ubi-chain.com", "https://www.ubi-chain.com"],
-      "to": "https://ubi-chain.github.io",
-      "type": "301"
-    },
-    "cadence": "hourly-09-22-JST"
-  },
-  "grokParticipate": {
-    "eligible": ["donor", "supporter"],
-    "right": "program.join",
-    "autoRoster": "consent-only",
-    "noLogin": true,
-    "cadence": "hourly-with-domain-bot"
+    "nttInquiryWhenLive": true,
+    "inquiryFrom": "080-5725-6673"
   }
 }
