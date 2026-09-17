@@ -1,0 +1,38 @@
+{
+  "title": "司法公約",
+  "serial": 2026091702,
+  "updatedAt": "2026-09-17T13:00:00+09:00",
+  "status": "seed-learn",
+  "notStatute": true,
+  "principle": "無料化と既納費世代への補償は同時設計する。努力は対価として戻す。生まれつきの不幸で報われなかった者も状況に応じ救済する。事の善悪に拘束しない。現行法令の上書きではない。",
+  "whenFree": [
+    "国家資格",
+    "医療",
+    "学校"
+  ],
+  "mustAlso": [
+    {
+      "id": "generation-gap",
+      "ja": "既に払い終えた世代への補償"
+    },
+    {
+      "id": "effort-return",
+      "ja": "努力を対価として戻す"
+    },
+    {
+      "id": "innate-misfortune",
+      "ja": "生まれつきの不幸で報われなかった者の状況的救済"
+    }
+  ],
+  "boundBy": [
+    "national constitution",
+    "existing statute",
+    "UDHR",
+    "UBICHAIN program chapters"
+  ],
+  "not": [
+    "rewrite-statute",
+    "moralize-case-by-case-as-veto",
+    "preferential-payout-without-ledger"
+  ]
+}
