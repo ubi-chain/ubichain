@@ -1,8 +1,8 @@
 {
   "origin": "ubichain.is-a.dev",
   "class": "IN",
-  "serial": 2026091501,
-  "appliedAt": "2026-09-15T09:26:00+09:00",
+  "serial": 2026092401,
+  "appliedAt": "2026-09-24T13:25:00+09:00",
   "registry": "pr-ready",
   "registered": true,
   "registrar": "is-a.dev",
@@ -15,6 +15,12 @@
     "status": "pages-live · is-a.dev pr-ready"
   },
   "paid": { "origin": "ubi-chain.com", "status": "unregistered-nxdomain" },
+  "ietfubi": {
+    "origin": "ietfubi.com",
+    "www": "www.ietfubi.com",
+    "status": "unregistered-available",
+    "forward": "https://ubi-chain.github.io"
+  },
   "records": [
     {
       "host": "@",
@@ -24,6 +30,15 @@
       "ttl": 3600,
       "purposeJa": "無料ホストを Vercel へ接続",
       "purposeEn": "Free hostname → Vercel"
+    },
+    {
+      "host": "www",
+      "fqdn": "www.ietfubi.com",
+      "type": "CNAME",
+      "value": "ubi-chain.github.io.",
+      "ttl": 3600,
+      "purposeJa": "www.ietfubi.com を GitHub Pages へ",
+      "purposeEn": "www.ietfubi.com → GitHub Pages"
     }
   ]
 }

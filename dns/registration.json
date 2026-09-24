@@ -12,12 +12,15 @@
     "cname": "cname.vercel-dns.com",
     "nameservers": ["ns1.vercel-dns.com", "ns2.vercel-dns.com"],
     "loginVia": "github",
-    "addDomain": "ubichain.is-a.dev"
+    "addDomain": "ubichain.is-a.dev",
+    "connectedAccountProjects": 0,
+    "note": "connected Vercel has no teams/projects; cannot attach live domains from this connector"
   },
   "pages": {
     "origin": "ubi-chain.github.io",
     "url": "https://ubi-chain.github.io",
-    "status": "live"
+    "status": "live",
+    "intendedCustom": "www.ietfubi.com"
   },
   "isADev": {
     "origin": "ubichain.is-a.dev",
@@ -38,6 +41,21 @@
       "value": "vc-domain-verify=ubi-chain.com,a867d92e04fd510123b0"
     }
   },
-  "serial": 2026091501,
-  "status": "free-live"
+  "ietfubi": {
+    "origin": "ietfubi.com",
+    "www": "www.ietfubi.com",
+    "registered": false,
+    "availableOnVercel": true,
+    "listPriceUsdYear": 11.25,
+    "status": "unregistered-available",
+    "intended": {
+      "www": { "type": "CNAME", "value": "ubi-chain.github.io" },
+      "apexA": ["185.199.108.153", "185.199.109.153", "185.199.110.153", "185.199.111.153"],
+      "altNs": ["ns1.vercel-dns.com", "ns2.vercel-dns.com"]
+    },
+    "xdomain": "set records at Xdomain panel if already purchased there",
+    "buy": false
+  },
+  "serial": 2026092401,
+  "status": "free-live + ietfubi-intent"
 }

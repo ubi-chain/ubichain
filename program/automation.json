@@ -1,9 +1,12 @@
 {
-  "serial": 2026091701,
-  "updatedAt": "2026-09-17T09:30:00+09:00",
+  "serial": 2026092401,
+  "updatedAt": "2026-09-24T13:25:00+09:00",
+  "cycle": 11,
+  "version": "1.11.1",
   "domainPublish": {
-    "origins": ["https://ubi-chain.github.io", "ubichain.is-a.dev", "ubi-chain.com"],
+    "origins": ["https://ubi-chain.github.io", "ubichain.is-a.dev", "ubi-chain.com", "www.ietfubi.com", "ietfubi.com"],
     "paid": "unregistered-nxdomain",
+    "ietfubi": "unregistered-available",
     "buy": false,
     "nttInquiryWhenLive": true,
     "inquiryFrom": "080-5725-6673"

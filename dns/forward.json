@@ -1,10 +1,11 @@
 {
-  "serial": 2026091504,
-  "from": ["ubi-chain.com", "www.ubi-chain.com"],
+  "serial": 2026092401,
+  "from": ["ubi-chain.com", "www.ubi-chain.com", "ietfubi.com", "www.ietfubi.com"],
   "to": "https://ubi-chain.github.io",
-  "when": "after-paid-registration",
+  "when": "after-registration",
   "method": "https-301",
   "nameservers": ["ns1.vercel-dns.com", "ns2.vercel-dns.com"],
-  "status": "armed-waiting-nxdomain",
+  "pagesTarget": "ubi-chain.github.io",
+  "status": "ietfubi-unregistered-available",
   "buy": false
 }

@@ -1,0 +1,25 @@
+; ietfubi.com — UBICHAIN intended zone (domain currently unregistered)
+; serial 2026092401  applied 2026-09-24T13:25:00+09:00
+$ORIGIN ietfubi.com.
+$TTL 3600
+
+@                86400  IN SOA    ns1.vercel-dns.com. hostmaster.ietfubi.com. (
+                                 2026092401 ; serial
+                                 86400      ; refresh
+                                 7200       ; retry
+                                 604800     ; expire
+                                 300 )      ; minimum
+@                86400  IN NS     ns1.vercel-dns.com.
+@                86400  IN NS     ns2.vercel-dns.com.
+@                3600   IN A      185.199.108.153
+@                3600   IN A      185.199.109.153
+@                3600   IN A      185.199.110.153
+@                3600   IN A      185.199.111.153
+www              3600   IN CNAME  ubi-chain.github.io.
+@                3600   IN AAAA   2606:50c0:8000::153
+@                3600   IN AAAA   2606:50c0:8001::153
+@                3600   IN AAAA   2606:50c0:8002::153
+@                3600   IN AAAA   2606:50c0:8003::153
+@                3600   IN CAA    0 issue "letsencrypt.org"
+@                3600   IN TXT    "v=spf1 -all"
+_dmarc           3600   IN TXT    "v=DMARC1; p=reject; adkim=s; aspf=s"
