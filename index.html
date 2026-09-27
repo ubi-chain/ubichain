@@ -1,23 +1,223 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>UBICHAIN</title>
-  <style>
-    :root { color-scheme: light dark; }
-    body { font-family: system-ui, sans-serif; margin: 0; padding: 24px; line-height: 1.5; max-width: 40rem; }
-    h1 { font-size: 1.4rem; }
-    a { color: inherit; }
-    .muted { opacity: .7; font-size: .95rem; }
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>UBICHAIN · CYCLE 0011</title>
+<style>
+  :root{--c:#00d4ff;--d:#06202a;--bg:#020408;--fg:#d8f6ff;--m:#6a8a96;--ok:#7dffb3;--al:#ff5d73}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:12px/1.35 ui-monospace,Menlo,Consolas,monospace;overflow:hidden}
+  canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
+  #hud{position:relative;z-index:2;display:grid;grid-template-rows:auto 1fr auto;height:100%}
+  header,footer{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 12px;background:rgba(2,4,8,.72);border-color:rgba(0,212,255,.28);border-style:solid}
+  header{border-bottom-width:1px}
+  footer{border-top-width:1px}
+  .k{letter-spacing:.28em;color:var(--c);font-size:10px}
+  .cycle{font-size:28px;color:var(--c);letter-spacing:.08em}
+  .stage{position:relative;min-height:0}
+  .panel{position:absolute;background:rgba(2,6,12,.82);border:1px solid rgba(0,212,255,.35);padding:8px 10px;backdrop-filter:blur(6px);min-width:168px;max-width:240px}
+  .panel h3{margin:0 0 6px;font-size:10px;letter-spacing:.22em;color:var(--c);font-weight:600}
+  .row{display:flex;justify-content:space-between;gap:8px;color:var(--m);font-size:11px}
+  .row b{color:var(--fg);font-weight:500}
+  .ok{color:var(--ok)}
+  .al{color:var(--al)}
+  .hex{color:#9be7ff;font-size:10px}
+  #asset{top:12px;left:12px}
+  #flow{top:12px;right:12px}
+  #comms{bottom:12px;right:12px;max-height:38%}
+  #cui{bottom:12px;left:12px}
+  #emblem-cap{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);text-align:center;pointer-events:none}
+  #emblem-cap .etf{font-size:13px;letter-spacing:.34em;color:var(--c)}
+  #emblem-cap .sub{font-size:10px;color:var(--m);margin-top:2px}
+  #boot{position:fixed;inset:0;z-index:9;background:#010204}
+  #boot.out{opacity:0;pointer-events:none;transition:opacity .5s}
+  .win{position:absolute;border:1px solid rgba(0,212,255,.45);background:rgba(0,10,16,.88);padding:7px 8px;font-size:10px;color:#9be7ff;opacity:0;transform:translateY(8px);animation:pop .35s ease forwards}
+  @keyframes pop{to{opacity:1;transform:none}}
+  .skip{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:var(--m);background:none;border:0;letter-spacing:.2em;min-height:44px}
+  @media (max-width:720px){
+    .panel{position:static;max-width:none;margin:6px}
+    .stage{display:flex;flex-direction:column;overflow:auto}
+    #emblem-cap{position:static;transform:none;padding:8px}
+  }
+</style>
 </head>
 <body>
-  <p class="muted">FREE HOST · ubi-chain.github.io · cycle 1.11.12</p>
-  <h1>UBICHAIN</h1>
-  <p>経済安定保証 PWA。デモのみ。広告なし、本番決済なし。</p>
-  <p>無料ホストはここで公開中。<code>www.ietfubi.com</code> と <code>ubi-chain.com</code> はまだ未登録です。</p>
-  <p>Grok 参加: <a href="https://grok.com">https://grok.com</a></p>
-  <p><a href="https://github.com/ubi-chain/ubichain">ソース</a> · <a href="https://ubi-chain.github.io">公開UI</a></p>
+<canvas id="fx"></canvas>
+<div id="hud">
+  <header>
+    <div>
+      <div class="k">UBICHAIN · Q DESK</div>
+      <div>公開シミュレーション · 資金フロー可視化</div>
+    </div>
+    <div style="text-align:right">
+      <div class="k">CYCLE</div>
+      <div class="cycle">0011</div>
+    </div>
+  </header>
+  <div class="stage">
+    <aside class="panel" id="asset">
+      <h3>ASSET · UBI</h3>
+      <div class="row">LAT <b id="lat">+35.689</b></div>
+      <div class="row">LON <b id="lon">+139.692</b></div>
+      <div class="row">ALT <b>ISS 420 km</b></div>
+      <div class="row">回線 <b>080-5725-6673</b></div>
+      <div class="row">入金 <b class="ok">¥9,000,000</b></div>
+      <div class="row">月収 <b>¥10,000,000</b></div>
+      <div class="row" style="margin-top:6px;font-size:9px">アプリ内台帳。銀行送金ではない。</div>
+    </aside>
+    <aside class="panel" id="flow">
+      <h3>FLOW · GUI</h3>
+      <div class="row">銀行資本 <b id="cap">¥126.0B</b></div>
+      <div class="row">↓ 入金</div>
+      <div class="row">保障準備金 <b id="pool">¥8.4B</b></div>
+      <div class="row">↓ 給付</div>
+      <div class="row">UBI総額 <b class="ok">¥12.8B</b></div>
+      <div class="row">↓ 返還</div>
+      <div class="row">戦争・紛争・災害 <b class="al">優先</b></div>
+    </aside>
+    <aside class="panel" id="comms">
+      <h3>COMMS</h3>
+      <div id="log"></div>
+    </aside>
+    <aside class="panel" id="cui">
+      <h3>CUI · HEX</h3>
+      <div class="hex" id="hex"></div>
+    </aside>
+    <div id="emblem-cap">
+      <div class="etf">etf Ubi</div>
+      <div class="sub">INTERNATIONAL · 公開軌道のみ · 操縦しない</div>
+    </div>
+  </div>
+  <footer>
+    <div>ハニカム粒子 · 地球アーク · エンブレム回転</div>
+    <div class="k">NO UPLINK</div>
+  </footer>
+</div>
+<div id="boot">
+  <canvas id="bootfx"></canvas>
+  <div id="wins"></div>
+  <button class="skip" type="button" id="skip">SKIP</button>
+</div>
+<script>
+const CITIES=[
+  {n:"東京",x:.78,y:.42,p:.18},{n:"ニューヨーク",x:.26,y:.38,p:.16},{n:"ロンドン",x:.48,y:.32,p:.14},
+  {n:"北京",x:.74,y:.38,p:.28},{n:"ナイロビ",x:.56,y:.58,p:.72},{n:"ラゴス",x:.49,y:.56,p:.78},
+  {n:"カラチ",x:.64,y:.46,p:.68},{n:"メキシコシティ",x:.18,y:.50,p:.46},{n:"シドニー",x:.88,y:.72,p:.12},
+  {n:"カイロ",x:.55,y:.44,p:.52},{n:"ソウル",x:.80,y:.38,p:.14},{n:"サンパウロ",x:.32,y:.68,p:.34}
+];
+const FLOWS=[
+  ["東京","ナイロビ","UBI","¥1.9K"],["ロンドン","ラゴス","労働","£2.1K"],
+  ["ニューヨーク","メキシコシティ","UBI","$2.3K"],["北京","カラチ","返還","¥4.8K"],
+  ["ソウル","カイロ","UBI","$1.6K"],["東京","シドニー","労働","¥2.0K"]
+];
+function hexPack(i){
+  const w=[0x1550,i&0xffff,0x23a1,(i*17)&0xffff,0x9000,0x27c6];
+  return w.map(n=>n.toString(16).padStart(4,"0")).join(" ").toUpperCase();
+}
+function project3(x,y,z,ry,rx,w,h,f=520){
+  const cy=Math.cos(ry),sy=Math.sin(ry),cx=Math.cos(rx),sx=Math.sin(rx);
+  const x1=x*cy-z*sy,z1=x*sy+z*cy,y2=y*cx-z1*sx,z2=y*sx+z1*cx;
+  const s=f/(f+z2+280);
+  return [w/2+x1*s,h*.46+y2*s,s,z2];
+}
+function hexPath(ctx,x,y,r){
+  ctx.beginPath();
+  for(let i=0;i<6;i++){
+    const a=Math.PI/6+i*Math.PI/3;
+    const fn=i?"lineTo":"moveTo";
+    ctx[fn](x+Math.cos(a)*r,y+Math.sin(a)*r);
+  }
+  ctx.closePath();
+}
+const particles=[];
+for(let i=0;i<90;i++){
+  const a=Math.random()*Math.PI*2,b=(Math.random()-.5)*Math.PI;
+  particles.push({x:Math.cos(a)*Math.cos(b)*220,y:Math.sin(b)*140,z:Math.sin(a)*Math.cos(b)*220,r:4+Math.random()*7});
+}
+function drawScene(ctx,w,h,t,showEarth){
+  ctx.fillStyle="#020408";ctx.fillRect(0,0,w,h);
+  ctx.strokeStyle="rgba(0,212,255,.12)";ctx.lineWidth=1;
+  for(let i=0;i<=18;i++){ctx.beginPath();ctx.moveTo(i*w/18,0);ctx.lineTo(i*w/18,h);ctx.stroke()}
+  for(let i=0;i<=10;i++){ctx.beginPath();ctx.moveTo(0,i*h/10);ctx.lineTo(w,i*h/10);ctx.stroke()}
+  const ry=t*.00035,rx=Math.sin(t*.0002)*.18;
+  particles.forEach(p=>{
+    const [x,y,s]=project3(p.x,p.y,p.z,ry,rx,w,h);
+    ctx.strokeStyle=`rgba(0,212,255,${.18+s*.25})`;
+    hexPath(ctx,x,y,p.r*s);ctx.stroke();
+  });
+  const ring=16;
+  for(let i=0;i<ring;i++){
+    const a=i/ring*Math.PI*2+t*.0008;
+    const [x,y,s]=project3(Math.cos(a)*70,Math.sin(a)*18,Math.sin(a)*70,ry*.6,.2,w,h,380);
+    ctx.strokeStyle=`rgba(0,212,255,${.35+s*.4})`;
+    hexPath(ctx,x,y,10*s);ctx.stroke();
+  }
+  const [ex,ey]=project3(0,-8,0,0,.2,w,h,380);
+  ctx.strokeStyle="#00d4ff";hexPath(ctx,ex,ey,22);ctx.stroke();
+  ctx.fillStyle="#00d4ff";ctx.font="12px ui-monospace";ctx.textAlign="center";
+  ctx.fillText("III",ex,ey+4);
+  if(!showEarth) return;
+  CITIES.forEach(c=>{
+    const x=c.x*w,y=c.y*h*.72+h*.14;
+    ctx.fillStyle=c.p>.6?"#ff5d73":c.p>.35?"#ffcc66":"#7dffb3";
+    ctx.beginPath();ctx.arc(x,y,3.2,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle="rgba(216,246,255,.7)";ctx.font="10px ui-monospace";ctx.textAlign="left";
+    ctx.fillText(c.n,x+6,y-4);
+  });
+  const find=n=>CITIES.find(c=>c.n===n);
+  FLOWS.forEach((f,i)=>{
+    const a=find(f[0]),b=find(f[1]); if(!a||!b) return;
+    const x1=a.x*w,y1=a.y*h*.72+h*.14,x2=b.x*w,y2=b.y*h*.72+h*.14;
+    const mx=(x1+x2)/2,my=(y1+y2)/2-28;
+    const u=(Math.sin(t*.001+i)+1)/2;
+    ctx.strokeStyle=f[2]==="返還"?"rgba(255,93,115,.55)":f[2]==="労働"?"rgba(125,255,179,.45)":"rgba(0,212,255,.55)";
+    ctx.beginPath();ctx.moveTo(x1,y1);ctx.quadraticCurveTo(mx,my,x2,y2);ctx.stroke();
+    const px=(1-u)*(1-u)*x1+2*(1-u)*u*mx+u*u*x2;
+    const py=(1-u)*(1-u)*y1+2*(1-u)*u*my+u*u*y2;
+    ctx.fillStyle="#d8f6ff";ctx.beginPath();ctx.arc(px,py,2.4,0,Math.PI*2);ctx.fill();
+  });
+}
+const fx=document.getElementById("fx"),bfx=document.getElementById("bootfx");
+function size(c){c.width=innerWidth*devicePixelRatio;c.height=innerHeight*devicePixelRatio;c.getContext("2d").setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}
+size(fx);size(bfx);
+addEventListener("resize",()=>{size(fx);size(bfx)});
+let start=performance.now();
+function loop(now){
+  drawScene(fx.getContext("2d"),innerWidth,innerHeight,now-start,true);
+  if(!document.getElementById("boot").classList.contains("out"))
+    drawScene(bfx.getContext("2d"),innerWidth,innerHeight,now-start,true);
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+const log=document.getElementById("log"),hex=document.getElementById("hex");
+let seq=0;
+function tick(){
+  const f=FLOWS[seq%FLOWS.length];
+  const line=`${f[2]} ${f[0]} → ${f[1]}  ${f[3]}`;
+  const p=document.createElement("div");p.textContent=line;log.prepend(p);
+  while(log.children.length>7)log.lastChild.remove();
+  hex.textContent=[0,1,2,3].map(i=>hexPack(seq+i)).join("\n");
+  seq++;
+}
+tick();setInterval(tick,1600);
+
+const wins=document.getElementById("wins");
+const titles=["UBI","CUI","GUI","FLOW","COMMS","HEX","ASSET","RESERVE","BANK","ETF"];
+function spawn(i){
+  const el=document.createElement("div");
+  el.className="win";
+  el.style.left=(8+Math.random()*70)+"%";
+  el.style.top=(8+Math.random()*62)+"%";
+  el.style.animationDelay=(i*120)+"ms";
+  el.innerHTML=`<b>${titles[i%titles.length]}</b><div>${hexPack(i+11)}</div><div>CYCLE 0011 · etf Ubi</div>`;
+  wins.appendChild(el);
+}
+for(let i=0;i<14;i++)setTimeout(()=>spawn(i),180+i*140);
+function endBoot(){document.getElementById("boot").classList.add("out")}
+document.getElementById("skip").onclick=endBoot;
+setTimeout(endBoot,5200);
+</script>
 </body>
 </html>
