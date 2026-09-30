@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>UBICHAIN · CYCLE 0011</title>
+<title>UBICHAIN · CYCLE 0017</title>
 <style>
   :root{--c:#00d4ff;--d:#06202a;--bg:#020408;--fg:#d8f6ff;--m:#6a8a96;--ok:#7dffb3;--al:#ff5d73}
   *{box-sizing:border-box}
@@ -52,7 +52,7 @@
     </div>
     <div style="text-align:right">
       <div class="k">CYCLE</div>
-      <div class="cycle">0011</div>
+      <div class="cycle">0017</div>
     </div>
   </header>
   <div class="stage">
@@ -211,7 +211,7 @@ function spawn(i){
   el.style.left=(8+Math.random()*70)+"%";
   el.style.top=(8+Math.random()*62)+"%";
   el.style.animationDelay=(i*120)+"ms";
-  el.innerHTML=`<b>${titles[i%titles.length]}</b><div>${hexPack(i+11)}</div><div>CYCLE 0011 · etf Ubi</div>`;
+  el.innerHTML=`<b>${titles[i%titles.length]}</b><div>${hexPack(i+11)}</div><div>CYCLE 0017 · etf Ubi</div>`;
   wins.appendChild(el);
 }
 for(let i=0;i<14;i++)setTimeout(()=>spawn(i),180+i*140);
