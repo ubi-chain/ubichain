@@ -1,27 +1,11 @@
 # UBICHAIN
 
-Economic stability guarantee PWA.
+## Email magic-link login
 
-- **Live free host:** https://ubi-chain.github.io
-- **Intended custom:** `www.ietfubi.com` → `ubi-chain.github.io` (domain **not registered** as of 2026-09-24)
-- **Vercel-linked free origin:** `ubichain.is-a.dev` → `cname.vercel-dns.com` (is-a.dev PR ready)
-- **Paid apex:** `ubi-chain.com` is **not registered** (NXDOMAIN). `.com` is not free.
-- Cycle: `1.11.12` (2026-09-24 pulse 512)
-- Serial: `2026092402`
-- GitHub: `ubi-chain`
+The application uses [Magic](https://magic.link) for passwordless email login. Create a Magic application, then configure these environment variables for Production, Preview, and Development:
 
-## www.ietfubi.com DNS (Xdomain / any registrar)
+- `NEXT_PUBLIC_MAGIC_PUBLISHABLE_KEY`
+- `MAGIC_SECRET_KEY`
+- `AUTH_SESSION_SECRET` (a unique random value)
 
-Until the domain is purchased, public DNS cannot resolve. After purchase at Xdomain or Vercel:
-
-| host | type | value |
-| --- | --- | --- |
-| www | CNAME | ubi-chain.github.io |
-| @ | A | 185.199.108.153 |
-| @ | A | 185.199.109.153 |
-| @ | A | 185.199.110.153 |
-| @ | A | 185.199.111.153 |
-
-Optional Vercel nameservers: `ns1.vercel-dns.com` / `ns2.vercel-dns.com` — only if a Vercel project exists to attach the domain.
-
-Do not buy from this repo bot unless explicitly confirmed.
+After configuration, `/login` sends a magic link and `/mypage` requires a verified session. The existing public visualisation is available at `/legacy/`.
