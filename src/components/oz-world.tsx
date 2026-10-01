@@ -730,7 +730,7 @@ export function OzWorld({
               <span className="font-mono text-[10px] tracking-widest text-muted">
                 {game === "hana"
                   ? tx(lang, { ja: "花札 · 運", en: "Hanafuda · chance", fr: "Hanafuda · chance" })
-                  : tx(lang, { ja: "戦争 · 運", en: "War · chance", fr: "Bataille · chance" })}
+                  : tx(lang, { ja: "ハイカード · 運", en: "High card · chance", fr: "Carte haute · chance" })}
               </span>
               <button type="button" onClick={() => setGame("none")} className="text-[11px] text-muted">
                 {tx(lang, { ja: "閉じる", en: "Close", fr: "Fermer" })}

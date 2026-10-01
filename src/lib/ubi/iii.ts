@@ -50,9 +50,9 @@ export const LAW_ARTICLES = [
   },
   {
     id: "3",
-    ja: "戦争・紛争・災害の法域では、倒産しうる公社・公司・委員会の資本を、先に人へ返す。",
-    en: "In jurisdictions of war, conflict, or disaster, capital sitting in insolvent public corps, companies, and committees returns to people first.",
-    fr: "En guerre, conflit ou désastre, le capital des corps publics, sociétés et comités insolvables revient d'abord aux personnes.",
+    ja: "緊急支援・災害対応が必要な地域では、倒産しうる公社・公司・委員会の資本を、先に人へ返す。",
+    en: "Where emergency or disaster support is needed, capital sitting in insolvent public corps, companies, and committees returns to people first.",
+    fr: "Là où un soutien d'urgence ou une réponse aux catastrophes est nécessaire, le capital des corps publics, sociétés et comités insolvables revient d'abord aux personnes.",
   },
   {
     id: "4",

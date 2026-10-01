@@ -50,9 +50,9 @@ export const SEGMENTS: Segment[] = [
     topicJa: "国際法の樹立",
     topicEn: "Founding international law",
     topicFr: "Fonder le droit international",
-    ja: "法と国家から国際法を樹立する。人を目的として残す。戦争・紛争・災害の法域を先にする。",
-    en: "From right and the state, international law. The person remains an end. Jurisdictions of war, conflict, and disaster come first.",
-    fr: "Du droit et de l'État, le droit international. La personne reste une fin. Guerre, conflit, désastre d'abord.",
+    ja: "法と国家から国際法を樹立する。人を目的として残す。緊急支援・災害対応を先にする。",
+    en: "From right and the state, international law. The person remains an end. Emergency and disaster support come first.",
+    fr: "Du droit et de l'État, le droit international. La personne reste une fin. Le soutien d'urgence et la réponse aux catastrophes d'abord.",
   },
 ];
 

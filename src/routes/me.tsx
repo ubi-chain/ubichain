@@ -82,8 +82,8 @@ function MePage() {
       {isAdminPhone(user.phone) ? (
         <div className="border-b border-accent/30 bg-accent/5 px-4 py-3 font-mono text-[11px] leading-relaxed text-dim">
           {lang === "en"
-            ? `Admin ${ADMIN_PHONE}: insolvency capital in public corps, companies, and committees is returned first to countries under war, conflict, or disaster.`
-            : `管理者 ${ADMIN_PHONE}：倒産リスクのある公社・公司・委員会の資本は、戦争・紛争・災害リスクの国へ優先して分散返還されます。`}
+            ? `Admin ${ADMIN_PHONE}: insolvency capital in public corps, companies, and committees is prioritized for emergency and disaster support.`
+            : `管理者 ${ADMIN_PHONE}：倒産リスクのある公社・公司・委員会の資本は、緊急支援・災害対応を優先して分散返還されます。`}
           <div className="mt-2 text-[10px] tracking-widest text-accent">
             {lang === "en" ? "SMS SEND-AUTH ON THIS LINE" : "この回線はSMS送信認証済み"}
           </div>
