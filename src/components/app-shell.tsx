@@ -237,7 +237,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         </nav>
         )}
 
-        <main className="min-h-0 min-w-0 flex-1 overflow-hidden">{children}</main>
+        <main className="node-stage min-h-0 min-w-0 flex-1 overflow-hidden">{children}</main>
       </div>
 
       {qHome || !signed ? null : (
