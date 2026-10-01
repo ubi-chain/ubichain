@@ -1,0 +1,5 @@
+{
+  "functions": {
+    "api/paypal/webhook.js": { "maxDuration": 10 }
+  }
+}
