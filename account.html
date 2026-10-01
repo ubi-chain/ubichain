@@ -12,7 +12,7 @@ main{width:min(900px,calc(100% - 32px));margin:0 auto;padding:28px 0 48px}header
 </style>
 </head>
 <body>
-<main>
+<main id="account" hidden>
 <header><div><div class="k slash" data-type="UBICHAIN · ACCOUNT">UBICHAIN · ACCOUNT</div><h1 class="slash" data-type="マイページ">マイページ</h1></div><a href="index.html">Q DESK</a></header>
 <section class="grid">
   <section class="node"><h2 class="slash" data-type="CONNECTION">CONNECTION</h2><div class="row"><span>Provider</span><b>PayPal</b></div><div class="row"><span>Project</span><b>ubichain</b></div><div class="row"><span>Environment</span><b class="ok">Production connected</b></div><p class="notice">接続情報はVercel側で管理され、認証情報はこのページに公開されません。</p></section>
@@ -22,6 +22,7 @@ main{width:min(900px,calc(100% - 32px));margin:0 auto;padding:28px 0 48px}header
 </section>
 </main>
 <script>
+fetch('/api/auth/session').then(r=>r.json()).then(s=>{if(!s.authenticated)return location.replace('login.html');document.getElementById('account').hidden=false}).catch(()=>location.replace('login.html'));
 for(const [i,el] of [...document.querySelectorAll('[data-type]')].entries()){
  const text=el.dataset.type;el.textContent='';let n=0;setTimeout(()=>{const timer=setInterval(()=>{el.textContent=text.slice(0,++n);if(n===text.length)clearInterval(timer)},18)},300+i*80);
 }
