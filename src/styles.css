@@ -82,6 +82,15 @@
   }
 }
 
+.boot-emblem {
+  filter: drop-shadow(0 0 24px color-mix(in srgb, var(--color-accent) 55%, transparent));
+  opacity: .7;
+  animation: boot-emblem-in 1.4s ease-out both, boot-emblem-float 4s ease-in-out 1.4s infinite;
+}
+@keyframes boot-emblem-in { from { opacity: 0; transform: translateX(-50%) translateY(-44%) scale(.9); } to { opacity: .7; transform: translateX(-50%) translateY(-50%) scale(1); } }
+@keyframes boot-emblem-float { 50% { transform: translateX(-50%) translateY(calc(-50% - 8px)) scale(1.015); } }
+@media (prefers-reduced-motion: reduce) { .boot-emblem { animation: none; } }
+
 @keyframes pulse-glow {
   0%,
   100% {
