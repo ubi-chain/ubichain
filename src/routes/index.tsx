@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { QConsole } from "@/components/q-console";
+import { CuiHex } from "@/components/cui-hex";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -9,5 +9,5 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
-  return <QConsole />;
+  return <CuiHex />;
 }

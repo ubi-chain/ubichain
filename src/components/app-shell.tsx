@@ -124,7 +124,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="flex h-dvh flex-col overflow-hidden bg-bg text-fg">
-      <IosInstallBanner lang={lang} />
+      {qHome ? null : <IosInstallBanner lang={lang} />}
 
       {qHome ? null : (
       <header className="flex shrink-0 items-center gap-3 border-b border-border bg-surface px-3 py-2 pt-[max(0.5rem,env(safe-area-inset-top))]">
@@ -299,9 +299,9 @@ export function AppShell({ children }: { children: ReactNode }) {
         </div>
       ) : null}
 
-      {booting ? <BootSplash lang={lang} onDone={() => setBooting(false)} /> : null}
-      {!booting && isFirstVisit ? <Tutorial lang={lang} onDone={setFirstVisitDone} /> : null}
-      {!booting && !isFirstVisit ? <MaintenanceUpdate /> : null}
+      {qHome || !booting ? null : <BootSplash lang={lang} onDone={() => setBooting(false)} />}
+      {qHome || booting || !isFirstVisit ? null : <Tutorial lang={lang} onDone={setFirstVisitDone} />}
+      {qHome || booting || isFirstVisit ? null : <MaintenanceUpdate />}
     </div>
   );
 }

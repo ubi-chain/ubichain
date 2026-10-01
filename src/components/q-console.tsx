@@ -62,7 +62,7 @@ function hexLine(fix: IssFix, seq: number) {
   return words.map((w) => w.toString(16).padStart(4, "0")).join(" ").toUpperCase();
 }
 
-function drawMap(canvas: HTMLCanvasElement, fix: IssFix) {
+export function drawMap(canvas: HTMLCanvasElement, fix: IssFix) {
   const dpr = window.devicePixelRatio || 1;
   const w = canvas.offsetWidth;
   const h = canvas.offsetHeight;

@@ -119,6 +119,44 @@
   transform-origin: 50% 100%;
 }
 
+.cui-hex-panel {
+  animation: cui-hex-in 1.6s cubic-bezier(0.16, 0.84, 0.24, 1) both;
+}
+
+.cui-caret {
+  display: inline-block;
+  width: 0.55ch;
+  height: 0.95em;
+  margin-left: 2px;
+  vertical-align: -1px;
+  background: var(--color-accent);
+  animation: cui-blink 1s steps(1) infinite;
+}
+
+@keyframes cui-hex-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes cui-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cui-hex-panel,
+  .cui-caret {
+    animation: none;
+  }
+}
+
 .trinity-map,
 .trinity-map .leaflet-container {
   height: 100%;
