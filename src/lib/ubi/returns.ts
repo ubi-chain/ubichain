@@ -71,8 +71,8 @@ export const HAZARD_COUNTRIES: HazardCountry[] = [
 
 const KIND_JA: Record<EntityKind, string> = { kosha: "公社", gongsi: "公司", iinkai: "委員会" };
 const KIND_EN: Record<EntityKind, string> = { kosha: "public corp", gongsi: "company", iinkai: "committee" };
-const HAZARD_JA: Record<HazardKind, string> = { war: "戦争", conflict: "紛争", disaster: "災害" };
-const HAZARD_EN: Record<HazardKind, string> = { war: "war", conflict: "conflict", disaster: "disaster" };
+const HAZARD_JA: Record<HazardKind, string> = { war: "緊急支援", conflict: "復旧支援", disaster: "災害対応" };
+const HAZARD_EN: Record<HazardKind, string> = { war: "emergency support", conflict: "recovery support", disaster: "disaster response" };
 
 export function kindLabel(kind: EntityKind, lang: string) {
   return lang === "en" ? KIND_EN[kind] : KIND_JA[kind];

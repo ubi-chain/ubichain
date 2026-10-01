@@ -126,9 +126,9 @@ export const BOOKS: ShelfBook[] = [
         fr: "L'État est l'effectivité de l'idée éthique. Cette effectivité n'est pas un permis de laisser affamer au-delà de la frontière.",
       },
       {
-        en: "International law is the thin promise between states. UBICHAIN treats the person as the end of that promise: a floor that follows them, thicker where war, conflict, or disaster has already taken the rest.",
-        ja: "国際法は国家のあいだの薄い約束である。UBICHAINはその約束の目的を人とする。戦争・紛争・災害ですでに失われた場所ほど、最低線を厚くする。",
-        fr: "Le droit international est la promesse mince entre États. UBICHAIN en fait une fin : la personne. Le plancher s'épaissit là où guerre, conflit ou désastre ont déjà tout pris.",
+        en: "International law is the thin promise between states. UBICHAIN treats the person as the end of that promise: a floor that follows them, stronger where emergency or disaster support is needed.",
+        ja: "国際法は国家のあいだの薄い約束である。UBICHAINはその約束の目的を人とする。緊急支援・災害対応が必要な場所ほど、最低線を厚くする。",
+        fr: "Le droit international est la promesse mince entre États. UBICHAIN en fait une fin : la personne. Le plancher s'épaissit là où le soutien d'urgence ou la réponse aux catastrophes est nécessaire.",
       },
     ],
   },

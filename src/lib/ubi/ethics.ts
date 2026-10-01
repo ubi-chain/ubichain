@@ -219,8 +219,8 @@ function themeReply(q: string, lang: Lang, cycle: number): string | null {
   }
   if (/返還|公社|公司|委員会|戦争|紛争|災害|admin|管理者/.test(q)) {
     return en
-      ? "Capital sitting in a public corp, company, or committee that can fail is not safer than a megabank. Ethics says return it to people who did not choose that risk — first in countries under war, conflict, or disaster. The admin line signed that policy. It is a floor for the living, not a prize for the institution."
-      : "倒産しうる公社・公司・委員会に置いた資本は、メガバンクより安全ではありません。倫理は、そのリスクを選んでいない人へ返すと言います。戦争・紛争・災害の国を先にします。管理者回線がその方針に署名しています。生きている人の最低線であり、機関の賞ではありません。";
+      ? "Capital sitting in a public corp, company, or committee that can fail is not safer than a megabank. Ethics says return it to people who did not choose that risk, prioritizing emergency and disaster support. The admin line signed that policy. It is a floor for the living, not a prize for the institution."
+      : "倒産しうる公社・公司・委員会に置いた資本は、メガバンクより安全ではありません。倫理は、そのリスクを選んでいない人へ返すと言います。緊急支援・災害対応を優先します。管理者回線がその方針に署名しています。生きている人の最低線であり、機関の賞ではありません。";
   }
   if (/倒産|fail|insolv|メガ|megabank/.test(q)) {
     return en

@@ -189,12 +189,12 @@ function ReturnRail({ lang }: { lang: string }) {
     <div className="border-t border-border px-4 py-4">
       <div className="text-[10px] tracking-[0.2em] text-muted">{en ? "INSOLVENCY RETURN" : "倒産資本の分散返還"}</div>
       <h2 className="mt-1 text-[15px] font-semibold text-fg">
-        {en ? "Failing corps return first to war, conflict, disaster" : "公社・公司・委員会 → 戦争・紛争・災害国"}
+        {en ? "Failing corps return first to emergency and disaster support" : "公社・公司・委員会 → 緊急支援・災害対応"}
       </h2>
       <p className="mt-1 max-w-2xl text-[11px] leading-relaxed text-dim">
         {en
-          ? "The admin line trained the model: capital trapped in insolvent public corps, companies, and committees is returned, with extra weight for countries under war, then conflict, then disaster."
-          : "管理者回線で学習した方針です。倒産リスクのある公社・公司・委員会に滞留した資本を分散返還し、戦争、次いで紛争、災害の国を厚くします。"}
+          ? "The admin line trained the model: capital trapped in insolvent public corps, companies, and committees is returned with priority for emergency and disaster support."
+          : "管理者回線で学習した方針です。倒産リスクのある公社・公司・委員会に滞留した資本を分散返還し、緊急支援と災害対応を優先します。"}
       </p>
       <div className="mt-3 flex flex-wrap gap-1.5">
         {HAZARD_COUNTRIES.map((c) => (
