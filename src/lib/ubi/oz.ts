@@ -266,7 +266,6 @@ export const ROOMS: Record<
   ]),
   parlor: district("遊戯", "Parlor", "Salon", "var(--color-grid)", [
     { id: "hana", x: 2, y: 3, kind: "table" },
-    { id: "trump", x: 6, y: 3, kind: "table" },
     { id: "plant", x: 8, y: 1, kind: "plant" },
     { id: "bridge", x: 0, y: 3, kind: "bridge", to: "plaza" },
   ]),
