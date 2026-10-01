@@ -57,7 +57,7 @@ export function BootSplash({ lang, onDone }: { lang: Lang; onDone: () => void })
         src="/loading-emblem.png"
         alt=""
         aria-hidden="true"
-        className="boot-emblem pointer-events-none absolute left-1/2 top-[42%] w-[min(76vw,34rem)] -translate-x-1/2 -translate-y-1/2 object-contain"
+        className="boot-emblem pointer-events-none absolute z-10 left-1/2 top-[42%] block w-[min(76vw,34rem)] -translate-x-1/2 -translate-y-1/2 object-contain"
       />
       <div className="absolute inset-x-0 bottom-0 flex flex-col items-center px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-20">
         <div className="grid size-12 place-items-center rounded-xl bg-bg font-mono text-xl font-bold text-accent ring-1 ring-accent/50">
