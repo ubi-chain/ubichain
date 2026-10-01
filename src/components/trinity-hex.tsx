@@ -745,9 +745,9 @@ function Alerts({ en, wx, gibsDay, compact }: { en: boolean; wx: Wx | null; gibs
   const list = compact ? rows.slice(0, 3) : rows;
   return (
     <ul className="space-y-1 font-mono text-[10px]">
-      {list.map((row) => (
+      {list.map((row, i) => (
         <li key={row.lv + row.text} className="flex justify-between gap-2">
-          <span className="text-dim">{row.text}</span>
+          <span className="log-slash log-type" style={{ animationDelay: `${i * 55}ms` }}>{row.text}</span>
           <span className="shrink-0 text-warn">{row.lv}</span>
         </li>
       ))}
@@ -890,7 +890,7 @@ function Comms({ logs, en, compact }: { logs: LogLine[]; en: boolean; compact?: 
         {logs.map((row, i) => (
           <li key={`${row.t}-${i}`} className="flex gap-2">
             <span className="text-muted tabular">{row.t}</span>
-            <span className="text-dim">{row.text}</span>
+            <span className="log-slash log-type" style={{ animationDelay: `${i * 55}ms` }}>{row.text}</span>
           </li>
         ))}
       </ul>

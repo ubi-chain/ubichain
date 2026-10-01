@@ -206,7 +206,7 @@ export function QConsole() {
   const cycleLabel = "0011";
 
   return (
-    <div className="flex h-full min-h-0 flex-col bg-bg text-fg">
+    <div className="node-stage flex h-full min-h-0 flex-col bg-bg text-fg">
       <header className="flex shrink-0 items-center gap-2 border-b border-border px-3 py-2 pt-[max(0.5rem,env(safe-area-inset-top))]">
         <div className="min-w-0 leading-tight">
           <div className="font-mono text-[10px] tracking-[0.28em] text-accent">IETFUBI</div>
@@ -271,7 +271,7 @@ export function QConsole() {
             <ul className="mt-1 space-y-1 overflow-hidden">
               {log.map((row, i) => (
                 <li key={`${row}-${i}`} className="truncate font-mono text-[10px] text-dim">
-                  {row}
+                  <span className="log-slash log-type" style={{ animationDelay: `${i * 55}ms` }}>{row}</span>
                 </li>
               ))}
             </ul>
