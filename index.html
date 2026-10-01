@@ -16,7 +16,10 @@
   .k{letter-spacing:.28em;color:var(--c);font-size:10px}
   .cycle{font-size:28px;color:var(--c);letter-spacing:.08em}
   .stage{position:relative;min-height:0}
-  .panel{position:absolute;background:rgba(2,6,12,.82);border:1px solid rgba(0,212,255,.35);padding:8px 10px;backdrop-filter:blur(6px);min-width:168px;max-width:240px}
+  .panel{position:absolute;background:rgba(2,6,12,.82);border:1px solid rgba(0,212,255,.35);padding:8px 10px;backdrop-filter:blur(6px);min-width:168px;max-width:240px;opacity:0;animation:node-in .48s ease-out forwards}
+  .panel:nth-of-type(1){animation-delay:.2s}.panel:nth-of-type(2){animation-delay:.38s}.panel:nth-of-type(3){animation-delay:.56s}.panel:nth-of-type(4){animation-delay:.74s}
+  @keyframes node-in{from{opacity:0;transform:scale(.94) translateY(10px)}to{opacity:1;transform:none}}
+  .slash-text::before{content:"/";color:var(--c);margin-right:.15em}.slash-text{display:inline-block}
   .panel h3{margin:0 0 6px;font-size:10px;letter-spacing:.22em;color:var(--c);font-weight:600}
   .row{display:flex;justify-content:space-between;gap:8px;color:var(--m);font-size:11px}
   .row b{color:var(--fg);font-weight:500}
@@ -52,7 +55,7 @@
     </div>
     <div style="text-align:right">
       <div class="k">CYCLE</div>
-      <div class="cycle">0011</div>
+      <div class="cycle">0011</div><a href="account.html" style="font-size:10px;color:#00d4ff">MY PAGE</a>
     </div>
   </header>
   <div class="stage">
@@ -215,7 +218,15 @@ function spawn(i){
   wins.appendChild(el);
 }
 for(let i=0;i<14;i++)setTimeout(()=>spawn(i),180+i*140);
-function endBoot(){document.getElementById("boot").classList.add("out")}
+function slashType(el, delay=0){
+  const text=el.textContent.trim(); if(!text||el.dataset.typed)return;
+  el.dataset.typed="1";el.textContent="";el.classList.add("slash-text");let i=0;
+  setTimeout(()=>{const timer=setInterval(()=>{el.append(text[i++]||"");if(i>=text.length)clearInterval(timer)},18)},delay);
+}
+function startSlashText(){
+  document.querySelectorAll('header .k, header > div:not(:has(.k)), footer > div, .panel h3').forEach((el,i)=>slashType(el,900+i*90));
+}
+function endBoot(){document.getElementById("boot").classList.add("out");startSlashText()}
 document.getElementById("skip").onclick=endBoot;
 setTimeout(endBoot,5200);
 </script>
