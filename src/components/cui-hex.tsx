@@ -35,13 +35,12 @@ function drawHexField(canvas: HTMLCanvasElement, t: number, reduced: boolean) {
       const x = col * size * 1.5;
       const y = row * size * Math.sqrt(3) + (col % 2 ? size * 0.866 : 0);
       const dist = Math.hypot(x - ox, y - oy);
-      const keep = dist < 220 || ((col * 17 + row * 13) & 7) === 0;
-      if (!keep) continue;
-      const delay = reduced ? 0 : Math.min(dist, 520) * 2.2;
-      const p = reduced ? 1 : Math.max(0, Math.min(1, (t - delay) / 420));
+      const branch = Math.abs(Math.sin(col * 0.72 + row * 0.46));
+      const delay = reduced ? 0 : Math.min(dist, 680) * 1.65 + branch * 180;
+      const p = reduced ? 1 : Math.max(0, Math.min(1, (t - delay) / 520));
       if (p <= 0) continue;
       const ease = 1 - (1 - p) ** 3;
-      const r = size * 0.46 * ease;
+      const r = size * (0.16 + 0.3 * ease);
       ctx.beginPath();
       for (let i = 0; i < 6; i++) {
         const a = Math.PI / 6 + (i * Math.PI) / 3;
@@ -51,9 +50,13 @@ function drawHexField(canvas: HTMLCanvasElement, t: number, reduced: boolean) {
         else ctx.lineTo(px, py);
       }
       ctx.closePath();
-      ctx.strokeStyle = `rgba(0, 212, 255, ${0.16 + ease * 0.55})`;
-      ctx.lineWidth = 1;
+      ctx.strokeStyle = `rgba(0, 212, 255, ${0.08 + ease * 0.58})`;
+      ctx.lineWidth = 0.75 + ease * 0.45;
       ctx.stroke();
+      if (ease > 0.72 && (col + row * 3) % 5 === 0) {
+        ctx.fillStyle = `rgba(0, 212, 255, ${(ease - 0.72) * 0.8})`;
+        ctx.fill();
+      }
     }
   }
 }
@@ -149,11 +152,11 @@ export function CuiHex() {
         <h1 className="text-sm tracking-[0.28em] text-accent">{title}</h1>
         <ul className="mt-2 space-y-1 text-[12px] leading-relaxed text-fg">
           {done.map((row) => (
-            <li key={row} className="truncate">
+            <li key={row} className="cui-log-line truncate">
               {row}
             </li>
           ))}
-          <li className="truncate text-accent">
+          <li className="cui-log-line truncate text-accent">
             {live}
             <span className="cui-caret" />
           </li>
