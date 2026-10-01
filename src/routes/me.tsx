@@ -1,17 +1,16 @@
 import type { ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Fingerprint, Plane, ShieldCheck, Smartphone, Wallet, Building2 } from "lucide-react";
+import { Fingerprint, Plane, ShieldCheck, Smartphone, Wallet } from "lucide-react";
 import { useUbi } from "@/lib/ubi/store";
-import { yen } from "@/lib/ubi/format";
-import { ADMIN_PHONE, isAdminPhone, maskPhone } from "@/lib/ubi/admin";
+import { ADMIN_PHONE, isAdminIdentity, maskPhone } from "@/lib/ubi/admin";
 import { TrinityHex } from "@/components/trinity-hex";
 
 export const Route = createFileRoute("/me")({ component: MePage });
 
 function MePage() {
-  const { lang, user, logout, linkedBanks, deposits } = useUbi();
-  const admin = Boolean(user && isAdminPhone(user.phone));
+  const { lang, user, logout } = useUbi();
+  const admin = isAdminIdentity(user);
   const [pane, setPane] = useState<"desk" | "book">("book");
   useEffect(() => {
     if (admin) setPane("desk");
@@ -39,16 +38,7 @@ function MePage() {
     );
   }
 
-  const history = [
-    ...deposits.slice(0, 3).map((d) => ({
-      t: lang === "en" ? `${d.tier === "mega" ? "Megabank" : "Regional"} · ${d.bankNameEn}` : `${d.tier === "mega" ? "メガバンク" : "地方銀行"} · ${d.bankNameJa}`,
-      v: `+${yen(d.amount)}`,
-      ok: true,
-    })),
-    { t: lang === "en" ? "Today's UBI posted" : "本日のUBI振込", v: "+¥580", ok: true },
-    { t: lang === "en" ? "Labor credit queued" : "労働対価 翌月払戻", v: "+¥12,400", ok: true },
-    { t: lang === "en" ? "Power infrastructure" : "電力インフラ使用料", v: "−¥428", ok: false },
-  ];
+
 
   return (
     <div className="flex h-full flex-col font-mono">
@@ -58,7 +48,7 @@ function MePage() {
         </div>
         <h1 className="text-xl font-semibold text-fg">{user.name}</h1>
         <div className="mt-1 text-[11px] text-dim">
-          {user.memberId} · {admin ? user.phone : maskPhone(user.phone)}
+          {user.memberId} · {admin ? (user.email ?? user.phone) : maskPhone(user.phone)}
         </div>
         {admin ? (
           <div className="mt-3 flex gap-2 text-[11px]">
@@ -79,7 +69,7 @@ function MePage() {
       ) : (
       <div className="min-h-0 flex-1 overflow-y-auto">
 
-      {isAdminPhone(user.phone) ? (
+      {admin ? (
         <div className="border-b border-accent/30 bg-accent/5 px-4 py-3 font-mono text-[11px] leading-relaxed text-dim">
           {lang === "en"
             ? `Admin ${ADMIN_PHONE}: insolvency capital in public corps, companies, and committees is returned first to countries under war, conflict, or disaster.`
@@ -97,32 +87,11 @@ function MePage() {
             <div className="text-[10px] tracking-[0.3em] text-accent">IETFUBI</div>
             <div className="mt-6 text-lg">{user.name}</div>
             <div className="mt-1 text-[11px] text-dim">{user.memberId}</div>
-            <div className="mt-4 flex justify-between text-[11px]">
-              <span className="text-muted">{lang === "en" ? "Balance" : "残高"}</span>
-              <span className="tabular text-accent">{yen(user.balance)}</span>
-            </div>
-            <div className="mt-1 flex justify-between text-[11px]">
-              <span className="text-muted">{lang === "en" ? "Monthly" : "月収"}</span>
-              <span className="tabular text-fg">{yen(user.monthlyUbi)}</span>
-            </div>
           </div>
-          <div className="mt-3 text-[11px] text-dim">
-            {lang === "en" ? "Next UBI" : "次回UBI振込"}: {lang === "en" ? "1st of next month" : "来月1日"}
-          </div>
-          <div className="mt-1 text-[11px] text-ok">
-            {lang === "en" ? "From banks" : "銀行入金"} {yen(user.bankDeposited ?? 0)}
-          </div>
+          <div className="mt-3 text-[11px] text-dim">{lang === "en" ? "Verified account" : "認証済みアカウント"}</div>
         </section>
 
-        <section className="rounded-lg border border-border bg-surface p-4">
-          <div className="mb-2 text-[10px] tracking-widest text-muted">{lang === "en" ? "HISTORY" : "履歴"}</div>
-          {history.map((h, i) => (
-            <div key={`${h.t}-${i}`} className="flex items-center justify-between border-b border-border py-2 text-[12px]">
-              <span className="text-fg">{h.t}</span>
-              <span className={h.ok ? "text-ok" : "text-alert"}>{h.v}</span>
-            </div>
-          ))}
-        </section>
+
 
         <section className="rounded-lg border border-border bg-surface p-4 md:col-span-2">
           <div className="mb-3 text-[10px] tracking-widest text-muted">{lang === "en" ? "SECURITY" : "セキュリティ"}</div>
@@ -132,29 +101,7 @@ function MePage() {
             <Li icon={<Wallet className="size-4" />} t={lang === "en" ? "Wallet visual" : lang === "fr" ? "Wallet visuel" : "見た目のウォレット"} />
             <Li icon={<Smartphone className="size-4" />} t={lang === "en" ? "Touch pay ready" : lang === "fr" ? "Paiement tactile" : "タッチ決済 有効"} />
             <Li icon={<Plane className="size-4" />} t={lang === "en" ? "In-app air pass" : lang === "fr" ? "Passe aérien in-app" : "アプリ内航空パス"} />
-            <Li
-              icon={<Building2 className="size-4" />}
-              t={
-                linkedBanks.length
-                  ? lang === "en"
-                    ? `${linkedBanks.length} bank(s)`
-                    : `銀行 ${linkedBanks.length} 件`
-                  : lang === "en"
-                    ? "No bank linked yet"
-                    : "銀行 未連携"
-              }
-            />
           </ul>
-          {deposits[0] ? (
-            <p className="mt-3 text-[11px] text-dim">
-              {lang === "en" ? "Last deposit" : "直近入金"}{" "}
-              {lang === "en" ? deposits[0].bankNameEn : deposits[0].bankNameJa} {yen(deposits[0].amount)}
-            </p>
-          ) : (
-            <Link to="/banks" className="mt-3 inline-block text-[11px] text-accent">
-              {lang === "en" ? "Deposit from a bank →" : "銀行から入金 →"}
-            </Link>
-          )}
           <p className="mt-3 text-[11px] leading-relaxed text-muted">
             {lang === "en"
               ? "Device, location, and behavior patterns double-lock theft. AES-256-GCM in transit."

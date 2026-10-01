@@ -57,10 +57,9 @@ function LedgerPage() {
         fr: "Il apprend pour éviter le déficit. Le soin n'est jamais coupé.",
       })}
     >
-      <div className="grid gap-3 p-4 md:grid-cols-3">
-        <Stat k={tx(lang, { ja: "収入（UBI）", en: "Income (UBI)", fr: "Revenu (UBI)" })} v={yen(state.income)} />
+      <div className="grid gap-3 p-4 md:grid-cols-2">
         <Stat k={tx(lang, { ja: "支出", en: "Spend", fr: "Dépense" })} v={yen(spend)} />
-        <Stat k={tx(lang, { ja: "過不足", en: "Gap", fr: "Écart" })} v={yen(state.income - spend)} danger={deficit > 0} />
+        <Stat k={tx(lang, { ja: "状態", en: "Status", fr: "État" })} v={deficit > 0 ? tx(lang, { ja: "調整が必要", en: "Adjustment needed", fr: "Ajustement requis" }) : tx(lang, { ja: "安定", en: "Stable", fr: "Stable" })} danger={deficit > 0} />
       </div>
 
       <div className="h-56 px-2">

@@ -1,21 +1,17 @@
-import type { ReactNode } from "react";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { RefreshCw, Nfc, QrCode, Building2 } from "lucide-react";
+import { RefreshCw, Nfc } from "lucide-react";
 import { useUbi } from "@/lib/ubi/store";
-import { yen } from "@/lib/ubi/format";
 import { DonorRailPanel } from "@/components/donor-rail";
 import { RailDesk } from "@/components/rail-desk";
 
 export const Route = createFileRoute("/pay")({ component: PayPage });
 
 function PayPage() {
-  const { lang, user, donorBatches, pulseDonorRail } = useUbi();
+  const { lang, donorBatches, pulseDonorRail } = useUbi();
   const [code, setCode] = useState("482917");
   const [tab, setTab] = useState<"code" | "qr" | "nfc">("qr");
   const matrix = useMemo(() => qrMatrix(code), [code]);
-  const balance = user?.balance ?? 1_240_000;
-  const monthly = user?.monthlyUbi ?? 17400;
 
   return (
     <div className="h-full overflow-y-auto">
@@ -25,7 +21,7 @@ function PayPage() {
           {lang === "en" ? "One-time pay" : "ワンタイム決済"}
         </h1>
         <p className="font-mono text-[11px] text-dim">
-          {lang === "en" ? "QR · PayPal · Pay-easy" : "QR・PayPal・Pay-easy"}
+          {lang === "en" ? "QR · NFC" : "QR・NFC"}
         </p>
       </div>
       <DonorRailPanel lang={lang} batches={donorBatches} onPulse={pulseDonorRail} />
@@ -95,48 +91,12 @@ function PayPage() {
         </section>
 
         <section className="space-y-3">
-          <div className="rounded-lg border border-border bg-surface p-4 font-mono">
-            <div className="text-[10px] tracking-widest text-muted">{lang === "en" ? "BALANCE" : "残高"}</div>
-            <div className="text-2xl tabular text-accent">{yen(balance)}</div>
-            <div className="mt-1 text-[11px] text-dim">
-              {lang === "en" ? "Monthly UBI" : "月額UBI"} {yen(monthly)}
-            </div>
-          </div>
-
-          <div className="rounded-lg border border-border bg-surface p-4 font-mono text-[12px]">
-            <div className="mb-2 text-[10px] tracking-widest text-muted">
-              {lang === "en" ? "WALLETS" : "連携"}
-            </div>
-            <Row icon={<Building2 className="size-4" />} label="PayPal" value={lang === "en" ? "Ledger" : "台帳"} />
-            <Row icon={<QrCode className="size-4" />} label="Pay-easy" value={lang === "en" ? "Dummy slip" : "ダミー伝票"} />
-            <Row
-              icon={<Building2 className="size-4" />}
-              label={lang === "en" ? "Banks" : "銀行入金"}
-              value={user?.bankDeposited ? yen(user.bankDeposited) : lang === "en" ? "Open" : "受付中"}
-            />
-          </div>
-
-          <div className="rounded-lg border border-border bg-panel p-4 font-mono text-[11px] leading-relaxed text-dim">
-            {lang === "en"
-              ? "Current phase is a stability guarantee. Capital still sits in banks — megabanks can fail too. Deposit from a regional bank or a megabank into the public reserve."
-              : "現行は経済の安定保障です。資本はまだ銀行にあります。メガバンクも倒産しうるので、地方銀行・メガバンクの両方から保障準備金へ入金できます。"}
-            <Link to="/banks" className="mt-2 block text-accent">
-              {lang === "en" ? "Deposit from a bank →" : "銀行から入金する →"}
-            </Link>
+          <div className="rounded-lg border border-border bg-surface p-4 font-mono text-[12px] text-dim">
+            {lang === "en" ? "This payment screen does not connect to PayPal or bank accounts." : "この決済画面はPayPal・銀行口座に接続していません。"}
           </div>
           <RailDesk mode="in" />
         </section>
       </div>
-    </div>
-  );
-}
-
-function Row({ icon, label, value }: { icon: ReactNode; label: string; value: string }) {
-  return (
-    <div className="flex items-center gap-2 border-b border-border py-2 last:border-0">
-      <span className="text-accent">{icon}</span>
-      <span className="flex-1 text-fg">{label}</span>
-      <span className="text-ok">{value}</span>
     </div>
   );
 }
