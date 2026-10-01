@@ -52,7 +52,7 @@ import {
 import { applyNightlyRepair, OZ_DISTRICTS, OZ_NPCS, OZ_VERSION, OZ_WINDOW_JST, readOps, worldHealth, type OzNpc, type OzOps } from "@/lib/ubi/oz-ops";
 import { firstLifeName, guardSnap, makePacket, pathStep, receiveOz, type GuardSnap } from "@/lib/ubi/oz-guard";
 import { OZ_ORIGIN } from "@/lib/ubi/host";
-import { hanaDeck, hanaLabel, hanaScore, makeDeck, rankLabel, type HanaCard, type TrumpCard } from "@/lib/ubi/cards";
+import { hanaDeck, hanaLabel, hanaScore, type HanaCard } from "@/lib/ubi/cards";
 import { tx, type Lang } from "@/lib/ubi/i18n";
 import {
   ActTray,
@@ -92,7 +92,7 @@ export function OzWorld({
   const [chat, setChat] = useState<Chat[]>([]);
   const [msg, setMsg] = useState("");
   const [channel, setChannel] = useState<(typeof CHANNELS)[number]["id"]>("JP");
-  const [game, setGame] = useState<"none" | "hana" | "war">("none");
+  const [game, setGame] = useState<"none" | "hana">("none");
   const [decorate, setDecorate] = useState(false);
   const [picked, setPicked] = useState<FurnKind>("plant");
   const [layout, setLayout] = useState(readLayout);
@@ -489,10 +489,7 @@ export function OzWorld({
                 if (href === "/library") void navigate({ to: "/library" });
                 else if (href === "/live") void navigate({ to: "/live" });
               }}
-              onTable={(id) => {
-                if (id === "trump") setGame("war");
-                else setGame("hana");
-              }}
+              onTable={() => setGame("hana")}
               onSit={(x, y) => save({ ...guest, pos: { x, y }, pose: "sit" })}
               onYou={() => setMenu((v) => !v)}
               onNpc={(id) => {
@@ -728,15 +725,13 @@ export function OzWorld({
           <div className="max-h-[80%] w-full max-w-lg overflow-y-auto rounded-md border border-border bg-surface p-3" onClick={(e) => e.stopPropagation()}>
             <div className="mb-2 flex justify-between">
               <span className="font-mono text-[10px] tracking-widest text-muted">
-                {game === "hana"
-                  ? tx(lang, { ja: "花札 · 運", en: "Hanafuda · chance", fr: "Hanafuda · chance" })
-                  : tx(lang, { ja: "戦争 · 運", en: "War · chance", fr: "Bataille · chance" })}
+                {tx(lang, { ja: "花札 · 運", en: "Hanafuda · chance", fr: "Hanafuda · chance" })}
               </span>
               <button type="button" onClick={() => setGame("none")} className="text-[11px] text-muted">
                 {tx(lang, { ja: "閉じる", en: "Close", fr: "Fermer" })}
               </button>
             </div>
-            {game === "hana" ? <Hanafuda lang={lang} /> : <WarGame lang={lang} />}
+            <Hanafuda lang={lang} />
           </div>
         </div>
       ) : null}
@@ -1162,54 +1157,6 @@ function HanaTile({ card, lang, active }: { card: HanaCard; lang: Lang; active?:
     <div className={`grid h-14 w-10 place-items-center rounded-sm border ${active ? "border-accent bg-panel" : "border-border bg-raised"}`}>
       <div className="text-[10px] text-accent">{hanaLabel(card.month, lang)}</div>
       <div className="text-[9px] text-muted">{card.kind}</div>
-    </div>
-  );
-}
-
-function WarGame({ lang }: { lang: Lang }) {
-  const [you, setYou] = useState<TrumpCard | null>(null);
-  const [house, setHouse] = useState<TrumpCard | null>(null);
-  const [ys, setYs] = useState(0);
-  const [hs, setHs] = useState(0);
-
-  const flip = () => {
-    const d = makeDeck();
-    const a = d[0]!;
-    const b = d[1]!;
-    setYou(a);
-    setHouse(b);
-    if (a.rank > b.rank) setYs((n) => n + 1);
-    else if (b.rank > a.rank) setHs((n) => n + 1);
-  };
-
-  return (
-    <div className="font-mono text-[12px]">
-      <p className="mb-2 text-dim">{tx(lang, { ja: "高い札が勝ち。運だけの対戦です。", en: "Higher card wins. Pure chance.", fr: "La plus haute gagne. Pur hasard." })}</p>
-      <div className="flex justify-center gap-6 py-3">
-        <WarTile label={tx(lang, { ja: "あなた", en: "You", fr: "Vous" })} card={you} />
-        <WarTile label={tx(lang, { ja: "相手", en: "House", fr: "Maison" })} card={house} />
-      </div>
-      <div className="flex items-center justify-between">
-        <span className="text-dim">
-          {ys} – {hs}
-        </span>
-        <button type="button" onClick={flip} className="h-11 px-4 bg-accent font-semibold text-bg">
-          {tx(lang, { ja: "めくる", en: "Flip", fr: "Tirer" })}
-        </button>
-      </div>
-    </div>
-  );
-}
-
-function WarTile({ label, card }: { label: string; card: TrumpCard | null }) {
-  const color = card && (card.suit === "h" || card.suit === "d") ? "text-danger" : "text-fg";
-  const suit = card ? { s: "S", h: "H", d: "D", c: "C" }[card.suit] : "—";
-  return (
-    <div className="w-20 text-center">
-      <div className="text-[10px] text-muted">{label}</div>
-      <div className={`mt-1 grid h-24 place-items-center rounded-sm border border-border bg-panel text-2xl ${color}`}>
-        {card ? `${rankLabel(card.rank)}${suit}` : "?"}
-      </div>
     </div>
   );
 }

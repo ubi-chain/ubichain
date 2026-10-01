@@ -123,6 +123,10 @@
   animation: cui-hex-in 1.6s cubic-bezier(0.16, 0.84, 0.24, 1) both;
 }
 
+.cui-log-line {
+  animation: cui-log-in 280ms steps(3, end) both;
+}
+
 .cui-caret {
   display: inline-block;
   width: 0.55ch;
@@ -144,6 +148,17 @@
   }
 }
 
+@keyframes cui-log-in {
+  from {
+    opacity: 0;
+    transform: translateX(-0.5ch);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes cui-blink {
   50% {
     opacity: 0;
@@ -152,6 +167,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .cui-hex-panel,
+  .cui-log-line,
   .cui-caret {
     animation: none;
   }
