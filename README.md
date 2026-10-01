@@ -25,3 +25,19 @@ Until the domain is purchased, public DNS cannot resolve. After purchase at Xdom
 Optional Vercel nameservers: `ns1.vercel-dns.com` / `ns2.vercel-dns.com` — only if a Vercel project exists to attach the domain.
 
 Do not buy from this repo bot unless explicitly confirmed.
+
+## App source (exported 2026-10-01)
+
+The TanStack Start app lives in this repository (`src/`, `public/`, `server/`, `scripts/`).
+
+- Site name: **IETFUBI**
+- Home: public ISS desk, cycle **0011** (simulation only)
+- Admin my page (`080-5725-6673`): TRINITY HEX SECTION 6 exercise desk. Not a locator.
+- PayPal and Pay-easy are in-app ledger posts only. Nothing is sent to those networks.
+- `index.html` and `satellite.html` remain the static GitHub Pages snapshots.
+- `program/`, `learn/`, and `dns/` were left in place.
+
+```bash
+npm install
+npm run dev
+```

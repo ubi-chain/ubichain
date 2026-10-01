@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.output/
+.vinxi/
+.nitro/
+.env
+.env.*
+!.env.example
+screenshots/
+artifacts/
+attachments/
+tmp/
+.grok/
+*.log
+.DS_Store
