@@ -1,5 +1,6 @@
+import { Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import { drawMap, } from "@/components/q-console";
+import { drawMap } from "@/components/q-console";
 import { issPosition, type IssFix } from "@/lib/ubi/iss";
 
 const BOOT = ["/boot", "/map", "/iss", "/honeycomb"];
@@ -9,7 +10,13 @@ function hexLine(fix: IssFix, seq: number) {
   const lon = Math.round(fix.lon * 100) & 0xffff;
   const alt = Math.round(fix.altKm) & 0xffff;
   const words = [seq & 0xffff, 0x1550, lat, lon, alt, (seq * 17) & 0xffff];
-  return "/" + words.map((w) => w.toString(16).padStart(4, "0")).join(" ").toUpperCase();
+  return (
+    "/" +
+    words
+      .map((w) => w.toString(16).padStart(4, "0"))
+      .join(" ")
+      .toUpperCase()
+  );
 }
 
 function drawHexField(canvas: HTMLCanvasElement, t: number, reduced: boolean) {
@@ -90,7 +97,9 @@ export function CuiHex() {
   }, []);
 
   useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     if (reduced) {
       titleDone.current = true;
       setTitle("/cuiHEX");
@@ -128,7 +137,9 @@ export function CuiHex() {
   }, []);
 
   useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     const canvas = hexRef.current;
     if (!canvas) return;
     let frame = 0;
@@ -143,21 +154,36 @@ export function CuiHex() {
 
   return (
     <div className="relative h-full min-h-0 overflow-hidden bg-bg text-fg">
-      <canvas ref={mapRef} className="absolute inset-0 h-full w-full" aria-label="public ISS map" />
-      <canvas ref={hexRef} className="pointer-events-none absolute inset-0 h-full w-full" />
-      <section className="cui-hex-panel pointer-events-none absolute right-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] left-3 z-10 font-mono sm:left-auto sm:w-[min(28rem,46vw)]">
-        <h1 className="text-sm tracking-[0.28em] text-accent">{title}</h1>
+      <canvas
+        ref={mapRef}
+        className="absolute inset-0 h-full w-full"
+        aria-label="public ISS map"
+      />
+      <canvas
+        ref={hexRef}
+        className="pointer-events-none absolute inset-0 h-full w-full"
+      />
+      <section className="cui-hex-panel absolute right-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] left-3 z-10 font-mono sm:left-auto sm:w-[min(28rem,46vw)]">
+        <h1 className="pointer-events-none text-sm tracking-[0.28em] text-accent">
+          {title}
+        </h1>
         <ul className="mt-2 space-y-1 text-[12px] leading-relaxed text-fg">
           {done.map((row) => (
             <li key={row} className="truncate">
               {row}
             </li>
           ))}
-          <li className="truncate text-accent">
+          <li className="pointer-events-none truncate text-accent">
             {live}
             <span className="cui-caret" />
           </li>
         </ul>
+        <Link
+          to="/register"
+          className="mt-4 inline-flex min-h-11 items-center rounded-sm border border-accent/60 bg-accent/10 px-4 text-[12px] tracking-widest text-accent hover:bg-accent/20"
+        >
+          登録・ログイン →
+        </Link>
       </section>
     </div>
   );
