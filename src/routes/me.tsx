@@ -1,11 +1,12 @@
 import type { ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Fingerprint, Plane, ShieldCheck, Smartphone, Wallet, Building2 } from "lucide-react";
+import { Fingerprint, Plane, ShieldCheck, Smartphone, Wallet, Building2, ChartNoAxesCombined } from "lucide-react";
 import { useUbi } from "@/lib/ubi/store";
 import { yen } from "@/lib/ubi/format";
 import { ADMIN_PHONE, isAdminPhone, maskPhone } from "@/lib/ubi/admin";
 import { TrinityHex } from "@/components/trinity-hex";
+import { remittanceInsights } from "@/lib/ubi/remittance-insights";
 
 export const Route = createFileRoute("/me")({ component: MePage });
 
@@ -122,6 +123,27 @@ function MePage() {
               <span className={h.ok ? "text-ok" : "text-alert"}>{h.v}</span>
             </div>
           ))}
+        </section>
+
+        <section className="rounded-lg border border-border bg-surface p-4 md:col-span-2">
+          <div className="mb-2 flex items-center gap-2 text-[10px] tracking-widest text-muted">
+            <ChartNoAxesCombined className="size-3.5 text-accent" />
+            {lang === "en" ? "GLOBAL REMITTANCE INSIGHTS" : "世界の送金傾向"}
+          </div>
+          <p className="text-[12px] leading-relaxed text-dim">
+            {lang === "en"
+              ? "Only anonymized, aggregate corridor metrics may appear here. Personal transactions, accounts, recipients, devices, and identities are never used for learning or transfer decisions."
+              : "ここには匿名化・集計済みの送金経路指標のみを表示します。個別取引、口座、受取人、端末、本人情報は学習や送金判断に使用しません。"}
+          </p>
+          {remittanceInsights.length ? (
+            <p className="mt-2 text-[11px] text-ok">
+              {lang === "en" ? `${remittanceInsights.length} verified aggregate corridor(s) available.` : `検証済みの集計送金経路 ${remittanceInsights.length} 件を表示中です。`}
+            </p>
+          ) : (
+            <p className="mt-2 text-[11px] text-muted">
+              {lang === "en" ? "No verified aggregate source is connected. This does not affect transfers or balances." : "検証済みの集計データソースは未接続です。送金や残高には影響しません。"}
+            </p>
+          )}
         </section>
 
         <section className="rounded-lg border border-border bg-surface p-4 md:col-span-2">
