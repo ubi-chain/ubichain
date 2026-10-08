@@ -69,7 +69,6 @@ export function AppShell({ children }: { children: ReactNode }) {
     isFirstVisit,
     setFirstVisitDone,
     hydrate,
-    totalUbi,
     totalUsers,
     flaggedCount,
     tickEconomy,
@@ -148,7 +147,8 @@ export function AppShell({ children }: { children: ReactNode }) {
           <LearnCyclePanel lang={lang} cycle={learn} compact />
           <span className="text-dim">v{learn.version ?? `1.${learn.cycle}.0`}</span>
           <Stat label={t(lang, "guarantee")} value={`¥${compactNumber(bankPool)}`} accent />
-          <Stat label={t(lang, "total_ubi")} value={`¥${compactNumber(totalUbi)}`} />
+          <Stat label="補正予算（受領確認済み）" value="¥0" />
+          <Stat label={`${t(lang, "total_ubi")}（給付実績）`} value="¥0" />
           <Stat label={t(lang, "alerts")} value={String(flaggedCount)} danger={flaggedCount > 8} />
         </div>
 
@@ -287,7 +287,8 @@ export function AppShell({ children }: { children: ReactNode }) {
             <NavLink to="/me" labelKey="nav_mypage" icon={UserRound} lang={lang} active={path.startsWith("/me")} onClick={() => setMenu(false)} />
             <div className="mt-auto p-4 font-mono text-[10px] text-muted">
               <div className="mb-2 grid grid-cols-3 gap-2 text-center">
-                <Mini label={t(lang, "total_ubi")} value={`¥${compactNumber(totalUbi)}`} />
+                <Mini label="補正予算（受領確認済み）" value="¥0" />
+                <Mini label={`${t(lang, "total_ubi")}（給付実績）`} value="¥0" />
                 <Mini label={t(lang, "members")} value={compactNumber(totalUsers)} />
                 <Mini label={t(lang, "alerts")} value={String(flaggedCount)} />
               </div>
