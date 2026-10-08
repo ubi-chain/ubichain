@@ -130,7 +130,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       <header className="flex shrink-0 items-center gap-3 border-b border-border bg-surface px-3 py-2 pt-[max(0.5rem,env(safe-area-inset-top))]">
         <Link to="/" className="flex items-center gap-2">
           <span className="grid size-8 place-items-center rounded-lg bg-bg font-mono text-sm font-bold text-accent ring-1 ring-accent/50">
-            I
+            <img src="/ubi-logo.svg" alt="UBI — 水平な天秤" width="32" height="32" />
           </span>
           <div className="leading-tight">
             <div className="font-mono text-[13px] font-semibold tracking-[0.18em] text-fg">IETFUBI</div>
