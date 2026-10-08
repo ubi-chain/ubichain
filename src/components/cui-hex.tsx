@@ -143,6 +143,7 @@ export function CuiHex() {
 
   return (
     <div className="relative h-full min-h-0 overflow-hidden bg-bg text-fg">
+      <img src="/ubi-logo.svg" alt="UBI — 水平な天秤" width="96" height="96" className="absolute left-3 top-3 z-10 w-20 sm:w-24" />
       <canvas ref={mapRef} className="absolute inset-0 h-full w-full" aria-label="public ISS map" />
       <canvas ref={hexRef} className="pointer-events-none absolute inset-0 h-full w-full" />
       <section className="cui-hex-panel pointer-events-none absolute right-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] left-3 z-10 font-mono sm:left-auto sm:w-[min(28rem,46vw)]">
