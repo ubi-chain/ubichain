@@ -26,6 +26,7 @@ import { Route as PayRouteImport } from './routes/pay'
 import { Route as PayoutRouteImport } from './routes/payout'
 import { Route as RegisterRouteImport } from './routes/register'
 import { Route as ReliefRouteImport } from './routes/relief'
+import { Route as ServicesRouteImport } from './routes/services'
 import { Route as XrpRouteImport } from './routes/xrp'
 
 const IndexRoute = IndexRouteImport.update({
@@ -113,6 +114,11 @@ const ReliefRoute = ReliefRouteImport.update({
   path: '/relief',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const XrpRoute = XrpRouteImport.update({
   id: '/xrp',
   path: '/xrp',
@@ -137,6 +143,7 @@ export interface FileRoutesByFullPath {
   '/payout': typeof PayoutRoute
   '/register': typeof RegisterRoute
   '/relief': typeof ReliefRoute
+  '/services': typeof ServicesRoute
   '/xrp': typeof XrpRoute
 }
 export interface FileRoutesByTo {
@@ -157,6 +164,7 @@ export interface FileRoutesByTo {
   '/payout': typeof PayoutRoute
   '/register': typeof RegisterRoute
   '/relief': typeof ReliefRoute
+  '/services': typeof ServicesRoute
   '/xrp': typeof XrpRoute
 }
 export interface FileRoutesById {
@@ -178,6 +186,7 @@ export interface FileRoutesById {
   '/payout': typeof PayoutRoute
   '/register': typeof RegisterRoute
   '/relief': typeof ReliefRoute
+  '/services': typeof ServicesRoute
   '/xrp': typeof XrpRoute
 }
 export interface FileRouteTypes {
@@ -200,6 +209,7 @@ export interface FileRouteTypes {
     | '/payout'
     | '/register'
     | '/relief'
+    | '/services'
     | '/xrp'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -220,6 +230,7 @@ export interface FileRouteTypes {
     | '/payout'
     | '/register'
     | '/relief'
+    | '/services'
     | '/xrp'
   id:
     | '__root__'
@@ -240,6 +251,7 @@ export interface FileRouteTypes {
     | '/payout'
     | '/register'
     | '/relief'
+    | '/services'
     | '/xrp'
   fileRoutesById: FileRoutesById
 }
@@ -261,6 +273,7 @@ export interface RootRouteChildren {
   PayoutRoute: typeof PayoutRoute
   RegisterRoute: typeof RegisterRoute
   ReliefRoute: typeof ReliefRoute
+  ServicesRoute: typeof ServicesRoute
   XrpRoute: typeof XrpRoute
 }
 
@@ -385,6 +398,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ReliefRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/xrp': {
       id: '/xrp'
       path: '/xrp'
@@ -413,6 +433,7 @@ const rootRouteChildren: RootRouteChildren = {
   PayoutRoute: PayoutRoute,
   RegisterRoute: RegisterRoute,
   ReliefRoute: ReliefRoute,
+  ServicesRoute: ServicesRoute,
   XrpRoute: XrpRoute,
 }
 export const routeTree = rootRouteImport
