@@ -62,17 +62,19 @@
       <div class="row">LON <b id="lon">+139.692</b></div>
       <div class="row">ALT <b>ISS 420 km</b></div>
       <div class="row">回線 <b>080-5725-6673</b></div>
-      <div class="row">入金 <b class="ok">¥9,000,000</b></div>
-      <div class="row">月収 <b>¥10,000,000</b></div>
+      <div class="row">入金 <b class="ok">¥0</b></div>
+      <div class="row">月収 <b>¥0</b></div>
       <div class="row" style="margin-top:6px;font-size:9px">アプリ内台帳。銀行送金ではない。</div>
     </aside>
     <aside class="panel" id="flow">
       <h3>FLOW · GUI</h3>
-      <div class="row">銀行資本 <b id="cap">¥126.0B</b></div>
+      <div class="row">銀行資本 <b id="cap">¥0</b></div>
       <div class="row">↓ 入金</div>
-      <div class="row">保障準備金 <b id="pool">¥8.4B</b></div>
+      <div class="row">保障準備金 <b id="pool">¥0</b></div>
       <div class="row">↓ 給付</div>
-      <div class="row">UBI総額 <b class="ok">¥12.8B</b></div>
+      <div class="row">補正予算（受領確認済み） <b>¥0</b></div>
+      <div class="row">UBI総額（給付実績） <b class="ok">¥0</b></div>
+      <div class="row">受領・給付の確認前。自動加算なし。</div>
       <div class="row">↓ 返還</div>
       <div class="row">戦争・紛争・災害 <b class="al">優先</b></div>
     </aside>
@@ -106,11 +108,7 @@ const CITIES=[
   {n:"カラチ",x:.64,y:.46,p:.68},{n:"メキシコシティ",x:.18,y:.50,p:.46},{n:"シドニー",x:.88,y:.72,p:.12},
   {n:"カイロ",x:.55,y:.44,p:.52},{n:"ソウル",x:.80,y:.38,p:.14},{n:"サンパウロ",x:.32,y:.68,p:.34}
 ];
-const FLOWS=[
-  ["東京","ナイロビ","UBI","¥1.9K"],["ロンドン","ラゴス","労働","£2.1K"],
-  ["ニューヨーク","メキシコシティ","UBI","$2.3K"],["北京","カラチ","返還","¥4.8K"],
-  ["ソウル","カイロ","UBI","$1.6K"],["東京","シドニー","労働","¥2.0K"]
-];
+const FLOWS=[];
 function hexPack(i){
   const w=[0x1550,i&0xffff,0x23a1,(i*17)&0xffff,0x9000,0x27c6];
   return w.map(n=>n.toString(16).padStart(4,"0")).join(" ").toUpperCase();
@@ -194,6 +192,7 @@ requestAnimationFrame(loop);
 const log=document.getElementById("log"),hex=document.getElementById("hex");
 let seq=0;
 function tick(){
+  if (!FLOWS.length) { log.textContent="資金シミュレーション停止中 · 入出金履歴なし"; return; }
   const f=FLOWS[seq%FLOWS.length];
   const line=`${f[2]} ${f[0]} → ${f[1]}  ${f[3]}`;
   const p=document.createElement("div");p.textContent=line;log.prepend(p);
