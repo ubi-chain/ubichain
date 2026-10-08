@@ -707,3 +707,48 @@ export const useUbi = create<UbiState>((set, get) => ({
     });
   },
 }));
+
+// Financial simulation shutdown: preserve identity and non-financial demos.
+// Old local demo balances are not real receipts and must never be restored.
+function clearSimulatedFunds(state: UbiState): Partial<UbiState> {
+  return {
+    totalUbi: 0,
+    bankPool: 0,
+    bankCapital: 0,
+    deposits: [],
+    donorBatches: [],
+    liveInflows: [],
+    returns: [],
+    user: state.user ? { ...state.user, balance: 0, monthlyUbi: 0, bankDeposited: 0 } : null,
+    iss: { ...state.iss, bankPool: 0 },
+  };
+}
+const originalHydrate = useUbi.getState().hydrate;
+useUbi.setState({
+  ...clearSimulatedFunds(useUbi.getState()),
+  hydrate: () => {
+    originalHydrate();
+    useUbi.setState(clearSimulatedFunds(useUbi.getState()));
+  },
+  tickEconomy: () => {},
+  pulseDonorRail: () => { throw new Error("Financial simulation disabled"); },
+  mintTestYen: () => {},
+  depositFromBank: () => null,
+  debitBalance: () => false,
+  creditBalance: () => false,
+});
+let clearingFunds = false;
+useUbi.subscribe((state) => {
+  if (clearingFunds) return;
+  clearingFunds = true;
+  try {
+    useUbi.setState(clearSimulatedFunds(state));
+    if (typeof window !== "undefined") {
+      persistUser(useUbi.getState().user);
+      persistBanks({ linkedBanks: state.linkedBanks, deposits: [], bankPool: 0, bankCapital: 0 });
+      persistDonor([]);
+    }
+  } finally {
+    clearingFunds = false;
+  }
+});
