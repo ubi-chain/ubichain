@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>UBICHAIN · CYCLE 0011</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
 <style>
   :root{--c:#00d4ff;--d:#06202a;--bg:#020408;--fg:#d8f6ff;--m:#6a8a96;--ok:#7dffb3;--al:#ff5d73}
   *{box-sizing:border-box}
@@ -48,7 +49,7 @@
   <header>
     <div>
       <div class="k">UBICHAIN · Q DESK</div>
-      <div>公開シミュレーション · 資金フロー可視化</div>
+      <div>シミュレーション · 実口座操作・送金・資金受入れなし</div>
     </div>
     <div style="text-align:right">
       <div class="k">CYCLE</div>
@@ -85,7 +86,8 @@
       <div class="hex" id="hex"></div>
     </aside>
     <div id="emblem-cap">
-      <div class="etf">etf Ubi</div>
+      <img src="/ubi-logo.svg" alt="UBI — 水平な天秤" width="96" height="96"/>
+      <div class="etf">UBI</div>
       <div class="sub">INTERNATIONAL · 公開軌道のみ · 操縦しない</div>
     </div>
   </div>
@@ -156,7 +158,7 @@ function drawScene(ctx,w,h,t,showEarth){
   const [ex,ey]=project3(0,-8,0,0,.2,w,h,380);
   ctx.strokeStyle="#00d4ff";hexPath(ctx,ex,ey,22);ctx.stroke();
   ctx.fillStyle="#00d4ff";ctx.font="12px ui-monospace";ctx.textAlign="center";
-  ctx.fillText("III",ex,ey+4);
+  ctx.fillText("UBI",ex,ey+4);
   if(!showEarth) return;
   CITIES.forEach(c=>{
     const x=c.x*w,y=c.y*h*.72+h*.14;

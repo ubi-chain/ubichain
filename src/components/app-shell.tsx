@@ -124,6 +124,9 @@ export function AppShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="flex h-dvh flex-col overflow-hidden bg-bg text-fg">
+      <div role="note" className="relative z-[8100] shrink-0 border-b border-accent/40 bg-bg px-3 py-2 text-center text-xs text-accent">
+        シミュレーション / Simulation — 実口座操作・送金・資金の受入れは行いません。No real account operations, transfers or deposits.
+      </div>
       {qHome ? null : <IosInstallBanner lang={lang} />}
 
       {qHome ? null : (
