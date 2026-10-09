@@ -15,6 +15,7 @@ import { Route as BanksRouteImport } from './routes/banks'
 import { Route as DnsRouteImport } from './routes/dns'
 import { Route as EarthRouteImport } from './routes/earth'
 import { Route as InfraRouteImport } from './routes/infra'
+import { Route as InstitutionsRouteImport } from './routes/institutions'
 import { Route as InternationalRouteImport } from './routes/international'
 import { Route as KabuPreviewRouteImport } from './routes/kabu-preview'
 import { Route as LedgerRouteImport } from './routes/ledger'
@@ -58,6 +59,11 @@ const EarthRoute = EarthRouteImport.update({
 const InfraRoute = InfraRouteImport.update({
   id: '/infra',
   path: '/infra',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InstitutionsRoute = InstitutionsRouteImport.update({
+  id: '/institutions',
+  path: '/institutions',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InternationalRoute = InternationalRouteImport.update({
@@ -138,6 +144,7 @@ export interface FileRoutesByFullPath {
   '/dns': typeof DnsRoute
   '/earth': typeof EarthRoute
   '/infra': typeof InfraRoute
+  '/institutions': typeof InstitutionsRoute
   '/international': typeof InternationalRoute
   '/kabu-preview': typeof KabuPreviewRoute
   '/ledger': typeof LedgerRoute
@@ -160,6 +167,7 @@ export interface FileRoutesByTo {
   '/dns': typeof DnsRoute
   '/earth': typeof EarthRoute
   '/infra': typeof InfraRoute
+  '/institutions': typeof InstitutionsRoute
   '/international': typeof InternationalRoute
   '/kabu-preview': typeof KabuPreviewRoute
   '/ledger': typeof LedgerRoute
@@ -183,6 +191,7 @@ export interface FileRoutesById {
   '/dns': typeof DnsRoute
   '/earth': typeof EarthRoute
   '/infra': typeof InfraRoute
+  '/institutions': typeof InstitutionsRoute
   '/international': typeof InternationalRoute
   '/kabu-preview': typeof KabuPreviewRoute
   '/ledger': typeof LedgerRoute
@@ -207,6 +216,7 @@ export interface FileRouteTypes {
     | '/dns'
     | '/earth'
     | '/infra'
+    | '/institutions'
     | '/international'
     | '/kabu-preview'
     | '/ledger'
@@ -229,6 +239,7 @@ export interface FileRouteTypes {
     | '/dns'
     | '/earth'
     | '/infra'
+    | '/institutions'
     | '/international'
     | '/kabu-preview'
     | '/ledger'
@@ -251,6 +262,7 @@ export interface FileRouteTypes {
     | '/dns'
     | '/earth'
     | '/infra'
+    | '/institutions'
     | '/international'
     | '/kabu-preview'
     | '/ledger'
@@ -274,6 +286,7 @@ export interface RootRouteChildren {
   DnsRoute: typeof DnsRoute
   EarthRoute: typeof EarthRoute
   InfraRoute: typeof InfraRoute
+  InstitutionsRoute: typeof InstitutionsRoute
   InternationalRoute: typeof InternationalRoute
   KabuPreviewRoute: typeof KabuPreviewRoute
   LedgerRoute: typeof LedgerRoute
@@ -332,6 +345,13 @@ declare module '@tanstack/react-router' {
       path: '/infra'
       fullPath: '/infra'
       preLoaderRoute: typeof InfraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/institutions': {
+      id: '/institutions'
+      path: '/institutions'
+      fullPath: '/institutions'
+      preLoaderRoute: typeof InstitutionsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/international': {
@@ -442,6 +462,7 @@ const rootRouteChildren: RootRouteChildren = {
   DnsRoute: DnsRoute,
   EarthRoute: EarthRoute,
   InfraRoute: InfraRoute,
+  InstitutionsRoute: InstitutionsRoute,
   InternationalRoute: InternationalRoute,
   KabuPreviewRoute: KabuPreviewRoute,
   LedgerRoute: LedgerRoute,

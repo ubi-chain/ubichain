@@ -20,6 +20,7 @@ import {
   ArrowDownToLine,
   Coins,
   Satellite,
+  FileSearch,
 } from "lucide-react";
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { t, type Lang } from "@/lib/ubi/i18n";
@@ -46,6 +47,7 @@ const NAV = [
   { to: "/payout", labelKey: "nav_payout" as const, icon: ArrowDownToLine, match: (p: string) => p.startsWith("/payout") },
   { to: "/xrp", labelKey: "nav_xrp" as const, icon: Coins, match: (p: string) => p.startsWith("/xrp") },
   { to: "/earth", labelKey: "nav_earth" as const, icon: Satellite, match: (p: string) => p.startsWith("/earth") },
+  { to: "/institutions", labelKey: "nav_link" as const, icon: FileSearch, match: (p: string) => p.startsWith("/institutions") },
   { to: "/library", labelKey: "nav_library" as const, icon: BookOpen, match: (p: string) => p.startsWith("/library") },
   { to: "/live", labelKey: "nav_live" as const, icon: Radio, match: (p: string) => p.startsWith("/live") },
   { to: "/ledger", labelKey: "nav_ledger" as const, icon: BarChart3, match: (p: string) => p.startsWith("/ledger") },
