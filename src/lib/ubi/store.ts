@@ -35,6 +35,7 @@ import {
 export type UbiUser = {
   name: string;
   phone: string;
+  email?: string;
   memberId: string;
   registeredAt: string;
   monthlyUbi: number;
@@ -104,7 +105,7 @@ type UbiState = {
   lang: Lang;
   setLang: (lang: Lang) => void;
   user: UbiUser | null;
-  login: (user: Omit<UbiUser, "memberId" | "registeredAt" | "balance" | "bankDeposited"> & Partial<UbiUser>) => void;
+  login: (user: Omit<UbiUser, "memberId" | "registeredAt" | "balance" | "bankDeposited" | "monthlyUbi"> & Partial<UbiUser>) => void;
   logout: () => void;
   isFirstVisit: boolean;
   setFirstVisitDone: () => void;
@@ -373,7 +374,8 @@ export const useUbi = create<UbiState>((set, get) => ({
     const user: UbiUser = {
       name: partial.name || (isAdminPhone(partial.phone) ? "管理者" : "田中 太郎"),
       phone: credit ? ADMIN_PHONE : partial.phone,
-      memberId: partial.memberId || memberIdFromPhone(partial.phone),
+      email: partial.email,
+      memberId: partial.memberId || memberIdFromPhone(partial.phone || partial.email || "member"),
       registeredAt: partial.registeredAt || new Date().toISOString().slice(0, 10),
       monthlyUbi: credit ? CREDIT_MONTHLY_YEN : (partial.monthlyUbi ?? 17400),
       balance: credit && !gapDone ? baseBal + GAP_YEN : baseBal,
