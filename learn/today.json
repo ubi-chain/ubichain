@@ -1,41 +1,34 @@
 {
-  "day": "2026-10-13",
-  "cycle": 30,
-  "pulse": 1438,
-  "version": "1.30.38",
-  "appliedAt": "2026-10-13T23:03:00+09:00",
-  "inequalityBias": 0.687,
-  "ubiDelta": 1310,
-  "usersDelta": 512,
-  "megaBias": 0.13,
-  "regionalBias": -0.30,
-  "insights": {
-    "mega": "10月13日23時時点でメガバンク3行の普通預金金利は年 0.40%で横並び、11月2日からの 0.50%への引き上げを待つ局面。ネット銀行の高金利（あおぞらBANK 100万円以下年1.20%など）が預金獲得競争を激化させ、資金調達コスト上昇圧力が継続。",
-    "flow": "北東北3地銀（プロクレアHD・秋田銀行・岩手銀行）が2028年4月目標の経営統合協議を継続。人口減少と預金競争の下で地方資金が首都圏・ネットへ流出する流れが加速し、地域預金基盤の細りが顕著。",
-    "gap": "家計金融資産は高水準を維持する一方、資産格差は拡大基調。首都圏に預金の50%超が集中し、地方の人口減と金利ある世界での若年層支払能力低下が地域間格差を固定化する。",
-    "pulse": "パルス1438：サイクル30（2026-09-14 00:00 JSTから43143分、30分刻み）。版1.30.38。Automationsに30分ケーデンスがないため毎時のフォールバック（前回1434/21:05から+4）。公開原点はhttps://ubi-chain.github.io。予定カスタムwww.ietfubi.comは2026-09-24時点未登録、ubi-chain.comはNXDOMAIN。ドメインは買わない。Vercel購入は呼ばない。",
-    "ethics": "マスクはAIによる豊かさの時代を主張する一方、ヴェンブはディストピアと批判。仕事の再発明と人間の尊厳を保つUBIは倫理的安定を支える。",
-    "heal": "地域金融の再編圧力と利上げ後の家計負担をUBI的安定所得で緩和し、地方経済の資金循環回復と社会的治癒を促す。",
-    "return": "UBIは地域の人と資金を地域に帰し、流出を抑えて循環を復活させるリターンを生み出す。"
-  },
+  "day": "2026-10-14",
+  "cycle": 31,
+  "version": "1.31.0",
+  "appliedAt": "2026-10-14T00:05:00+09:00",
+  "inequalityBias": 0.68,
+  "ubiDelta": 3,
+  "usersDelta": 42,
+  "megaBias": 0.55,
+  "regionalBias": 0.72,
+  "insights": [
+    "IMF GFSR: 22% of global banking assets in weak banks under AI-crash + bond-yield spike stress (up from 18%), Asian banks hardest hit excluding China.",
+    "Japan regional deposit flow: Tohoku banks (Procrea Holdings, Bank of Iwate, Akita Bank) start merger talks for ¥13.3tn group by 2028 amid rate-driven deposit competition and demographics; BOJ Sept deposits +1.6% y/y.",
+    "Inequality gap: Japan relative child poverty ~11%, single-parent rates high; AI wealth concentration fuels UBI/abundance debates (Musk: beyond UBI to high income era).",
+    "Ethics (insolvency): Stress scenarios highlight insolvency risks for weaker SIFIs and regionals; ethical need for redistribution and UBI-dignity to protect against deposit shifts and AI shocks.",
+    "Heal: Regional consolidation builds scale and resilience; pair with targeted UBI/cash transfers to heal inequality and buffer job/automation risks."
+  ],
   "news": [
     {
-      "id": 9030,
+      "id": 9031,
+      "title": "IMF stress test: AI boom fuels more weak banks in doomsday scenario",
       "category": "経済",
-      "urgency": "urgent",
-      "title": "北東北3地銀統合協議継続と預金競争激化、地域銀行基盤に圧力",
-      "summary": "プロクレアHD・秋田・岩手の3行が2028年4月目標で経営統合協議中。人口減少とネット銀行との預金競争で地方預金が首都圏へ流出する動きが加速。"
+      "urgent": true,
+      "summary": "IMF Global Financial Stability Report (Oct 2026): under AI crash + soaring yields + slowdown, 22% of global banking assets in 110 weak lenders (core capital <7%), up from 18%. Asian banks (ex-China) most affected."
     },
     {
-      "id": 8030,
+      "id": 8031,
+      "title": "UBI discussions intensify amid AI abundance visions and inequality",
       "category": "UBI",
-      "title": "AI時代の仕事再定義とUBI論議活発化、マスクの豊かさとヴェンブの批判",
-      "summary": "NYTなどがAIによるジョブ損失へのUBIを報道。マスクは豊かさの時代を主張する一方、ヴェンブはディストピアと批判し、仕事の再発明を強調。"
+      "urgent": false,
+      "summary": "Elon Musk on AI enabling high-income era beyond UBI; NYT and others highlight pilot programs for AI job risks. Japan analyses note UBI alone insufficient without capital/redistribution paths; relative poverty persists."
     }
-  ],
-  "origins": {
-    "live": "https://ubi-chain.github.io",
-    "intendedCustom": "www.ietfubi.com (unregistered as of 2026-09-24)",
-    "ubiChainCom": "NXDOMAIN"
-  }
+  ]
 }
