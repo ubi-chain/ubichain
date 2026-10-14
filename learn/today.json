@@ -1,9 +1,9 @@
 {
   "day": "2026-10-14",
   "cycle": 31,
-  "pulse": 1482,
-  "version": "1.31.82",
-  "appliedAt": "2026-10-14T21:06:00+09:00",
+  "pulse": 1484,
+  "version": "1.31.84",
+  "appliedAt": "2026-10-14T22:06:00+09:00",
   "inequalityBias": 0.68,
   "ubiDelta": 3,
   "usersDelta": 42,
@@ -13,7 +13,7 @@
     "mega": "IMF GFSR Oct 2026: AI-crash + yield spike + slowdown stress puts 22% of global banking assets in 110 weak banks (up from 18%), Asian banks hardest hit ex-China. Japan mega banks ordinary deposits remain ~0.400% mid-Oct, set to 0.5% from Nov 2 (highest since ~1992).",
     "flow": "North Tohoku regional banks (Procrea HD/Aomori Michinoku, Iwate Bank, Akita Bank) continue merger talks targeting Apr 2028, combined assets ~¥13.3tn amid rapid population decline; deposits continue shifting toward mega and net banks under rate competition.",
     "gap": "Japan household financial assets peaked ~¥2519tn (end-Jun 2026). Asset Gini rising overall and highest among youth (~0.72 for 18-24); large average-median gaps (e.g. 30s households median ¥3.11m vs average ¥10.96m) widen regional and generational divides.",
-    "pulse": "Hourly pulse 1482 (cycle 31 / v1.31.82): ~44466 minutes since 2026-09-14 00:00 JST, floor(/30). Automations lacks 30-min cadence so hourly fallback (prev 1478 at 19:02). Live origin remains https://ubi-chain.github.io. Intended custom www.ietfubi.com unregistered as of 2026-09-24; ubi-chain.com NXDOMAIN. Do not buy domains. Do not call Vercel purchase.",
+    "pulse": "Hourly pulse 1484 (cycle 31 / v1.31.84): ~44526 minutes since 2026-09-14 00:00 JST, floor(/30). Automations lacks 30-min cadence so hourly fallback (prev 1482 at 21:06). Live origin remains https://ubi-chain.github.io. Intended custom www.ietfubi.com unregistered as of 2026-09-24; ubi-chain.com NXDOMAIN. Do not buy domains. Do not call Vercel purchase.",
     "ethics": "Ethics of insolvency and dignity: IMF weak-bank scenarios and regional deposit outflows amplify need for redistribution. Condition-free basic income preserves dignity against rate/AI shocks rather than market-only outcomes.",
     "heal": "Heal: UBI-style stable income buffers household pressure from regional fund thinning, bank consolidation, and AI-related risks, supporting recovery of local circulation and intergenerational resilience.",
     "return": "Return: Pulse reconfirms stable live origin https://ubi-chain.github.io. Custom www.ietfubi.com remains unregistered, ubi-chain.com NXDOMAIN. No domain purchases; focus returns to content integrity and on-chain flow."
