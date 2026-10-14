@@ -1,20 +1,23 @@
 {
   "day": "2026-10-14",
   "cycle": 31,
-  "version": "1.31.0",
-  "appliedAt": "2026-10-14T00:05:00+09:00",
+  "pulse": 1474,
+  "version": "1.31.74",
+  "appliedAt": "2026-10-14T17:03:00+09:00",
   "inequalityBias": 0.68,
   "ubiDelta": 3,
   "usersDelta": 42,
   "megaBias": 0.55,
   "regionalBias": 0.72,
-  "insights": [
-    "IMF GFSR: 22% of global banking assets in weak banks under AI-crash + bond-yield spike stress (up from 18%), Asian banks hardest hit excluding China.",
-    "Japan regional deposit flow: Tohoku banks (Procrea Holdings, Bank of Iwate, Akita Bank) start merger talks for ¥13.3tn group by 2028 amid rate-driven deposit competition and demographics; BOJ Sept deposits +1.6% y/y.",
-    "Inequality gap: Japan relative child poverty ~11%, single-parent rates high; AI wealth concentration fuels UBI/abundance debates (Musk: beyond UBI to high income era).",
-    "Ethics (insolvency): Stress scenarios highlight insolvency risks for weaker SIFIs and regionals; ethical need for redistribution and UBI-dignity to protect against deposit shifts and AI shocks.",
-    "Heal: Regional consolidation builds scale and resilience; pair with targeted UBI/cash transfers to heal inequality and buffer job/automation risks."
-  ],
+  "insights": {
+    "mega": "IMF GFSR: 22% of global banking assets in weak banks under AI-crash + bond-yield spike stress (up from 18%), Asian banks hardest hit excluding China. Mega-scale risks amplify UBI necessity for systemic stability.",
+    "flow": "Japan regional deposit flow: Tohoku banks (Procrea Holdings, Bank of Iwate, Akita Bank) start merger talks for ¥13.3tn group by 2028 amid rate-driven deposit competition and demographics; BOJ Sept deposits +1.6% y/y. Capital flows shift toward consolidated entities.",
+    "gap": "Inequality gap: Japan relative child poverty ~11%, single-parent rates high; AI wealth concentration fuels UBI/abundance debates (Musk: beyond UBI to high income era). Persistent regional and generational gaps require targeted flows.",
+    "pulse": "Hourly pulse 1474 registers mid-day acceleration in regional consolidation signals and AI-risk narratives, sustaining cycle 31 momentum without domain acquisition.",
+    "ethics": "Ethics (insolvency): Stress scenarios highlight insolvency risks for weaker SIFIs and regionals; ethical need for redistribution and UBI-dignity to protect against deposit shifts and AI shocks. Dignity-preserving transfers over pure market outcomes.",
+    "heal": "Heal: Regional consolidation builds scale and resilience; pair with targeted UBI/cash transfers to heal inequality and buffer job/automation risks. Healing pathways via on-chain UBI pilots.",
+    "return": "Return: Pulse confirms stable live origin https://ubi-chain.github.io; custom www.ietfubi.com remains unregistered, ubi-chain.com NXDOMAIN. No domain purchases; focus returns to content and on-chain flow integrity."
+  },
   "news": [
     {
       "id": 9031,
