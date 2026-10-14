@@ -1,37 +1,37 @@
 {
   "day": "2026-10-14",
   "cycle": 31,
-  "pulse": 1478,
-  "version": "1.31.78",
-  "appliedAt": "2026-10-14T19:02:00+09:00",
+  "pulse": 1482,
+  "version": "1.31.82",
+  "appliedAt": "2026-10-14T21:06:00+09:00",
   "inequalityBias": 0.68,
   "ubiDelta": 3,
   "usersDelta": 42,
   "megaBias": 0.55,
   "regionalBias": 0.72,
   "insights": {
-    "mega": "IMF GFSR: 22% of global banking assets in weak banks under AI-crash + bond-yield spike stress (up from 18%), Asian banks hardest hit excluding China. Mega-scale risks amplify UBI necessity for systemic stability.",
-    "flow": "Japan regional deposit flow: Tohoku banks (Procrea Holdings, Bank of Iwate, Akita Bank) continue merger talks for ¥13.3tn group by 2028 amid rate-driven deposit competition and demographics; BOJ Sept deposits +1.6% y/y. Capital flows shift toward consolidated entities.",
-    "gap": "Inequality gap: Japan relative child poverty ~11%, single-parent rates high; AI wealth concentration fuels UBI/abundance debates (Musk: beyond UBI to high income era). Persistent regional and generational gaps require targeted flows.",
-    "pulse": "Hourly pulse 1478 registers evening acceleration in regional consolidation signals and AI-risk narratives, sustaining cycle 31 momentum without domain acquisition. Fallback from Automations 30-min limit.",
-    "ethics": "Ethics (insolvency): Stress scenarios highlight insolvency risks for weaker SIFIs and regionals; ethical need for redistribution and UBI-dignity to protect against deposit shifts and AI shocks. Dignity-preserving transfers over pure market outcomes.",
-    "heal": "Heal: Regional consolidation builds scale and resilience; pair with targeted UBI/cash transfers to heal inequality and buffer job/automation risks. Healing pathways via on-chain UBI pilots.",
-    "return": "Return: Pulse confirms stable live origin https://ubi-chain.github.io; custom www.ietfubi.com remains unregistered, ubi-chain.com NXDOMAIN. No domain purchases; focus returns to content and on-chain flow integrity."
+    "mega": "IMF GFSR Oct 2026: AI-crash + yield spike + slowdown stress puts 22% of global banking assets in 110 weak banks (up from 18%), Asian banks hardest hit ex-China. Japan mega banks ordinary deposits remain ~0.400% mid-Oct, set to 0.5% from Nov 2 (highest since ~1992).",
+    "flow": "North Tohoku regional banks (Procrea HD/Aomori Michinoku, Iwate Bank, Akita Bank) continue merger talks targeting Apr 2028, combined assets ~¥13.3tn amid rapid population decline; deposits continue shifting toward mega and net banks under rate competition.",
+    "gap": "Japan household financial assets peaked ~¥2519tn (end-Jun 2026). Asset Gini rising overall and highest among youth (~0.72 for 18-24); large average-median gaps (e.g. 30s households median ¥3.11m vs average ¥10.96m) widen regional and generational divides.",
+    "pulse": "Hourly pulse 1482 (cycle 31 / v1.31.82): ~44466 minutes since 2026-09-14 00:00 JST, floor(/30). Automations lacks 30-min cadence so hourly fallback (prev 1478 at 19:02). Live origin remains https://ubi-chain.github.io. Intended custom www.ietfubi.com unregistered as of 2026-09-24; ubi-chain.com NXDOMAIN. Do not buy domains. Do not call Vercel purchase.",
+    "ethics": "Ethics of insolvency and dignity: IMF weak-bank scenarios and regional deposit outflows amplify need for redistribution. Condition-free basic income preserves dignity against rate/AI shocks rather than market-only outcomes.",
+    "heal": "Heal: UBI-style stable income buffers household pressure from regional fund thinning, bank consolidation, and AI-related risks, supporting recovery of local circulation and intergenerational resilience.",
+    "return": "Return: Pulse reconfirms stable live origin https://ubi-chain.github.io. Custom www.ietfubi.com remains unregistered, ubi-chain.com NXDOMAIN. No domain purchases; focus returns to content integrity and on-chain flow."
   },
   "news": [
     {
-      "id": 9031,
-      "title": "IMF stress test: AI boom fuels more weak banks in doomsday scenario",
+      "id": 9032,
+      "title": "IMF stress test: 22% of global banking assets in weak banks under AI-crash scenario",
       "category": "経済",
       "urgent": true,
-      "summary": "IMF Global Financial Stability Report (Oct 2026): under AI crash + soaring yields + slowdown, 22% of global banking assets in 110 weak lenders (core capital <7%), up from 18%. Asian banks (ex-China) most affected."
+      "summary": "IMF GFSR (Oct 2026): AI crash + soaring yields + slowdown would leave 22% of global banking assets in 110 weak lenders (core capital <7%), up from 18% a year earlier. Asian banks (ex-China) most affected."
     },
     {
-      "id": 8031,
-      "title": "UBI discussions intensify amid AI abundance visions and inequality",
-      "category": "UBI",
+      "id": 8032,
+      "title": "North Tohoku 3 banks advance merger talks for 2028; household assets at record",
+      "category": "経済",
       "urgent": false,
-      "summary": "Elon Musk on AI enabling high-income era beyond UBI; NYT and others highlight pilot programs for AI job risks. Japan analyses note UBI alone insufficient without capital/redistribution paths; relative poverty persists."
+      "summary": "Procrea/Iwate/Akita continue talks for Apr 2028 integration (~¥13.3tn assets) driven by demographics. Japan household financial assets ~¥2519tn peak; youth asset Gini highest."
     }
   ]
 }
