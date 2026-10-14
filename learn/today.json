@@ -1,37 +1,34 @@
 {
-  "day": "2026-10-14",
-  "cycle": 31,
-  "pulse": 1484,
-  "version": "1.31.84",
-  "appliedAt": "2026-10-14T22:06:00+09:00",
-  "inequalityBias": 0.68,
-  "ubiDelta": 3,
-  "usersDelta": 42,
-  "megaBias": 0.55,
-  "regionalBias": 0.72,
-  "insights": {
-    "mega": "IMF GFSR Oct 2026: AI-crash + yield spike + slowdown stress puts 22% of global banking assets in 110 weak banks (up from 18%), Asian banks hardest hit ex-China. Japan mega banks ordinary deposits remain ~0.400% mid-Oct, set to 0.5% from Nov 2 (highest since ~1992).",
-    "flow": "North Tohoku regional banks (Procrea HD/Aomori Michinoku, Iwate Bank, Akita Bank) continue merger talks targeting Apr 2028, combined assets ~¥13.3tn amid rapid population decline; deposits continue shifting toward mega and net banks under rate competition.",
-    "gap": "Japan household financial assets peaked ~¥2519tn (end-Jun 2026). Asset Gini rising overall and highest among youth (~0.72 for 18-24); large average-median gaps (e.g. 30s households median ¥3.11m vs average ¥10.96m) widen regional and generational divides.",
-    "pulse": "Hourly pulse 1484 (cycle 31 / v1.31.84): ~44526 minutes since 2026-09-14 00:00 JST, floor(/30). Automations lacks 30-min cadence so hourly fallback (prev 1482 at 21:06). Live origin remains https://ubi-chain.github.io. Intended custom www.ietfubi.com unregistered as of 2026-09-24; ubi-chain.com NXDOMAIN. Do not buy domains. Do not call Vercel purchase.",
-    "ethics": "Ethics of insolvency and dignity: IMF weak-bank scenarios and regional deposit outflows amplify need for redistribution. Condition-free basic income preserves dignity against rate/AI shocks rather than market-only outcomes.",
-    "heal": "Heal: UBI-style stable income buffers household pressure from regional fund thinning, bank consolidation, and AI-related risks, supporting recovery of local circulation and intergenerational resilience.",
-    "return": "Return: Pulse reconfirms stable live origin https://ubi-chain.github.io. Custom www.ietfubi.com remains unregistered, ubi-chain.com NXDOMAIN. No domain purchases; focus returns to content integrity and on-chain flow."
-  },
+  "day": "2026-10-15",
+  "cycle": 32,
+  "version": "1.32.0",
+  "appliedAt": "2026-10-15T00:05:00+09:00",
+  "inequalityBias": 0.71,
+  "ubiDelta": 4,
+  "usersDelta": 67,
+  "megaBias": 0.48,
+  "regionalBias": 0.78,
+  "insights": [
+    "メガバンクは日銀政策金利1.25%下で過去最高益を更新、普通預金利率0.5%へ引き上げ予定とライフスタイル特典で預金防衛を強化。IMFストレステストでAIクラッシュシナリオ下、グローバル銀行資産22%が弱勢銀行に集中。",
+    "北東北3地銀（プロクレアHD/青森みちのく・岩手・秋田）が2028年経営統合協議を継続、総資産約13.3兆円。首都圏預金集中が50%超で定着、相続・人口減で地方からメガ・ネット銀へのフローが加速。",
+    "東京都と地方の財政ギャップが18年ぶり最大、若年層資産ジニ最高。メガと地銀の賃金格差が拡大し、世代間・地域間格差が構造化。",
+    "ethics: ubi-dignity — 基礎所得は金利上昇・地域金融ストレス・AIリスク下でも、人間の尊厳を守る最低限の経済的自立を保証する。条件付きではなく無条件の支給が尊厳を守る。",
+    "heal: UBI的安定所得が地銀預金流出と世代間ローン負担を和らげ、地方の資金循環と全世代の可処分所得を回復させる。"
+  ],
   "news": [
     {
       "id": 9032,
-      "title": "IMF stress test: 22% of global banking assets in weak banks under AI-crash scenario",
+      "title": "北東北3地銀統合協議継続、首都圏預金集中50%超とメガ銀行利益拡大が並行",
       "category": "経済",
       "urgent": true,
-      "summary": "IMF GFSR (Oct 2026): AI crash + soaring yields + slowdown would leave 22% of global banking assets in 110 weak lenders (core capital <7%), up from 18% a year earlier. Asian banks (ex-China) most affected."
+      "summary": "プロクレアHD・岩手銀行・秋田銀行が2028年4月経営統合を目指に協議を継続（総資産約13.3兆円）。日銀1.25%利上げ後メガの預金利率優位が続き、首都圏預金が全国の50%超に集中。相続・人口減で地方からの流出が加速。"
     },
     {
       "id": 8032,
-      "title": "North Tohoku 3 banks advance merger talks for 2028; household assets at record",
-      "category": "経済",
+      "title": "高市政権、食品消費税減税と勤労者向け給付を並行提案、普遍現金は拒否",
+      "category": "UBI",
       "urgent": false,
-      "summary": "Procrea/Iwate/Akita continue talks for Apr 2028 integration (~¥13.3tn assets) driven by demographics. Japan household financial assets ~¥2519tn peak; youth asset Gini highest."
+      "summary": "高市早苗首相が食品消費税を8%→1%（2027年4月から2年）と所得連動の勤労者支援給付を提案。全世帯への無条件現金給付は「十分性と迅速性」の観点から拒否。減税効果は市民当たり約3.6万円相当。"
     }
   ]
 }
