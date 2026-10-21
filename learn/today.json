@@ -1,21 +1,31 @@
 {
-  "day": "2026-10-21",
-  "cycle": 38,
-  "pulse": 1822,
-  "version": "1.38.22",
-  "appliedAt": "2026-10-21T23:04:00+09:00",
-  "inequalityBias": 0.15,
-  "ubiDelta": 8,
-  "usersDelta": 148,
-  "megaBias": 0.04,
-  "regionalBias": -0.06,
-  "insights": {
-    "mega": "夜間の金融市場は静穏。メガバンクの利上げ転嫁は利益を支えるが、全体の健全性は変わらず。",
-    "flow": "夜間の資金フローは低迷。都市集中の傾向が続き、地方の流動性は依然として課題。",
-    "gap": "格差の固定化は夜間でも進行。資産と機会の偏在がUBIの必要性を強調する。",
-    "pulse": "パルス1822：23時の補完パルス。サイクル38日目、30分刻みの心拍が1822回目。深夜の観測で構造的課題を再確認。",
-    "ethics": "truth-telling — 時間帯を問わず、データに基づく透明な洞察が倫理的な基盤を維持する。",
-    "heal": "UBIの安定収入は夜間の不安を軽減し、地域の回復力と世代間バランスを長期的に治癒する。",
-    "return": "再分配のリターンは社会の持続可能性。UBIは深夜の静寂の中でも、公正な成長への道を照らす。"
-  }
+  "day": "2026-10-22",
+  "cycle": 39,
+  "version": "1.39.0",
+  "appliedAt": "2026-10-22T00:05:00+09:00",
+  "inequalityBias": 0.16,
+  "ubiDelta": 12,
+  "usersDelta": 165,
+  "megaBias": 0.06,
+  "regionalBias": -0.09,
+  "insights": [
+    "mega: メガバンクはFY利益33.9%増の5.26兆円、ステーブルコイン実証完了とデジタルバンク免許で優位を拡大。",
+    "flow: 預金はメガ・都市集中が加速。地方は人口減と預金獲得競争で資金フローが圧迫され再編へ。",
+    "gap: ピケティらがAI・気候と連動した格差のディストピア未来を警告。上位0.001%への富集中が問題。",
+    "ethics: redistribution — AI生産性向上の果実を再分配し、Universal High Incomeで格差是正を。",
+    "heal: UBIは地方銀行の預金流出と住民の不安を癒し、地域経済の回復力を長期的に強化する。"
+  ],
+  "news": [
+    {
+      "id": 9039,
+      "category": "\u7d4c\u6e08",
+      "urgent": true,
+      "title": "\u5730\u65b9\u9280\u884c\u306e\u9810\u91d1\u30ea\u30b9\u30af\u3068\u518d\u7de8\u52a0\u901f\u3002\u6771\u5317\uff13\u884c\u304c\u7d4c\u55b6\u7d71\u5408\u5354\u8b70\u958b\u59cb\u3001\u30e1\u30ac\u30d0\u30f3\u30af\u306f\u5229\u76ca\u62e1\u5927\u3002"
+    },
+    {
+      "id": 8039,
+      "category": "UBI",
+      "title": "\u30a4\u30fc\u30ed\u30f3\u30fb\u30de\u30b9\u30af\u6c0f\u304cUniversal High Income\u3092\u63d0\u5531\u3001\u7c73\u56fd\u306e\u5b50\u3069\u3082\u3078\u306eSpaceX\u682a\u914d\u5e03\u3092\u4e88\u544a\u3002AI\u6642\u4ee3\u306eUBI\u8b70\u8ad6\u304c\u6d3b\u767a\u5316\u3002"
+    }
+  ]
 }
